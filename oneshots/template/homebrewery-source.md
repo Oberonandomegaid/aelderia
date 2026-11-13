@@ -30,6 +30,7 @@
 .page:has(.edition-cover):before,.page:has(.edition-cover):after{display:none!important}
 .page .pf-body.edition-cover{position:absolute;inset:0;background:var(--accent);color:#f7f3e9;text-align:center;overflow:hidden}
 .page .cv-art{position:absolute;left:0;top:0;width:100%;height:60%;overflow:hidden;background:#111}
+.page .cv-art p,.page .oo-pregen p,.page .cv-band p:empty{margin:0!important;height:100%;display:block}
 .page .cv-art img{width:100%!important;height:100%!important;max-width:none!important;object-fit:cover;display:block;margin:0}
 .page .cv-logo{position:absolute;top:20pt;left:22pt;width:56pt!important;height:56pt!important;object-fit:contain;z-index:3}
 .page .cv-band{position:absolute;left:0;right:0;bottom:0;height:40%;background:var(--accent);box-sizing:border-box;padding:0 54px}

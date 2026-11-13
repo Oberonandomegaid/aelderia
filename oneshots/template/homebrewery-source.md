@@ -41,6 +41,9 @@
 .page .cv-meta{font:10.5px Arial,sans-serif!important;letter-spacing:2px!important;margin:0!important}
 .page .cv-ed{font:10px Arial,sans-serif!important;letter-spacing:3px!important;margin:9px 0 0!important;opacity:.85}
 .page .cv-foot{position:absolute;left:54px;right:54px;bottom:24px;border-top:1px solid rgba(255,255,255,.35);padding-top:9px;font:9px Arial,sans-serif;letter-spacing:3px;display:flex;justify-content:space-between}
+/* Homebrewery's theme puts images at z-index:-1; lift ours above coloured boxes */
+.page .pf-body img{position:relative;z-index:1}
+.page .pf-body .cv-logo{position:absolute}
 /* adventure symbol watermark: large, faint, centred on every page */
 .page:before{top:50%!important;left:50%!important;bottom:auto!important;width:440px!important;height:440px!important;transform:translate(-50%,-50%);opacity:.055!important;background-position:center!important;background-size:contain!important;background-repeat:no-repeat!important;z-index:0}
 .page .pf-body,.page .running,.page .folio-footer{position:relative;z-index:1}

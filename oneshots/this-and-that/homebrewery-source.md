@@ -1,4 +1,4 @@
-<style>
+<style>/*fitfix*/#p2 .story-navigation p{margin-bottom:2px!important;line-height:1.22!important;font-size:11px!important}#p2 .story-navigation h2{margin-bottom:4px}#p33 .pf-body{font-size:12.6px;line-height:1.38}#p33 .pf-body p{margin-bottom:7px}
 
 .page{width:210mm;height:297mm;padding:62px 48px 58px;box-sizing:border-box;background:#f6f2e8;background-image:none;color:#282c2b;font:14px Georgia,serif;line-height:1.38;column-count:1;position:relative}
 

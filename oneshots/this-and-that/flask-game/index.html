@@ -14,9 +14,7 @@ h1{margin:0;font-size:26px;letter-spacing:.5px}
 .sub{margin:2px 0 10px;font-style:italic;color:#5b4630}
 .stage{position:relative;width:100%;aspect-ratio:1/1;margin:6px auto 10px;max-width:420px}
 .stage>*{position:absolute;inset:0;width:100%;height:100%}
-.x-unused{-webkit-mask:url(img/flask-mask.png) center/100% 100% no-repeat;mask:url(img/flask-mask.png) center/100% 100% no-repeat}
-.x-unused2{-webkit-mask:url(img/ooze-mask.png) center/100% 100% no-repeat;mask:url(img/ooze-mask.png) center/100% 100% no-repeat}
-.liquid{background:rgba(190,225,200,.35)}
+.stage img{color:transparent}
 .chips{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:8px 0}
 .chip{border:1.5px dashed #9c8461;border-radius:10px;padding:6px 4px;text-align:center;font-size:13px;min-height:52px;background:var(--paper2)}
 .chip b{display:block;font-size:12px;letter-spacing:1px;color:#6b5236;text-transform:uppercase}
@@ -98,9 +96,16 @@ const save=()=>{try{localStorage.setItem('zoltan-flask-v1',JSON.stringify(S))}ca
 
 const ORDER=['aura','essence','ichor','heart','BASE','skin','dust'];
 const ANIM={aura:'hz',heart:'pl',dust:'tw'};
+function retry(im){const n=+(im.dataset.n||0)+1;im.dataset.n=n;if(n>5){im.style.visibility='hidden';return}
+ const base=im.getAttribute('src').split('?')[0];setTimeout(()=>{im.src=base+'?r='+n+'-'+Date.now()},400*n)}
+const IMG=(src,cls='')=>`<img class="${cls}" src="img/${src}.webp" alt="" onerror="retry(this)">`;
 function render(el,m,st){const anyR=CATS.some(c=>st[c]==='rainbow');
- el.innerHTML=ORDER.map(c=>{if(c==='BASE')return `<img src="img/${m==='flask'?'flask-blank':(anyR?'ooze-blank-happy':'ooze-blank-angry')}.webp" alt="">`;
-  return st[c]?`<img class="${ANIM[c]||''}" src="img/${m}-${c}-${st[c]}.webp" alt="">`:''}).join('')}
+ el.innerHTML=ORDER.map(c=>c==='BASE'?IMG(m==='flask'?'flask-blank':(anyR?'ooze-blank-happy':'ooze-blank-angry')):(st[c]?IMG(`${m}-${c}-${st[c]}`,ANIM[c]||''):'')).join('')}
+(function preload(){const L=['flask-blank','ooze-blank-angry','ooze-blank-happy','rainbow-pet'];
+ for(const m of ['flask','ooze'])for(const c of CATS)for(const v in V[c])L.push(`${m}-${c}-${v}`);
+ let i=0;const next=()=>{if(i>=L.length)return;const im=new Image(),src=L[i++];let t=0;
+  im.onload=next;im.onerror=()=>{if(++t<4)setTimeout(()=>{im.src=`img/${src}.webp?p=${t}`},500*t);else next()};im.src=`img/${src}.webp`};
+ for(let k=0;k<4;k++)next()})();
 const $=id=>document.getElementById(id);
 function chips(){$('chips').innerHTML=CATS.map(c=>S[c]?`<div class="chip done"><b>${LABEL[c]}</b>${V[c][S[c]][0]}</div>`:`<div class="chip"><b>${LABEL[c]}</b>?</div>`).join('')}
 function note(t,bad){const n=$('note');n.textContent=t;n.className='note'+(bad?' bad':'')}
@@ -115,7 +120,7 @@ $('pw').addEventListener('input',()=>{if($('note').classList.contains('bad'))not
 $('pour').addEventListener('click',()=>{const fs=$('flaskStage');fs.classList.add('shake');$('pour').classList.add('hidden');note('The bubbles stop. Everything goes very quiet...');
  setTimeout(()=>{fs.classList.remove('shake');S.poured=true;save();showResult(true)},1900)});
 function showResult(anim){const rain=CATS.every(c=>S[c]==='rainbow');$('flaskStage').classList.add('hidden');const os=$('oozeStage');os.classList.remove('hidden');
- if(rain){os.innerHTML='<img src="img/rainbow-pet.webp" alt="The Rainbow Flubb pet">';os.classList.add('pop')}
+ if(rain){os.innerHTML=IMG('rainbow-pet');os.classList.add('pop')}
  else{render(os,'ooze',S);if(anim)os.classList.add('pop')}
  
  $('play').classList.add('hidden');$('result').classList.remove('hidden');

@@ -14,8 +14,8 @@ h1{margin:0;font-size:26px;letter-spacing:.5px}
 .sub{margin:2px 0 10px;font-style:italic;color:#5b4630}
 .stage{position:relative;width:100%;aspect-ratio:1/1;margin:6px auto 10px;max-width:420px}
 .stage>*{position:absolute;inset:0;width:100%;height:100%}
-.masked-flask{-webkit-mask:url(img/flask-mask.png) center/100% 100% no-repeat;mask:url(img/flask-mask.png) center/100% 100% no-repeat}
-.masked-ooze{-webkit-mask:url(img/ooze-mask.png) center/100% 100% no-repeat;mask:url(img/ooze-mask.png) center/100% 100% no-repeat}
+.x-unused{-webkit-mask:url(img/flask-mask.png) center/100% 100% no-repeat;mask:url(img/flask-mask.png) center/100% 100% no-repeat}
+.x-unused2{-webkit-mask:url(img/ooze-mask.png) center/100% 100% no-repeat;mask:url(img/ooze-mask.png) center/100% 100% no-repeat}
 .liquid{background:rgba(190,225,200,.35)}
 .chips{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:8px 0}
 .chip{border:1.5px dashed #9c8461;border-radius:10px;padding:6px 4px;text-align:center;font-size:13px;min-height:52px;background:var(--paper2)}
@@ -38,6 +38,9 @@ button.big{width:100%;margin-top:10px;font-size:19px;padding:14px}
 .pet{animation:petb 1s ease-in-out infinite}
 @keyframes petb{0%,100%{transform:translateY(0) scale(.6)}50%{transform:translateY(-10%) scale(.62,.58)}}
 .hidden{display:none}
+.hz{animation:hz 2.4s ease-in-out infinite}@keyframes hz{0%,100%{opacity:.8}50%{opacity:1}}
+.pl{animation:pl 1.4s ease-in-out infinite}@keyframes pl{0%,100%{transform:scale(1)}50%{transform:scale(1.025)}}
+.tw{animation:tw 1.8s ease-in-out infinite}@keyframes tw{0%,100%{opacity:1}50%{opacity:.45}}
 </style>
 </head>
 <body>
@@ -65,90 +68,39 @@ button.big{width:100%;margin-top:10px;font-size:19px;padding:14px}
  <div class="foot"><img src="../../shared/oberon-omega-logo.png" alt="Oberon &amp; Omega">Oberon &amp; Omega · Aelderia · This and That, That and This!</div>
 </div>
 <script>
-const CATS=['ichor','dust','heart','skin','solvent','essence'];
-const LABEL={ichor:'Ichor',dust:'Dust',heart:'Heart',skin:'Skin',solvent:'Solvent',essence:'Essence'};
+const CATS=['aura','heart','skin','ichor','dust','essence'];
+const LABEL={aura:'Aura',heart:'Heart',skin:'Skin',ichor:'Ichor',dust:'Dust',essence:'Essence'};
 const V={
-ichor:{rainbow:['Rainbow Ichor',['rainbowichor']],hard:['Hard Ichor',['hardichor']],spiky:['Spiky Ichor',['spikyichor']],sharp:['Sharp Ichor',['sharpichor']]},
-dust:{rainbow:['Rainbow Dust',['rainbowdust']],ember:['Ember Dust',['emberdust']],frost:['Frost Dust',['frostdust']],static:['Static Dust',['staticdust']]},
-heart:{rainbow:['Rainbow Heart',['rainbowheart','rainbowoozeheart']],squishy:['Squishy Ooze Heart',['squishyoozeheart','squishyheart']],puffy:['Puffy Ooze Heart',['puffyoozeheart','puffyheart']],dense:['Dense Ooze Heart',['denseoozeheart','denseheart']]},
+ichor:{rainbow:['Rainbow Ichor',['rainbowichor']],hard:['Hard Ichor',['hardichor']],spikey:['Spikey Ichor',['spikeyichor','spikyichor']],sharp:['Sharp Ichor',['sharpichor']]},
+dust:{rainbow:['Rainbow Dust',['rainbowdust']],ember:['Ember Dust',['emberdust']],frost:['Frost Dust',['frostdust']],storm:['Storm Dust',['stormdust','staticdust']]},
+heart:{rainbow:['Rainbow Heart',['rainbowheart','rainbowoozeheart']],squishy:['Squishy Heart',['squishyoozeheart','squishyheart']],puffy:['Puffy Heart',['puffyoozeheart','puffyheart']],dense:['Dense Heart',['denseoozeheart','denseheart']]},
 skin:{rainbow:['Rainbow Skin',['rainbowskin']],flexible:['Flexible Skin',['flexibleskin']],plated:['Plated Skin',['platedskin']],crystal:['Crystal Skin',['crystalskin']]},
-solvent:{rainbow:['Rainbow Solvent',['rainbowsolvent']],ember:['Ember Solvent',['embersolvent']],frost:['Frost Solvent',['frostsolvent']],storm:['Storm Solvent',['stormsolvent']]},
+aura:{rainbow:['Rainbow Aura',['rainbowaura','rainbowsolvent']],ember:['Ember Aura',['emberaura','embersolvent']],frost:['Frost Aura',['frostaura','frostsolvent']],storm:['Storm Aura',['stormaura','stormsolvent']]},
 essence:{rainbow:['Rainbow Essence',['rainbowessence']],bouncing:['Bouncing Essence',['bouncingessence','bounceessence','purplebounceessence']],sticky:['Sticky Essence',['stickyessence','greengooessence','gooessence']],dividing:['Dividing Essence',['dividingessence','splitteressence','yellowsplitteressence']]}};
 const NOTE={
-ichor:{rainbow:"\"Rainbow ichor! Utterly useless. Gorgeous, though.\"",hard:"\"Hard ichor. It clunks. Ichor shouldn't clunk.\"",spiky:"\"Spiky ichor! Mind your fingers. I didn't.\"",sharp:"\"Sharp ichor. Do NOT lick the spoon.\""},
-dust:{rainbow:"\"Rainbow dust! Pretty. Pointless. Pretty pointless.\"",ember:"\"Ember dust! Warm. Very warm. Ow.\"",frost:"\"Frost dust! Achoo! My eyebrows have frozen.\"",static:"\"Static dust! Achoo! Why is my hair standing up?\""},
+ichor:{rainbow:"\"Rainbow ichor! Utterly useless. Gorgeous, though.\"",hard:"\"Hard ichor. It clunks. Ichor shouldn't clunk.\"",spikey:"\"Spikey ichor! Mind your fingers. I didn't.\"",sharp:"\"Sharp ichor. Do NOT lick the spoon.\""},
+dust:{rainbow:"\"Rainbow dust! Pretty. Pointless. Pretty pointless.\"",ember:"\"Ember dust! Warm. Very warm. Ow.\"",frost:"\"Frost dust! Achoo! My eyebrows have frozen.\"",storm:"\"Storm dust! Achoo! Why is my hair standing up?\""},
 heart:{rainbow:"\"A rainbow heart. Adorable. Does absolutely nothing.\"",squishy:"\"A squishy little heart. Bless it.\"",puffy:"\"A puffy heart! Listen to it go.\"",dense:"\"A dense heart. Heavy. Ominous. Marvellous.\""},
 skin:{rainbow:"\"Rainbow skin. Shimmery! Not remotely protective.\"",flexible:"\"Flexible skin. Bends, wobbles, never breaks.\"",plated:"\"Plated skin! Like a tiny jelly knight.\"",crystal:"\"Crystal skin! Not too shiny. Oh, it is too shiny.\""},
-solvent:{rainbow:"\"Rainbow solvent. Protects against nothing at all, beautifully.\"",ember:"\"Ember solvent! Fireproof. Probably.\"",frost:"\"Frost solvent! Brr. Excellent for summer.\"",storm:"\"Storm solvent! That crackle is perfectly normal.\""},
+aura:{rainbow:"\"Rainbow aura. Protects against nothing at all, beautifully.\"",ember:"\"Ember aura! Fireproof. Probably.\"",frost:"\"Frost aura! Brr. Excellent for summer.\"",storm:"\"Storm aura! That crackle is perfectly normal.\""},
 essence:{rainbow:"\"Rainbow essence! Oh my. Oh MY.\"",bouncing:"\"Bouncing essence! Not too much life. Too late.\"",sticky:"\"Sticky essence! It's holding my hand. Let go.\"",dividing:"\"Dividing essence! Now there are two of it. Now one.\""}};
 const DESC={
-ichor:{rainbow:"Tiny rainbow bubbles drift harmlessly inside it.",hard:"Stony lumps bulge out of it like knuckles.",spiky:"Bone-white spikes bristle all over it.",sharp:"Long glinting blades slide in and out of its jelly."},
-dust:{rainbow:"Rainbow glitter twinkles inside it. Pretty, and useless.",ember:"Orange sparks fizz inside it, and it gives off heat.",frost:"Snowflakes swirl inside it, and frost creeps over whatever it touches.",static:"Purple static crackles across it. Your hair stands on end."},
+ichor:{rainbow:"Its base puddles into harmless rainbow goo.",hard:"Its base has set like grey stone.",spikey:"Its base bristles with green spikes.",sharp:"Its base is a pool of red, razor-edged shards."},
+dust:{rainbow:"Rainbow glitter twinkles around it. Pretty, and useless.",ember:"Orange sparks fizz in the air around it.",frost:"Tiny snowflakes swirl around it.",storm:"Purple static crackles around it. Your hair stands on end."},
 heart:{rainbow:"A tiny rainbow heart flutters in its middle.",squishy:"A small pink heart pulses in its middle.",puffy:"A plump red heart thumps away in its middle.",dense:"A huge dark heart pounds in its core. It looks very hard to kill."},
-skin:{rainbow:"Its skin shimmers with a rainbow sheen, and nothing more.",flexible:"Its skin is wet and glossy, and blows slip off it.",plated:"Its skin has hardened into overlapping scales.",crystal:"Crystals have grown all over its skin, catching the light."},
-solvent:{rainbow:"A faint rainbow halo hangs round it.",ember:"A heat haze ripples around it.",frost:"Icy mist curls off it.",storm:"Little lightning arcs dance around it."},
+skin:{rainbow:"Its skin shimmers with a rainbow sheen, and nothing more.",flexible:"A glossy green rim of skin bends with every wobble.",plated:"A hard golden rim of plating edges its skin.",crystal:"A rim of blue crystal glints along its skin."},
+aura:{rainbow:"A faint rainbow halo hangs round it.",ember:"A heat haze ripples around it.",frost:"Icy mist curls off it.",storm:"Little lightning arcs dance around it."},
 essence:{rainbow:"Its whole body swirls with rainbow colours.",bouncing:"It's purple, and it bounces off everything.",sticky:"It's green and gooey, and it sticks to everything.",dividing:"It's yellow, and it keeps splitting in two and joining back up."}};
 const norm=s=>s.toLowerCase().replace(/[^a-z]/g,'');
 const LOOK={};for(const c of CATS)for(const v in V[c])for(const a of V[c][v][1])LOOK[a]=[c,v];
 let S={};try{S=JSON.parse(localStorage.getItem('zoltan-flask-v1')||'{}')||{}}catch(e){S={}}
 const save=()=>{try{localStorage.setItem('zoltan-flask-v1',JSON.stringify(S))}catch(e){}};
 
-const GEO={flask:{cx:500,cy:600,rx:440,ry:470,heart:[500,790],box:[110,150,890,980]},ooze:{cx:500,cy:490,rx:420,ry:430,heart:[515,610],box:[130,110,870,875]}};
-const EDGE=[[250,415,-170],[250,314,-150],[303,224,-130],[385,142,-110],[500,102,-90],[622,121,-70],[723,192,-50],[784,294,-30],[800,405,-10]];
-function rnd(seed){let s=seed;return()=>{s=(s*9301+49297)%233280;return s/233280}}
-const RB=['#ff4b4b','#ffb53a','#ffe94a','#4fd06a','#4aa3ff','#9b6eff'];
-const svg=(inner,defs='')=>`<svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><defs><style>
-.tw{animation:tw 1.6s ease-in-out infinite}@keyframes tw{0%,100%{opacity:1}50%{opacity:.25}}
-.pl{animation:pl 1.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}@keyframes pl{0%,100%{transform:scale(1)}50%{transform:scale(1.09)}}
-.fl{animation:fl .9s steps(2) infinite}@keyframes fl{0%{opacity:1}50%{opacity:.15}}
-.dr{animation:dr 5s ease-in-out infinite}@keyframes dr{0%,100%{transform:translate(0,0)}50%{transform:translate(14px,-12px)}}
-.hz{animation:hz 2.2s ease-in-out infinite}@keyframes hz{0%,100%{opacity:.55}50%{opacity:.9}}
-</style>${defs}</defs>${inner}</svg>`;
-
-function aura(m,v){const g=GEO[m];let s='';
- if(v==='ember'){s=`<radialGradient id="ae${m}"><stop offset=".55" stop-color="#ff7a2a" stop-opacity="0"/><stop offset=".8" stop-color="#ff7a2a" stop-opacity=".55"/><stop offset="1" stop-color="#ff3a1a" stop-opacity="0"/></radialGradient>`;
-  let w='';for(let i=0;i<8;i++){const a=i/8*6.283,x=g.cx+Math.cos(a)*g.rx*.95,y=g.cy+Math.sin(a)*g.ry*.95;w+=`<path d="M${x-18} ${y+25} q12 -16 0 -30 q-12 -16 0 -30" fill="none" stroke="#ffb14a" stroke-width="7" stroke-linecap="round" class="hz" style="animation-delay:${i*.25}s"/>`}
-  return svg(`<ellipse cx="${g.cx}" cy="${g.cy}" rx="${g.rx*1.08}" ry="${g.ry*1.06}" fill="url(#ae${m})" class="hz"/>${w}`,s)}
- if(v==='frost'){const r=rnd(7);for(let i=0;i<12;i++){const a=i/12*6.283,x=g.cx+Math.cos(a)*g.rx*.98,y=g.cy+Math.sin(a)*g.ry*.98;s+=`<ellipse cx="${x}" cy="${y}" rx="${70+r()*40}" ry="${34+r()*16}" fill="#d6efff" opacity=".75" class="dr" style="animation-delay:${i*.4}s"/>`}
-  for(let i=0;i<14;i++){const a=r()*6.283,x=g.cx+Math.cos(a)*g.rx*1.02,y=g.cy+Math.sin(a)*g.ry*1.02;s+=`<circle cx="${x}" cy="${y}" r="7" fill="#fff" class="tw" style="animation-delay:${r()*1.5}s"/>`}return svg(s)}
- if(v==='storm'){for(let i=0;i<7;i++){const a=i/7*6.283+.3,x=g.cx+Math.cos(a)*g.rx*.98,y=g.cy+Math.sin(a)*g.ry*.98,dx=Math.cos(a)*40,dy=Math.sin(a)*40;
-  s+=`<path d="M${x-dx} ${y-dy} l${dx*.6-15} ${dy*.6+10} l25 -10 l${dx*.8} ${dy*.8}" fill="none" stroke="#c9a8ff" stroke-width="14" stroke-linejoin="round" class="fl" style="animation-delay:${i*.13}s"/><path d="M${x-dx} ${y-dy} l${dx*.6-15} ${dy*.6+10} l25 -10 l${dx*.8} ${dy*.8}" fill="none" stroke="#fff" stroke-width="5" stroke-linejoin="round" class="fl" style="animation-delay:${i*.13}s"/>`}return svg(s)}
- if(v==='rainbow'){RB.forEach((c,i)=>s+=`<ellipse cx="${g.cx}" cy="${g.cy}" rx="${g.rx*1.0+i*9}" ry="${g.ry*1.0+i*9}" fill="none" stroke="${c}" stroke-width="6" opacity=".45"/>`);return svg(`<g class="hz">${s}</g>`)}
- return ''}
-
-function ichorOut(v){if(!v||v==='rainbow')return '';let s='';
- for(const [x,y,d] of EDGE){const a=d*Math.PI/180,c=Math.cos(a),n=Math.sin(a),px=-n,py=c;
-  if(v==='hard')s+=`<circle cx="${x+c*20}" cy="${y+n*20}" r="40" fill="#8d7b63" stroke="#3b2f22" stroke-width="7"/><circle cx="${x+c*20-10}" cy="${y+n*20-12}" r="10" fill="#c2b29a"/>`;
-  if(v==='spiky')s+=`<polygon points="${x+c*95},${y+n*95} ${x+px*28},${y+py*28} ${x-px*28},${y-py*28}" fill="#d9ccae" stroke="#3b2f22" stroke-width="7" stroke-linejoin="round"/>`;
-  if(v==='sharp')s+=`<polygon points="${x+c*150},${y+n*150} ${x+px*14},${y+py*14} ${x-c*10},${y-n*10} ${x-px*14},${y-py*14}" fill="#c9d6e2" stroke="#26313b" stroke-width="6" stroke-linejoin="round"/><line x1="${x}" y1="${y}" x2="${x+c*130}" y2="${y+n*130}" stroke="#fff" stroke-width="4"/>`}
- return svg(s)}
-
-function heartPath(cx,cy,k){return `M${cx} ${cy+70*k} C${cx-150*k} ${cy-30*k} ${cx-80*k} ${cy-130*k} ${cx} ${cy-60*k} C${cx+80*k} ${cy-130*k} ${cx+150*k} ${cy-30*k} ${cx} ${cy+70*k}Z`}
-function inner(m,st){const g=GEO[m],[bx,by,bx2,by2]=g.box,r=rnd(m==='flask'?3:11);let s='',defs='';
- const h=st.heart;if(h){const [hx,hy]=g.heart;
-  if(h==='rainbow'){defs+=`<linearGradient id="rh${m}">${RB.map((c,i)=>`<stop offset="${i/5}" stop-color="${c}"/>`).join('')}</linearGradient>`;s+=`<path d="${heartPath(hx,hy,.55)}" fill="url(#rh${m})" stroke="#fff" stroke-width="8" class="pl" opacity=".9"/>`}
-  else{const k={squishy:.6,puffy:.85,dense:1.15}[h],col={squishy:'#ff8fb5',puffy:'#e8395f',dense:'#7a0f2c'}[h];
-   s+=`<path d="${heartPath(hx,hy,k*1.25)}" fill="${col}" opacity=".35" class="pl"/><path d="${heartPath(hx,hy,k)}" fill="${col}" stroke="#fff" stroke-width="9" class="pl"/><path d="M${hx-60*k} ${hy-50*k} q20 -30 50 -10" fill="none" stroke="#fff" stroke-width="${10*k}" stroke-linecap="round" opacity=".8"/>`}}
- const ic=st.ichor;if(m==='flask'&&ic){for(let i=0;i<8;i++){const x=bx+120+r()*(bx2-bx-240),y=by+300+r()*(by2-by-380);
-  if(ic==='hard')s+=`<circle cx="${x}" cy="${y}" r="30" fill="#8d7b63" stroke="#3b2f22" stroke-width="6" class="dr" style="animation-delay:${i*.5}s"/>`;
-  if(ic==='spiky')s+=`<g class="dr" style="animation-delay:${i*.5}s"><polygon points="${x},${y-45} ${x+18},${y+20} ${x-18},${y+20}" fill="#efe7d4" stroke="#3b2f22" stroke-width="6" stroke-linejoin="round"/></g>`;
-  if(ic==='sharp')s+=`<g class="dr" style="animation-delay:${i*.5}s"><polygon points="${x-55},${y+20} ${x+55},${y-20} ${x+45},${y-6} ${x-45},${y+30}" fill="#c9d6e2" stroke="#26313b" stroke-width="5"/></g>`;
-  if(ic==='rainbow')s+=`<circle cx="${x}" cy="${y}" r="22" fill="none" stroke="${RB[i%6]}" stroke-width="6" class="dr"/>`}}
- if(m==='ooze'&&ic==='rainbow'){for(let i=0;i<8;i++){const x=bx+150+r()*(bx2-bx-300),y=by+200+r()*(by2-by-320);s+=`<circle cx="${x}" cy="${y}" r="20" fill="none" stroke="${RB[i%6]}" stroke-width="6" class="dr"/>`}}
- const sk=st.skin;if(sk==='flexible'){s+=`<path d="M${bx+90} ${by+340} Q${bx+140} ${by+130} ${bx+330} ${by+90}" fill="none" stroke="#fff" stroke-width="26" stroke-linecap="round" opacity=".85"/><path d="M${bx2-110} ${by+360} Q${bx2-90} ${by+520} ${bx2-160} ${by+640}" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round" opacity=".7"/><path d="M${bx+200} ${by2-170} Q${bx+380} ${by2-110} ${bx+560} ${by2-150}" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" opacity=".6"/>`}
- if(sk==='plated'){defs+=`<pattern id="sc${m}" width="80" height="60" patternUnits="userSpaceOnUse"><path d="M0 30 a40 30 0 0 0 80 0" fill="rgba(255,255,255,.18)" stroke="#1f2a1f" stroke-width="5"/><path d="M-40 60 a40 30 0 0 0 80 0 M40 60 a40 30 0 0 0 80 0" fill="rgba(255,255,255,.12)" stroke="#1f2a1f" stroke-width="5"/></pattern>`;s+=`<rect x="0" y="0" width="1000" height="1000" fill="url(#sc${m})" opacity=".75"/>`}
- if(sk==='crystal'){for(let i=0;i<7;i++){const x=bx+90+r()*(bx2-bx-180),y=by+120+r()*(by2-by-200);s+=`<g><polygon points="${x},${y-60} ${x+26},${y} ${x},${y+20} ${x-26},${y}" fill="#d9f3ff" stroke="#fff" stroke-width="6" opacity=".95"/><polygon points="${x+30},${y-30} ${x+48},${y+8} ${x+30},${y+22} ${x+14},${y+6}" fill="#9fd8f5" stroke="#fff" stroke-width="5"/><line x1="${x}" y1="${y-60}" x2="${x}" y2="${y+20}" stroke="#7cc3e6" stroke-width="4"/></g>`}}
- if(sk==='rainbow'){RB.forEach((c,i)=>s+=`<rect x="-200" y="${120+i*130}" width="1400" height="50" fill="${c}" opacity=".22" transform="rotate(-25 500 500)"/>`)}
- const du=st.dust;if(du){for(let i=0;i<26;i++){const x=bx+60+r()*(bx2-bx-120),y=by+(m==='flask'?260:80)+r()*(by2-by-(m==='flask'?320:160)),d=`style="animation-delay:${(r()*1.6).toFixed(2)}s"`;
-  if(du==='ember')s+=`<g class="tw" ${d}><circle cx="${x}" cy="${y}" r="15" fill="#ff7a1a" stroke="#4a1a00" stroke-width="3"/><circle cx="${x}" cy="${y}" r="6" fill="#fff6c2"/></g>`;
-  if(du==='frost')s+=`<g class="tw" ${d} stroke-linecap="round"><path d="M${x-18} ${y}h36M${x} ${y-18}v36M${x-13} ${y-13}l26 26M${x+13} ${y-13}l-26 26" stroke="#13406b" stroke-width="10"/><path d="M${x-18} ${y}h36M${x} ${y-18}v36M${x-13} ${y-13}l26 26M${x+13} ${y-13}l-26 26" stroke="#fff" stroke-width="5"/></g>`;
-  if(du==='static')s+=`<g class="fl" ${d}><path d="M${x-16} ${y-18} l14 12 l-10 6 l16 16" fill="none" stroke="#3a1060" stroke-width="12" stroke-linejoin="round"/><path d="M${x-16} ${y-18} l14 12 l-10 6 l16 16" fill="none" stroke="#e6d4ff" stroke-width="5" stroke-linejoin="round"/></g>`;
-  if(du==='rainbow')s+=`<circle cx="${x}" cy="${y}" r="9" fill="${RB[i%6]}" stroke="#fff" stroke-width="3" class="tw" ${d}/>`}}
- return svg(s,defs)}
-
-function render(el,m,st){const fill=st.essence?`<img src="img/${m}-fill-${st.essence}.webp" alt="">`:`<div class="liquid masked-${m}"></div>`;
- el.innerHTML=(st.solvent?aura(m,st.solvent):'')+(m==='ooze'?ichorOut(st.ichor):'')+fill+`<img src="img/${m}-base.webp" alt="">`+`<div class="masked-${m}">${inner(m,st)}</div>`}
-
+const ORDER=['aura','essence','ichor','heart','BASE','skin','dust'];
+const ANIM={aura:'hz',heart:'pl',dust:'tw'};
+function render(el,m,st){const anyR=CATS.some(c=>st[c]==='rainbow');
+ el.innerHTML=ORDER.map(c=>{if(c==='BASE')return `<img src="img/${m==='flask'?'flask-blank':(anyR?'ooze-blank-happy':'ooze-blank-angry')}.webp" alt="">`;
+  return st[c]?`<img class="${ANIM[c]||''}" src="img/${m}-${c}-${st[c]}.webp" alt="">`:''}).join('')}
 const $=id=>document.getElementById(id);
 function chips(){$('chips').innerHTML=CATS.map(c=>S[c]?`<div class="chip done"><b>${LABEL[c]}</b>${V[c][S[c]][0]}</div>`:`<div class="chip"><b>${LABEL[c]}</b>?</div>`).join('')}
 function note(t,bad){const n=$('note');n.textContent=t;n.className='note'+(bad?' bad':'')}
@@ -163,11 +115,12 @@ $('pw').addEventListener('input',()=>{if($('note').classList.contains('bad'))not
 $('pour').addEventListener('click',()=>{const fs=$('flaskStage');fs.classList.add('shake');$('pour').classList.add('hidden');note('The bubbles stop. Everything goes very quiet...');
  setTimeout(()=>{fs.classList.remove('shake');S.poured=true;save();showResult(true)},1900)});
 function showResult(anim){const rain=CATS.every(c=>S[c]==='rainbow');$('flaskStage').classList.add('hidden');const os=$('oozeStage');os.classList.remove('hidden');
- render(os,'ooze',S);if(rain){os.classList.add('pet');os.insertAdjacentHTML('beforeend',svg(`<g class="tw"><path d="M150 200 l12 -24 l12 24 l-24 -14 h24z" fill="#ffd84a"/><path d="M820 260 l12 -24 l12 24 l-24 -14 h24z" fill="#ff8fd0"/><path d="${heartPath(200,700,.35)}" fill="#ff6fa8"/><path d="${heartPath(830,640,.3)}" fill="#ff6fa8"/></g>`))}
- else if(anim)os.classList.add('pop');
+ if(rain){os.innerHTML='<img src="img/rainbow-pet.webp" alt="The Rainbow Flubb pet">';os.classList.add('pop')}
+ else{render(os,'ooze',S);if(anim)os.classList.add('pop')}
+ 
  $('play').classList.add('hidden');$('result').classList.remove('hidden');
  $('rtitle').textContent=rain?'A tiny rainbow blob climbs over the rim, blinks, squeaks... and bounces straight into your arms. It has chosen you.':'Something translucent and thoroughly gelatinous climbs over the rim. Your Flubb is loose! Your GM has its stats. Good luck.';
- $('rdesc').innerHTML=rain?'<li>It is harmless and very affectionate.</li><li>It talks in squeaks, colour changes and bounces.</li><li>It wants to come home with you.</li>':['essence','heart','skin','ichor','dust','solvent'].map(c=>`<li>${DESC[c][S[c]]}</li>`).join('')}
+ $('rdesc').innerHTML=rain?'<li>It is harmless and very affectionate.</li><li>It talks in squeaks, colour changes and bounces.</li><li>It wants to come home with you.</li>':['essence','heart','skin','ichor','dust','aura'].map(c=>`<li>${DESC[c][S[c]]}</li>`).join('')}
 let armed=false;$('reset').addEventListener('click',()=>{if(!armed){armed=true;$('reset').textContent='Tap again to empty the flask';setTimeout(()=>{armed=false;$('reset').textContent='Empty the flask and start again'},4000);return}
  S={};save();armed=false;$('reset').textContent='Empty the flask and start again';$('result').classList.add('hidden');$('play').classList.remove('hidden');$('oozeStage').className='stage hidden';$('flaskStage').classList.remove('hidden');note('Fresh flask. Search Zoltan\'s stores and type each ingredient your GM names.');refresh()});
 refresh();

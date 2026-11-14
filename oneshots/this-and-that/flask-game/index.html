@@ -94,14 +94,14 @@ const LOOK={};for(const c of CATS)for(const v in V[c])for(const a of V[c][v][1])
 let S={};try{S=JSON.parse(localStorage.getItem('zoltan-flask-v1')||'{}')||{}}catch(e){S={}}
 const save=()=>{try{localStorage.setItem('zoltan-flask-v1',JSON.stringify(S))}catch(e){}};
 
-const ORDER=['aura','essence','ichor','heart','BASE','skin','dust'];
+const ORDER=['aura','essence','ichor','heart','BASE','FACE','skin','dust'];
 const ANIM={aura:'hz',heart:'pl',dust:'tw'};
 function retry(im){const n=+(im.dataset.n||0)+1;im.dataset.n=n;if(n>5){im.style.visibility='hidden';return}
  const base=im.getAttribute('src').split('?')[0];setTimeout(()=>{im.src=base+'?r='+n+'-'+Date.now()},400*n)}
 const IMG=(src,cls='')=>`<img class="${cls}" src="img/${src}.webp" alt="" onerror="retry(this)">`;
 function render(el,m,st){const anyR=CATS.some(c=>st[c]==='rainbow');
- el.innerHTML=ORDER.map(c=>c==='BASE'?IMG(m==='flask'?'flask-blank':(anyR?'ooze-blank-happy':'ooze-blank-angry')):(st[c]?IMG(`${m}-${c}-${st[c]}`,ANIM[c]||''):'')).join('')}
-(function preload(){const L=['flask-blank','ooze-blank-angry','ooze-blank-happy','rainbow-pet'];
+ el.innerHTML=ORDER.map(c=>c==='FACE'?(m==='ooze'?IMG(anyR?'ooze-face-happy':'ooze-face-angry'):''):c==='BASE'?IMG(m==='flask'?'flask-blank':(anyR?'ooze-blank-happy':'ooze-blank-angry')):(st[c]?IMG(`${m}-${c}-${st[c]}`,ANIM[c]||''):'')).join('')}
+(function preload(){const L=['flask-blank','ooze-blank-angry','ooze-blank-happy','ooze-face-angry','ooze-face-happy','rainbow-pet'];
  for(const m of ['flask','ooze'])for(const c of CATS)for(const v in V[c])L.push(`${m}-${c}-${v}`);
  let i=0;const next=()=>{if(i>=L.length)return;const im=new Image(),src=L[i++];let t=0;
   im.onload=next;im.onerror=()=>{if(++t<4)setTimeout(()=>{im.src=`img/${src}.webp?p=${t}`},500*t);else next()};im.src=`img/${src}.webp`};

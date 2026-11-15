@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Mr Cuddlesworth's Bowl</title>
+<style>
+:root{--ink:#2b1d14;--paper:#f6ecd8;--accent:#8a4b6b}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.4 Georgia,serif;color:var(--ink);background:#1b120c radial-gradient(circle at 50% 0,#3a2618,#140d08 70%);min-height:100vh}
+main{max-width:520px;margin:auto;padding:14px 14px 40px}
+h1{font-size:23px;margin:4px 0 2px;color:#f6e3c4;text-align:center;letter-spacing:.5px}
+.sub{color:#d9c2a0;text-align:center;font-size:13.5px;margin:0 0 10px}
+.stage{position:relative;width:100%;aspect-ratio:1;border-radius:14px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.6);background:#20150d}
+.stage canvas{position:absolute;inset:0;width:100%;height:100%}
+.card{background:var(--paper);border-radius:12px;padding:12px 14px;margin-top:12px;box-shadow:0 2px 10px rgba(0,0,0,.4)}
+.row{display:flex;gap:8px}
+input{flex:1;font:16px Georgia,serif;padding:10px 12px;border:2px solid #c9b48e;border-radius:9px;background:#fffaf0;min-width:0}
+button{font:600 15px Georgia,serif;padding:10px 14px;border:0;border-radius:9px;background:var(--accent);color:#fff;cursor:pointer}
+button:disabled{opacity:.45}
+.msg{min-height:22px;margin:8px 2px 0;font-size:14.5px}
+.msg.bad{color:#9b2f2f}.msg.good{color:#3d6b2f}
+.slots{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:10px}
+.slot{border:1.5px dashed #c9b48e;border-radius:9px;padding:6px 8px;font-size:13px;display:flex;gap:7px;align-items:center;min-height:46px}
+.slot img{width:34px;height:34px;object-fit:contain}
+.slot b{display:block;font-size:12px;color:#7a6345;font-weight:600}
+.slot.on{border-style:solid;border-color:var(--accent);background:#fff6f9}
+.dunk{width:100%;margin-top:12px;font-size:18px;padding:13px;background:linear-gradient(#c0567f,#8a4b6b)}
+.result h2{margin:2px 0 6px;font-size:20px}
+.result ul{margin:6px 0 0;padding-left:18px}.result li{margin:3px 0}
+.reset{background:#6b5a48;font-size:13px;padding:7px 11px;margin-top:12px}
+.hidden{display:none}
+</style></head>
+<body><main>
+<h1>Mr Cuddlesworth’s Bowl</h1>
+<p class="sub">Add the four ingredients the GM names. Then dunk the teddy.</p>
+<div class="stage" id="stage"><canvas id="cv"></canvas></div>
+
+<div class="card" id="mix">
+  <div class="row"><input id="ing" placeholder="Type an ingredient…" autocomplete="off" autocapitalize="words"><button id="add">Add</button></div>
+  <div class="msg" id="msg"></div>
+  <div class="slots" id="slots"></div>
+  <button class="dunk hidden" id="dunk">Dunk Mr Cuddlesworth!</button>
+</div>
+
+<div class="card result hidden" id="result"></div>
+<button class="reset" id="reset">Start again</button>
+</main>
+<script>
+const CATS=['soft','sweet','scent','love'];
+const LABEL={soft:'Something soft',sweet:'Something sweet',scent:'A lovely scent',love:'Something full of love'};
+// key: [display name, image, what players notice]
+const ING={
+ soft:{perfect:['Perfect Fluff','soft-perfect','He is softer than a cloud, and shimmers like a rainbow.'],
+       velvet:['Velvet Wool','soft-velvet','His fur turns thick and velvety, with a plum sheen.'],
+       marshmallow:['Marshmallow Down','soft-marshmallow','He puffs up round and squashy, like a marshmallow.'],
+       pillow:['Pillow Cloud','soft-pillow','His tummy turns plump and springy, like a pillow.']},
+ sweet:{honeykiss:['Honey Kiss','sweet-honeykiss','A warm golden glow, and he smells of honey.'],
+       sticky:['Sticky Honey','sweet-sticky','His paws are a little sticky. Things cling to him.'],
+       toffee:['Toffee Sap','sweet-toffee','A glossy toffee shine. His hugs are very firm.'],
+       sugared:['Sugared Frost','sweet-sugared','Sugar crystals sparkle on his paws.']},
+ scent:{lavender:['Lavender Crown','scent-lavender','Lavender petals drift around him. Lovely.'],
+       rose:['Rose-Pollen Mist','scent-rose','Pink pollen glitters around him. It tickles your nose.'],
+       mint:['Mint Sparkle','scent-mint','Fresh minty sparkles fizz around him.'],
+       vanilla:['Vanilla Dream','scent-vanilla','A golden swirl of vanilla scent makes you feel sleepy.']},
+ love:{heartstring:['Heartstring Ribbon','love-heartstring','His bow turns pink and curls into a heart.'],
+       warm:['Warm Wishes Thread','love-warm','Golden thread glows in his seams.'],
+       yarn:['Affectionate Yarn','love-yarn','A little red heart is stitched on his chest. He loves you SO much.'],
+       stitch:['Eternal Embrace Stitch','love-stitch','Rose-gold stitches glow on his arms. He never lets go.']}
+};
+const PERFECT={soft:'perfect',sweet:'honeykiss',scent:'lavender',love:'heartstring'};
+const norm=s=>s.toLowerCase().replace(/[^a-z]/g,'');
+const LOOK={};for(const c of CATS)for(const k in ING[c])LOOK[norm(ING[c][k][0])]=[c,k];
+const KEY='cuddles-bowl-v1';
+let st={};try{st=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){st={}}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}};
+const $=id=>document.getElementById(id);
+
+// ---------- images ----------
+const IM={};function img(n){if(!IM[n]){const i=new Image();i.src='img/'+n+'.webp';IM[n]=i}return IM[n]}
+['bowl','ghost','teddy','teddy-perfect'].forEach(img);for(const c of CATS)for(const k in ING[c])img(ING[c][k][1]);
+
+// ---------- UI ----------
+function slots(){$('slots').innerHTML=CATS.map(c=>{const v=st[c];return v?`<div class="slot on"><img src="img/${ING[c][v][1]}.webp" alt=""><span><b>${LABEL[c]}</b>${ING[c][v][0]}</span></div>`:`<div class="slot"><span><b>${LABEL[c]}</b>…waiting</span></div>`}).join('');
+  const full=CATS.every(c=>st[c]);$('dunk').classList.toggle('hidden',!full||st.dunked);$('mix').classList.toggle('hidden',!!st.dunked)}
+function add(){const v=norm($('ing').value);const m=$('msg');if(!v)return;const hit=LOOK[v];
+  if(!hit){m.className='msg bad';m.textContent='Zoltan doesn’t recognise that. Check the exact name with your GM.';return}
+  const [c,k]=hit;if(st[c]&&st[c]!==k){m.className='msg bad';m.textContent=`The bowl already has ${LABEL[c].toLowerCase()}: ${ING[c][st[c]][0]}.`;return}
+  if(st[c]===k){m.className='msg';m.textContent='That’s already in.';return}
+  st[c]=k;save();drops.push({c,t:performance.now()});m.className='msg good';m.textContent=`${ING[c][k][0]} plops in. The ghost scowls.`;$('ing').value='';slots()}
+$('add').onclick=add;$('ing').onkeydown=e=>{if(e.key==='Enter')add()};
+$('reset').onclick=()=>{if($('reset').dataset.arm){st={};save();location.reload()}else{$('reset').dataset.arm=1;$('reset').textContent='Tap again to start again';setTimeout(()=>{delete $('reset').dataset.arm;$('reset').textContent='Start again'},2500)}};
+$('dunk').onclick=()=>{splashT=performance.now();setTimeout(()=>{st.dunked=1;save();slots();showResult()},1300)};
+function perfect(){return CATS.every(c=>st[c]===PERFECT[c])}
+function showResult(){const r=$('result');r.classList.remove('hidden');
+  if(perfect()){r.innerHTML=`<h2>The Perfect Hug!</h2><p>So much love went into the bowl that the grumpy ghost simply gave up. Mr Cuddlesworth sits down, hugs his heart cushion and sighs happily. He is gentle, sweet and exactly what Zoltan’s little sister needs.</p><p><b>Tell your GM: all four were perfect.</b></p>`;return}
+  r.innerHTML=`<h2>Mr Cuddlesworth wakes up!</h2><p>“Hewwo! Would you wike a cuddle?”</p><ul>${CATS.map(c=>`<li><b>${ING[c][st[c]][0]}:</b> ${ING[c][st[c]][2]}</li>`).join('')}</ul>`}
+
+// ---------- canvas ----------
+const cv=$('cv'),cx=cv.getContext('2d');let W=0,drops=[],splashT=0;
+function size(){const r=cv.getBoundingClientRect(),d=Math.min(2,devicePixelRatio||1);W=r.width;cv.width=W*d;cv.height=W*d;cx.setTransform(d,0,0,d,0,0)}
+addEventListener('resize',size);size();
+const SLOT={soft:[-.17,-.15],sweet:[.17,-.15],scent:[-.17,.17],love:[.17,.17]};
+const parts=Array.from({length:60},()=>({a:Math.random()*6.28,r:Math.random(),s:.2+Math.random()*.8,o:Math.random()*6.28}));
+const GC={};function ghostCanvas(g,n){if(GC[n])return GC[n];const c=document.createElement('canvas');c.width=c.height=600;const x=c.getContext('2d');x.drawImage(g,0,0,600,600);
+  x.globalCompositeOperation='source-atop';x.fillStyle='rgba(40,90,70,.18)';x.fillRect(0,0,600,600);if(n){x.fillStyle=`rgba(255,140,130,${n*.07})`;x.fillRect(0,0,600,600)}GC[n]=c;return c}
+function bowlScene(t){
+  const b=IM.bowl;if(b.complete)cx.drawImage(b,0,0,W,W);
+  // swirl: a slowly turning, clipped copy of the bowl's ectoplasm
+  cx.save();cx.beginPath();cx.arc(W/2,W/2,W*.37,0,7);cx.clip();
+  cx.globalAlpha=.35;cx.translate(W/2,W/2);cx.rotate(t*.08);cx.drawImage(b,-W/2,-W/2,W,W);cx.rotate(-t*.17);cx.globalAlpha=.2;cx.drawImage(b,-W/2,-W/2,W,W);cx.restore();
+  // drifting motes
+  cx.save();cx.globalCompositeOperation='lighter';for(const p of parts){const a=p.a+t*.15*p.s,r=W*.33*Math.sqrt(p.r);cx.fillStyle=`rgba(190,255,225,${.12+.12*Math.sin(t*2+p.o)})`;cx.beginPath();cx.arc(W/2+Math.cos(a)*r,W/2+Math.sin(a)*r,W*.006*(1+p.s),0,7);cx.fill()}cx.restore();
+  const n=CATS.filter(c=>st[c]).length,g=IM.ghost;
+  // the ghost: drifts, puffs, gets crosser (shakes and reddens) with each lovely thing
+  if(g.complete&&!st.dunked){const shake=n*1.2*Math.sin(t*25),gx=W/2+Math.cos(t*.4)*W*.06+shake,gy=W/2+Math.sin(t*.55)*W*.05,gs=W*(.36+.02*Math.sin(t*1.3))*(1+n*.04);
+    const gc=ghostCanvas(g,n);cx.save();const hg=cx.createRadialGradient(gx,gy,0,gx,gy,gs*.5);hg.addColorStop(0,'rgba(10,40,30,.45)');hg.addColorStop(1,'rgba(10,40,30,0)');cx.fillStyle=hg;cx.beginPath();cx.arc(gx,gy,gs*.5,0,7);cx.fill();cx.globalAlpha=.95;cx.translate(gx,gy);cx.rotate(Math.sin(t*.5)*.08);cx.drawImage(gc,-gs/2,-gs/2,gs,gs);cx.restore()}
+  // ingredients bob and turn
+  for(const c of CATS){const v=st[c];if(!v)continue;const im=IM[ING[c][v][1]];if(!im.complete)continue;
+    const d=drops.find(x=>x.c===c),age=d?(performance.now()-d.t)/1000:9,fall=Math.max(0,1-age/0.6);
+    const [sx,sy]=SLOT[c],k=CATS.indexOf(c),orb=t*.12+k*1.57,ox=W/2+(sx*Math.cos(t*.12)-sy*Math.sin(t*.12))*W,oy=W/2+(sx*Math.sin(t*.12)+sy*Math.cos(t*.12))*W;
+    const sz=W*.2*(1+.04*Math.sin(t*1.7+k))*(1+fall*1.2),rot=Math.sin(t*.8+k)*.25;
+    cx.save();cx.globalAlpha=1-fall*.6;cx.translate(ox,oy-fall*W*.25);cx.rotate(rot);cx.drawImage(im,-sz/2,-sz/2*im.height/im.width,sz,sz*im.height/im.width);cx.restore();
+    if(age<1.2){cx.save();cx.strokeStyle=`rgba(220,255,240,${.7*(1-age/1.2)})`;cx.lineWidth=3;cx.beginPath();cx.arc(ox,oy,W*.05+age*W*.12,0,7);cx.stroke();cx.restore()}}
+}
+// teddy reveal with ingredient effects
+const fx=Array.from({length:70},()=>({x:Math.random(),y:Math.random(),v:.02+Math.random()*.05,s:.5+Math.random(),o:Math.random()*6.28,k:Math.floor(Math.random()*3)}));
+function heart(x,y,r){cx.beginPath();cx.moveTo(x,y+r*.35);cx.bezierCurveTo(x,y,x-r*.6,y-r*.2,x-r*.6,y+r*.2);cx.bezierCurveTo(x-r*.6,y+r*.6,x,y+r*.8,x,y+r);cx.bezierCurveTo(x,y+r*.8,x+r*.6,y+r*.6,x+r*.6,y+r*.2);cx.bezierCurveTo(x+r*.6,y-r*.2,x,y,x,y+r*.35);cx.fill()}
+function teddyScene(t){const P=perfect(),im=IM[P?'teddy-perfect':'teddy'];
+  const sq=1+.025*Math.sin(t*2.6),bob=Math.abs(Math.sin(t*1.3))*W*.012;
+  cx.save();cx.translate(W/2,W*.98);cx.scale(2-sq,sq);cx.translate(-W/2,-W*.98-bob);if(im.complete)cx.drawImage(im,0,0,W,W);cx.restore();
+  if(P)return;
+  const scol={lavender:'rgba(170,120,255,',rose:'rgba(255,120,180,',mint:'rgba(140,255,190,',vanilla:'rgba(255,215,120,'}[st.scent];
+  cx.save();cx.globalCompositeOperation='lighter';
+  for(const p of fx){p.y-=p.v*.016;if(p.y<-.05){p.y=1.05;p.x=Math.random()}const x=(p.x+Math.sin(t+p.o)*.03)*W,y=p.y*W,tw=.5+.5*Math.sin(t*3+p.o);
+    if(p.k===0){cx.fillStyle=scol+(.55*tw)+')';if(st.scent==='lavender'||st.scent==='rose'){cx.save();cx.translate(x,y);cx.rotate(t+p.o);cx.beginPath();cx.ellipse(0,0,W*.012*p.s,W*.005*p.s,0,0,7);cx.fill();cx.restore()}else{cx.beginPath();cx.arc(x,y,W*.006*p.s,0,7);cx.fill()}}
+    else if(p.k===1){const c={honeykiss:'255,200,90',sticky:'255,170,60',toffee:'230,120,40',sugared:'200,230,255'}[st.sweet];cx.strokeStyle=`rgba(${c},${tw})`;cx.lineWidth=1.5;const r=W*.012*p.s*tw;cx.beginPath();cx.moveTo(x-r,y);cx.lineTo(x+r,y);cx.moveTo(x,y-r);cx.lineTo(x,y+r);cx.stroke()}
+    else{const c={heartstring:'255,120,170',warm:'255,200,90',yarn:'255,80,90',stitch:'255,160,130'}[st.love];cx.fillStyle=`rgba(${c},${.45*tw})`;heart(x,y,W*.018*p.s)}}
+  cx.restore()}
+function splash(t){const a=(performance.now()-splashT)/1300;if(a>1||!splashT)return;cx.save();cx.globalCompositeOperation='lighter';
+  for(let i=0;i<40;i++){const an=i*.157+.3,r=a*W*.5;cx.fillStyle=`rgba(200,255,230,${.8*(1-a)})`;cx.beginPath();cx.arc(W/2+Math.cos(an)*r,W/2+Math.sin(an)*r-Math.sin(a*3.14)*W*.1,W*.012*(1-a)+2,0,7);cx.fill()}
+  cx.fillStyle=`rgba(255,255,255,${Math.max(0,.9-a*1.5)*(a>.5?1:a*2)})`;cx.fillRect(0,0,W,W);cx.restore()}
+function loop(now){requestAnimationFrame(loop);if(!W)return;const t=now/1000;cx.clearRect(0,0,W,W);
+  if(st.dunked)teddyScene(t);else bowlScene(t);splash(t)}
+requestAnimationFrame(loop);slots();if(st.dunked)showResult();
+</script></body></html>

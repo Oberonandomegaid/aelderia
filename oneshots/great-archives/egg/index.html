@@ -134,9 +134,9 @@ button.b:active{transform:translateY(2px);box-shadow:none}
   <div class="panel off" id="bondPanel">
     <div id="acts">
       <button class="b" data-a="stroke">Stroke</button><button class="b" data-a="nuzzle">Nuzzle</button><button class="b" data-a="nudge">Nudge</button>
-      <button class="b" data-a="feed">Feed</button><button class="b" data-a="beak">Beak</button><button class="b" data-a="give">Give</button>
+      <button class="b" data-a="feed">Feed</button><button class="b" data-a="beak">Beak</button><button class="b" data-a="give">Say</button>
     </div>
-    <form class="row" id="givebox" autocomplete="off"><input class="t" id="giveIn" maxlength="40" placeholder="What will you give?" enterkeyhint="send" aria-label="What will you give?"><button class="b" type="submit">Offer</button></form>
+    <form class="row" id="givebox" autocomplete="off"><input class="t" id="giveIn" maxlength="40" placeholder="What do you say?" enterkeyhint="send" aria-label="What do you say?"><button class="b" type="submit">Say</button></form>
   </div>
 
   <div id="mute" role="button" aria-label="Sound on or off"></div>
@@ -263,7 +263,7 @@ const GIVE=[
  [/(seed|berr|bread|crumb|worm|grub|cake|treat|food|grain|corn|oat|apple|fruit|biscuit|nut|cheese|bug|cricket|snack|millet|honey|pastry|bun|raisin)/,'feed'],
  [/(feather|plume|quill)/,'feather'],[/(book|scroll|page|map|parchment|tome|letter|journal)/,'book'],
  [/(toy|ball|ribbon|string|bell|marble|yarn|doll|rattle|thread)/,'toy'],[/(coin|gem|gold|ring|jewel|shiny|crystal|button|silver|pearl)/,'shiny'],
- [/(water|drink|milk|tea|dew)/,'drink'],[/(hug|cuddle|kiss|love|scratch|pat|tickle)/,'love'],[/(blanket|nest|cushion|pillow|hat|sock|scarf|straw)/,'nest']];
+ [/(water|drink|milk|tea|dew)/,'drink'],[/(hug|cuddle|kiss|love|scratch|pat|tickle|good|clever|pretty|cute|sweet|lovely|darling|hello|\bhi\b|hey|welcome|friend|pipkin|fizzwick|solin|tuppence)/,'love'],[/(come|here|jump|dance|fly)/,'play'],[/(blanket|nest|cushion|pillow|hat|sock|scarf|straw)/,'nest']];
 async function give(txt){const t=txt.trim().toLowerCase();if(!t)return;
  if(fnv(t)===BOOKCASE){$('#giveIn').value='';$('#givebox').classList.remove('on');return finale()}
  if(busy)return;busy=true;clearTimeout(idleTimer);
@@ -271,7 +271,8 @@ async function give(txt){const t=txt.trim().toLowerCase();if(!t)return;
  try{
   if(kind==='feed'){busy=false;return doAct('feed')}
   if(kind==='love'){busy=false;return doAct('stroke')}
-  if(kind==='feather'){frame('chirp');SFX.chirp(1.1);await ACT._bounce(2);await IDLE.peer();frame('idle')}
+  if(kind==='play'){frame('chirp');SFX.chirp(1.1);await ACT._bounce(who==='fizzwick'?3:2);frame('idle')}
+  else if(kind==='feather'){frame('chirp');SFX.chirp(1.1);await ACT._bounce(2);await IDLE.peer();frame('idle')}
   else if(kind==='book'){await blink(300);await A(mover,[{transform:'none'},{transform:'rotate(-15deg)'},{transform:'rotate(15deg)'},{transform:'none'}],1500);await blink(300);await blink(300)}
   else if(kind==='toy'){await A(mover,[{transform:'none'},{transform:'rotate(16deg)'},{transform:'rotate(16deg)'},{transform:'none'}],1300);frame('chirp');SFX.peep();await sleep(250);frame('idle');if(who==='fizzwick')await ACT._bounce(2)}
   else if(kind==='shiny'){frame('chirp');SFX.surprise();SFX.sparkle();await A(mover,[{transform:'none'},{transform:'translate(6%,3%) rotate(14deg) scale(1.04)'},{transform:'none'}],1200);frame('idle')}

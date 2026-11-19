@@ -220,7 +220,7 @@
 <div class="running" style="--accent:#8a3b12"><span>The Burning of the Great Archives</span><span>GM</span></div><div class="pf-body columns" style="--accent:#8a3b12"><div class="layout-cols"><div class="flow-col"><h3>The doors</h3>
 <p>The Great Archives rise from the square, a vast round tower of pale stone. Two enormous golems stand either side of the open doors, perfectly still.</p><blockquote data-label="READ ALOUD"><p><em>As you climb the steps, a man in Isthara's robes breaks from the crowd and sprints for the doors, a sack under his arm. He gets one foot over the threshold.</em></p>
 <p><strong><em>BOING!</em></strong></p>
-<p><em>A stone fist shoots out on a great coiled spring and he sails back over your heads into the crowd. The fist retracts with a polite little clunk.</em></p>
+<p><em>A stone fist shoots out on a great coiled spring and catches him in the doorway. He spins across the threshold, hat, papers and all, and lands in a heap outside among the crowd. The fist retracts with a polite little clunk.</em></p>
 <p><em>A cockroach scuttles across the step and in through the door.</em></p>
 <p><strong><em>BOING! SPLAT!</em></strong></p>
 <p><em>The golem returns to perfect stillness. The professor pats your arm. "You see? Nothing gets past them."</em></p></blockquote><div class="gm-note"><h4>Why this matters</h4><p>This is the whole adventure in two jokes. The golems hit <em>anything</em> without a bracelet, instantly and precisely. Let the players laugh. They will remember it in Act II.</p></div></div><div class="flow-col"><h3>The bracelets</h3>

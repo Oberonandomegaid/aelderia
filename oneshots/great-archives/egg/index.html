@@ -63,6 +63,9 @@ img.abs{height:auto}
 #flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none}
 .comic{position:absolute;font-family:Bangers,Impact,'Arial Black',sans-serif;letter-spacing:.04em;color:#ffe14d;-webkit-text-stroke:calc(var(--u)*.7) #8b1a10;paint-order:stroke fill;text-shadow:calc(var(--u)*.8) calc(var(--u)*.8) 0 #3a0a05;pointer-events:none;opacity:0;white-space:nowrap}
 .burst{position:absolute;background:#fff4c2;clip-path:polygon(50% 0,61% 30%,95% 12%,74% 42%,100% 55%,70% 62%,84% 96%,55% 74%,38% 100%,34% 70%,3% 84%,24% 56%,0 36%,30% 34%,18% 4%);opacity:0;pointer-events:none}
+#lightHot{position:absolute;left:62%;top:2%;width:24%;height:13%;z-index:22;display:none;cursor:pointer;border-radius:50%}
+#pw{position:absolute;left:10%;right:10%;top:30%;z-index:31;display:none;background:rgba(14,12,20,.95);border:1px solid #6b8fb3;border-radius:calc(var(--u)*3);padding:5%;text-align:center}
+#pw.on{display:block}#pw p{margin:0 0 4%;font:italic calc(var(--u)*4.2) 'IM Fell English',Georgia,serif;color:#dfe9f5}#pw form{display:flex;gap:2.4%}
 #tableNote{position:absolute;left:0;right:0;bottom:6%;text-align:center;font:italic calc(var(--u)*4.4) 'IM Fell English',Georgia,serif;color:#f3e6c8;text-shadow:0 2px 6px #000;opacity:0;transition:opacity 2.5s}
 .shake{animation:shake .45s linear}
 @keyframes shake{10%{transform:translate(-3%,2%)}25%{transform:translate(3%,-2%)}40%{transform:translate(-2%,1%)}60%{transform:translate(2%,-1%)}80%{transform:translate(-1%,0)}}
@@ -141,6 +144,8 @@ button.b:active{transform:translateY(2px);box-shadow:none}
 
   <div id="mute" role="button" aria-label="Sound on or off"></div>
   <div id="gmhot"></div>
+  <div id="lightHot" aria-hidden="true"></div>
+  <div id="pw"><p>The light flickers, waiting…</p><form id="pwForm" autocomplete="off"><input class="t" id="pwIn" type="password" maxlength="30" enterkeyhint="go" aria-label="Password"><button class="b" type="submit">Speak</button></form></div>
   <div id="gm">
     <h3>Archivist's controls</h3>
     <button data-g="reset">Reset to the egg</button>
@@ -368,7 +373,7 @@ async function finale(fromShelf){const my=++runId,ok=()=>my===runId;state='final
  A(fist,[{left:'31%'},{left:'34%'},{left:'30%'},{left:'32.5%'},{left:'31%'}],{duration:900,fill:'forwards'});
  await sleep(4200);if(!ok())return;
  $('#tableNote').style.transition='opacity 2.5s';$('#tableNote').style.opacity=1;
- const s=store.get();s.done=true;store.set(s);busy=false}
+ const s=store.get();s.done=true;store.set(s);busy=false;showLight(true)}
 function pop(bs,ts,x,y,rot,size,hold){const b=$(bs),t=$(ts);t.style.left=x+'%';t.style.top=y/1.5+'%';t.style.fontSize=`calc(var(--u)*${size})`;t.style.transform=`translate(-50%,-50%) rotate(${rot}deg)`;
  b.style.left=(x-size*1.7)+'%';b.style.top=((y-size*1.3)/1.5)+'%';b.style.width=size*3.4+'%';b.style.height=(size*2.6/1.5)+'%';
  const kfB=[{opacity:0,transform:'scale(.2) rotate(0)'},{opacity:1,transform:'scale(1.1) rotate(8deg)',offset:.25},{opacity:1,transform:'scale(1) rotate(4deg)',offset:.4}],kfT=[{opacity:0,transform:`translate(-50%,-50%) rotate(${rot}deg) scale(.2)`},{opacity:1,transform:`translate(-50%,-50%) rotate(${rot}deg) scale(1.2)`,offset:.25},{opacity:1,transform:`translate(-50%,-50%) rotate(${rot}deg) scale(1)`,offset:.4}];
@@ -378,7 +383,7 @@ function pop(bs,ts,x,y,rot,size,hold){const b=$(bs),t=$(ts);t.style.left=x+'%';t
 let taps=[];$('#gmhot').addEventListener('pointerdown',e=>{e.stopPropagation();const n=Date.now();taps=taps.filter(t=>n-t<2500);taps.push(n);if(taps.length>=5){taps=[];openGM()}});
 if(new URLSearchParams(location.search).has('gm'))setTimeout(openGM,800);
 function openGM(){$('#gm').classList.add('on');$('#gm [data-g=rehatch]').disabled=!who;$('#gm [data-g=bond]').disabled=!who;$('#gm [data-g=splat]').disabled=!who}
-function toMain(){runId++;const sh=$('#shelfScene');sh.style.transition='none';sh.style.opacity=0;$('#world').getAnimations().forEach(a=>a.cancel());$('#fist').getAnimations().forEach(a=>a.cancel());$('#fist').style.left='105%';
+function toMain(){runId++;showLight(false);const sh=$('#shelfScene');sh.style.transition='none';sh.style.opacity=0;$('#world').getAnimations().forEach(a=>a.cancel());$('#fist').getAnimations().forEach(a=>a.cancel());$('#fist').style.left='105%';
  ['#boing','#splat','#burst1','#burst2'].forEach(s=>{$(s).getAnimations().forEach(a=>a.cancel());$(s).style.opacity=0});document.querySelectorAll('.feather,.fx,.crumb').forEach(f=>f.remove());$('#tableNote').style.transition='none';$('#tableNote').style.opacity=0;
  mover.getAnimations().forEach(a=>a.cancel());bird.getAnimations().forEach(a=>a.cancel());$('#givebox').classList.remove('on');clearTimeout(idleTimer);clearTimeout(eggTimer);busy=false}
 $('#gm').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const g=b.dataset.g;ac();
@@ -390,10 +395,19 @@ $('#gm').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)r
  if(g==='bond'&&who){const s2=store.get();delete s2.done;store.set(s2);$('#eggwrap').style.display='none';placeBird(28.8,74.4,40);frame('idle');bird.classList.remove('hidden');enterBond()}
  if(g==='splat'&&who){$('#eggwrap').style.display='none';state='final';finale(true)}
 });
+// ---------- hidden reset after the SPLAT: touch the light, speak the password
+const RESETPW=2284334553;
+function showLight(on){$('#lightHot').style.display=on?'block':'none'}
+$('#lightHot').addEventListener('pointerdown',e=>{e.stopPropagation();$('#pw').classList.add('on');$('#pwIn').value='';setTimeout(()=>$('#pwIn').focus(),50)});
+$('#pwForm').addEventListener('submit',e=>{e.preventDefault();const v=$('#pwIn').value.toLowerCase().replace(/\s+/g,'');$('#pwIn').blur();$('#pw').classList.remove('on');
+ if(fnv(v)!==RESETPW)return;
+ try{localStorage.removeItem(KEY)}catch(e){}
+ const m=muted;showLight(false);toMain();store.set({muted:m});who=null;state='egg';bird.classList.add('hidden');resetEgg();$('#bondPanel').classList.add('off');$('#namePanel').classList.remove('off');$('#nameIn').value='';$('#msg').textContent='';eggIdle()});
+document.addEventListener('pointerdown',e=>{if($('#pw').classList.contains('on')&&!e.target.closest('#pw'))$('#pw').classList.remove('on')});
 // ---------- start
 const saved=store.get();setMute(!!saved.muted);
 Promise.all(imgs.map(s=>load(s))).then(()=>{$('#loading').style.opacity=0;setTimeout(()=>$('#loading').remove(),900);resetEgg();
- if(saved.bird&&PERS[saved.bird]&&saved.done){setBird(saved.bird);$('#eggwrap').style.display='none';$('#namePanel').classList.add('off');state='final';const sh=$('#shelfScene');sh.style.transition='none';sh.style.opacity=1;$('#fist').style.left='31%';$('#tableNote').style.opacity=1}
+ if(saved.bird&&PERS[saved.bird]&&saved.done){setBird(saved.bird);$('#eggwrap').style.display='none';$('#namePanel').classList.add('off');state='final';const sh=$('#shelfScene');sh.style.transition='none';sh.style.opacity=1;$('#fist').style.left='31%';$('#tableNote').style.opacity=1;showLight(true)}
  else if(saved.bird&&PERS[saved.bird]){setBird(saved.bird);$('#eggwrap').style.display='none';placeBird(28.8,74.4,40);frame('idle');bird.classList.remove('hidden');enterBond()}
  else eggIdle()});
 })();

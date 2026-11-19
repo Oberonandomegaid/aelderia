@@ -49,7 +49,7 @@
 .page .four-box{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0}.page .four-box div{border:1px solid #c9ab8a;border-top:5px solid #8a3b12;background:#faf3ea;padding:8px 11px;min-height:200px}
 .page .four-box h4{margin:0 0 4px!important;font:700 19px Georgia,serif!important;color:#4a2208!important;border:0!important}.page .four-box p{font-size:12px;line-height:1.38;margin:0 0 5px}.page .four-box .say{font-style:italic;color:#5a3a20}
 .page .tracker{width:100%;border-collapse:collapse}.page .tracker td,.page .tracker th{border:1px solid #b49470!important;padding:6px 6px!important;font-size:11.5px!important;vertical-align:top}.page .tracker th{background:#8a3b12!important;color:#fff!important;font:700 10px Arial,sans-serif!important;letter-spacing:1px}
-.page .tracker td.lvl{width:20%;font-weight:700}.page .tracker td.box{height:58px}.page .dial{display:flex;gap:6px;align-items:center;margin:6px 0;font:700 11px Arial,sans-serif;letter-spacing:1px;color:#5e2a0c}.page .dial span{display:inline-block;width:26px;height:26px;border:1.5px solid #8a3b12;border-radius:50%;text-align:center;line-height:24px;font:12px Georgia,serif;color:#5e2a0c}
+.page .tracker td.lvl{width:20%;font-weight:700}.page .tracker td.box{height:58px}.page .dial{display:flex;flex-wrap:wrap;gap:5px;align-items:center;margin:6px 0;font:700 11px Arial,sans-serif;letter-spacing:1px;color:#5e2a0c}.page .dial span{display:inline-block;width:26px;height:26px;border:1.5px solid #8a3b12;border-radius:50%;text-align:center;line-height:24px;font:12px Georgia,serif;color:#5e2a0c}
 .page .loglines p{border-bottom:1px solid #c9ab8a;height:22px;margin:0 0 3px!important;font-size:11px;color:#7a5a3a}
 .page .hazard{background:#f3e6d6;border:2px solid #8a3b12;border-radius:3px;padding:9px 12px;margin:6px 0 10px}.page .hazard h4{margin:0 0 4px!important;color:#5e2a0c!important;font-variant:small-caps;font-size:18px!important;border-bottom:2px solid #a8622a!important}
 .page .hazard p,.page .hazard li{font-size:11.6px;line-height:1.36;margin:0 0 4px}.page .shot{display:block;width:100%;border:1px solid #c9ab8a;box-shadow:0 2px 6px rgba(0,0,0,.3)}
@@ -115,16 +115,16 @@
 </style>
 <div class="pf-body edition-cover" style="--accent:#8a3b12"><div class="cv-art"><img alt="A great stone golem guarding the Great Archives" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/golem.jpg" style="object-position:50% 12%"></div><img class="cv-logo" alt="Oberon &amp; Omega" src="https://oberonandomegaid.github.io/aelderia/oneshots/shared/oberon-omega-logo.png"><div class="cv-band"><img class="cv-mark" alt="" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgY29sb3I9IiM4YTNiMTIiIHN0cm9rZS13aWR0aD0iMy40IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxjaXJjbGUgY3g9IjEwMCIgY3k9IjEwMCIgcj0iODYiLz48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9Ijc3IiBzdHJva2Utd2lkdGg9IjEiLz48cGF0aCBkPSJNNDIgMTMycTI5LTEyIDU4IDRxMjktMTYgNTgtNHYtNDRxLTI5LTEyLTU4IDRxLTI5LTE2LTU4LTR6Ii8+PHBhdGggZD0iTTEwMCA5MnY0NCIvPjxwYXRoIGQ9Ik0xMDAgODZxLTE0LTIyIDItNTBxMTYgMjItMiA1MHoiIGZpbGw9ImN1cnJlbnRDb2xvciIgZmlsbC1vcGFjaXR5PSIuODUiLz48cGF0aCBkPSJNMTAxIDg0cTItMTggMC00MCIvPjxwYXRoIGQ9Ik05MCA2NmwxMCA2TTExMiA1OGwtMTAgOCIvPjwvc3ZnPg=="><p class="cv-series">AN INDEPENDENT ONE-SHOT ADVENTURE</p><h1 id="great-archives-title">The Destruction of the Great Archives</h1><p class="cv-sub">The safest library in Aelderia, an egg eleven years in the making, and guardians who never make mistakes.</p><p class="cv-meta">LEVEL 3 · 4–6 PLAYERS · 3–3½ HOURS</p><p class="cv-ed">GAME MASTER EDITION</p><div class="cv-foot"><span>OBERON &amp; OMEGA</span><span>AELDERIA</span></div></div></div>
 \page
-<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM ONLY</span></div><div class="pf-body gm-synopsis" style="--accent:#8a3b12"><h1>GM synopsis</h1><p class="synopsis-deck">The Destruction of the Great Archives</p><div class="synopsis-columns"><div><h3>The adventure</h3><p><strong>Professor Emeric Quillweather</strong> has spent years following the research of Magister Othrelis Var, and he has done it: a Genesis Egg, through three of its four stages, ready to hatch. He hires the party to keep him safe on the way to the <strong>Great Archives</strong>, then begs them to stay for the hatching.</p><p>On the players’ phones, the egg hatches into the fluffiest bird anyone has ever seen. They name it, stroke it and feed it. Then it flutters to a bookcase, and a stone guardian punches it flat. <strong>BOING! SPLAT!</strong></p><h3>What is really happening</h3><p>The bird has no bracelet, and in the Great Archives no bracelet means intruder. The golems are not broken. They are doing exactly what they were built to do.</p><p>Nobody knew the egg had been infused with fire. <strong>WHOOMPH.</strong> The bird is reborn in flame, the shelves catch, and a terrified baby phoenix flies straight up through the tower with every guardian in the building after it.</p></div><div><h3>Where it leads</h3><ul><li><strong>Act I:</strong> the hire, the escort and the doors. BOING!</li><li><strong>Act II:</strong> naming, hatching and bonding on the players’ phones. SPLAT!</li><li><strong>Act III:</strong> the Archives burn. WHOOMPH! The bird, the fire, the people and the books.</li><li><strong>Ending:</strong> the assembly ground, and the librarians’ story.</li></ul><p>Built for six level-3 characters in one session of about 3–3½ hours. Set in the Great Archives, 298 THK.</p><p><strong>History says the Archives burn.</strong> This adventure never fakes that. The players get every honest chance to change it.</p></div></div><section class="story-navigation"><h2>At the table</h2><div class="nav-grid"><div><h4>Story route</h4><p><a href="#p3">Running this adventure</a></p><p><a href="#p5">Act I · The Professor and the Archives</a></p><p><a href="#p9">Act II · Naming, Hatching, Bonding</a></p><p><a href="#p19">Act III · The Archives Burn</a></p><p><a href="#p25">Ending · The Assembly Ground</a></p></div><div><h4>Reference</h4><p><a href="#p26">GM quick reference</a></p><p><a href="#p20">Golem hazard card</a></p><p><a href="#p2">The tower, level by level</a></p><p><a href="#p29">Maps</a></p><p><a href="#p2">Theatre of the mind</a></p><p><a href="#p34">Tracker and log</a></p><p><a href="#p37">Player handout</a></p></div></div></section></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>2</span></div>
+<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM ONLY</span></div><div class="pf-body gm-synopsis" style="--accent:#8a3b12"><h1>GM synopsis</h1><p class="synopsis-deck">The Destruction of the Great Archives</p><div class="synopsis-columns"><div><h3>The adventure</h3><p><strong>Professor Emeric Quillweather</strong> has spent years following the research of Magister Othrelis Var, and he has done it: a Genesis Egg, through three of its four stages, ready to hatch. He hires the party to keep him safe on the way to the <strong>Great Archives</strong>, then begs them to stay for the hatching.</p><p>On the players’ phones, the egg hatches into the fluffiest bird anyone has ever seen. They name it, stroke it and feed it. Then it flutters to a bookcase, and a stone guardian punches it flat. <strong>BOING! SPLAT!</strong></p><h3>What is really happening</h3><p>The bird has no bracelet, and in the Great Archives no bracelet means intruder. The golems are not broken. They are doing exactly what they were built to do.</p><p>Nobody knew the egg had been infused with fire. <strong>WHOOMPH.</strong> The bird is reborn in flame, the shelves catch, and a terrified baby phoenix flies straight up through the tower. Every time a golem reaches it, it dies, comes back hotter, and sets another fire, faster and faster.</p></div><div><h3>Where it leads</h3><ul><li><strong>Act I:</strong> the hire, the escort and the doors. BOING!</li><li><strong>Act II:</strong> naming, hatching and bonding on the players’ phones. SPLAT!</li><li><strong>Act III:</strong> the Archives burn. WHOOMPH! The bird, the fire, the people and the books.</li><li><strong>Ending:</strong> the assembly ground, and the librarians’ story.</li></ul><p>Built for six level-3 characters in one session of about 3–3½ hours. Set in the Great Archives, 298 THK.</p><p><strong>History says the Archives burn.</strong> This adventure never fakes that. The players get every honest chance to change it.</p></div></div><section class="story-navigation"><h2>At the table</h2><div class="nav-grid"><div><h4>Story route</h4><p><a href="#p3">Running this adventure</a></p><p><a href="#p5">Act I · The Professor and the Archives</a></p><p><a href="#p9">Act II · Naming, Hatching, Bonding</a></p><p><a href="#p19">Act III · The Archives Burn</a></p><p><a href="#p27">Ending · The Assembly Ground</a></p></div><div><h4>Reference</h4><p><a href="#p28">GM quick reference</a></p><p><a href="#p21">Golem hazard card</a></p><p><a href="#p2">The tower, level by level</a></p><p><a href="#p31">Maps</a></p><p><a href="#p2">Theatre of the mind</a></p><p><a href="#p36">Tracker and log</a></p><p><a href="#p39">Player handout</a></p></div></div></section></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>2</span></div>
 \page
-<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM</span></div><div class="pf-body columns" style="--accent:#8a3b12"><figure class="tb-banner" style="height:230px"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/burning.jpg" style="object-position:50% 6%"></figure><div class="layout-cols"><div class="flow-col"><h2>1 / Running this adventure</h2>
+<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM</span></div><div class="pf-body columns" style="--accent:#8a3b12"><div class="layout-cols"><div class="flow-col"><h2>1 / Running this adventure</h2>
 <h3>What's really going on</h3>
 <ul>
 <li><strong>The egg is real, and so is the danger.</strong> The professor has completed three of the four Genesis Egg stages: Aspect Infusion, Bonding &amp; Care, and Visualisation &amp; Imprint. Stage four, Naming &amp; Hatching, happens with the party. He hides nothing about the egg, because he doesn't know there's anything to hide.</li>
 <li><strong>Nobody knows it's a phoenix.</strong> Somewhere in its long infusion, the egg was touched by fire. The professor never noticed.</li>
 <li><strong>The golems aren't malfunctioning.</strong> They are efficient, precise and completely literal. Anything without a bracelet is an intruder: a protester, a cockroach, a baby bird.</li>
-<li><strong>The first punch can't be stopped.</strong> It happens on the players' phones, at the end of the hatching page. <strong>Every punch after that can.</strong></li>
-<li><strong>History wins honestly.</strong> The Archives burn because the tower is enormous, fire climbs, and the golems never stop. Never because you tilt the dice. If the players truly beat all of it, they did (page 25).</li>
+<li><strong>The opening punches can't be stopped.</strong> The first happens on the players' phones, the second as Act III begins. <strong>Every punch after that can.</strong></li>
+<li><strong>History wins honestly.</strong> The Archives burn because the tower is enormous, fire climbs, and the golems never stop. Never because you tilt the dice. If the players truly beat all of it, they did (page 26).</li>
 </ul></div><div class="flow-col"><h3>The fixed rules</h3>
 <p>These never bend. Read them twice.</p>
 <table>
@@ -142,6 +142,18 @@
 <tr>
 <td style="text-align: left;"><strong>Out means out</strong></td>
 <td style="text-align: left;">A bracelet that takes you to the assembly ground comes off there and is gone. Go back in, and you go in without one.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Desks are safe, shelves are not</strong></td>
+<td style="text-align: left;">Golems guard the doors and the shelves. Anything on a desk or in a visitor's arms is a visitor's belongings; on a shelf or across a threshold, it's an intruder.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Once struck, always an intruder</strong></td>
+<td style="text-align: left;">After the first punch, the bird is a target everywhere, even in someone's arms.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>No off switch</strong></td>
+<td style="text-align: left;">The golems obey the Archives' rules, not people. Nobody can turn them off.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Golems chase the bird</strong></td>
@@ -163,9 +175,9 @@
 </table>
 <h3>Running it</h3>
 <ul>
-<li><strong>Six characters of 3rd level</strong>, 2024 rules. The level-3 pre-built characters are at the back. Scaling for four or five is on page 26.</li>
-<li><strong>You need:</strong> a phone per player (or one shared), the QR code on page 10, the private naming sheet (page 9) and the tracker sheet (page 34).</li>
-<li><strong>Pacing:</strong> Act I about 40 minutes, Act II about 55, Act III about 105.</li>
+<li><strong>Six characters of 3rd level</strong>, 2024 rules. The level-3 pre-built characters are at the back. Scaling for four or five is on page 28.</li>
+<li><strong>You need:</strong> a phone per player (or one shared), the QR code on page 10, the private naming sheet (page 9) and the tracker sheet (page 36).</li>
+<li><strong>Pacing:</strong> Act I about 30 minutes, Act II about 40, Act III about 2 hours.</li>
 </ul></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>3</span></div>
 \page
 <div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM</span></div><div class="pf-body columns" style="--accent:#8a3b12"><div class="layout-cols"><div class="flow-col"><h3>Who's who</h3>
@@ -183,7 +195,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>The hatchling</strong></td>
-<td style="text-align: left;">Pipkin, Fizzwick, Solin or Tuppence. Tiny, fluffy, terrified once it's been punched.</td>
+<td style="text-align: left;">Pipkin, Fizzwick, Solin or Tuppence. Tiny, fluffy, and a phoenix, though nobody knows it.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>The golems</strong></td>
@@ -221,13 +233,13 @@
 3. It <strong>takes you out</strong> to the assembly ground outside: if the wearer chooses, if the Archives order an evacuation, or the instant the wearer is in mortal danger.</p></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>4</span></div>
 \page
 <div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM</span></div><div class="pf-body columns" style="--accent:#8a3b12"><div class="layout-cols"><div class="flow-col"><h2>Act I — The Professor and the Archives</h2>
-<p><em>About 40 minutes.</em></p>
+<p><em>About 30 minutes.</em></p>
 <h3>The hire</h3>
 <p>The party are at the <strong>Gownsgate Adventurers' Guild</strong>, a crooked old hall down by the wizards' College, a couple of towns over from the Great Archives. Scholars hire here constantly: carrying, guarding, fetching, and once, memorably, finding a lost familiar in the College drains.</p><blockquote data-label="READ ALOUD"><p><em>Guildmaster Agatha Rooke leans on the counter and nods across the hall. "That chap over there wants some guards up to the Archives. Pays on time. Talks a bit."</em></p>
 <p><em>You look over. In the corner, an elderly scholar with wild white hair is hugging a wooden box, rocking on his heels, and chattering away to himself in pure delight. As you watch, he punches the air and lets out a small, joyful whoop.</em></p>
-<p><em>He spots you looking. "Ah! Splendid, splendid, you must be my protection!"</em></p></blockquote><figure class="tb-pic"><div class="tb-frame" style="height:300px"><img alt="Professor Emeric Quillweather, mid-whoop." src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/professor.jpg" style="object-position:50% 14%"></div><figcaption>Professor Emeric Quillweather, mid-whoop.</figcaption></figure></div><div class="flow-col"><blockquote data-label="READ ALOUD"><p><em>"Do sit, mind the books, no, the other books. Tea? I've made tea. I think I've made tea." He beams at you over two pairs of spectacles. "Now. You'll want to know what you're protecting. A box! A very ordinary box. And in the box, the culmination of eleven years of my life, and sixty years of Magister Othrelis Var's before me. A Genesis Egg. Three stages complete. One to go. And I should very much like you to be there when it hatches."</em></p></blockquote><div class="gm-note"><h4>Playing the professor</h4><p>He is brilliant, cultured, respected and impossible to stop once he starts. He tells the party <strong>everything</strong>: Var’s notebooks, the infusion, the bonding, the dreams the egg gave him. He has nothing to hide. He doesn’t know about the fire. <em>Voice: a delighted lecturer who has had three cups of tea.</em></p></div><h3>What he'll tell them</h3>
+<p><em>He spots you looking. "Ah! Splendid, splendid, you must be my protection!"</em></p></blockquote><figure class="tb-pic"><div class="tb-frame" style="height:300px"><img alt="Professor Emeric Quillweather, mid-whoop." src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/professor.jpg" style="object-position:50% 14%"></div><figcaption>Professor Emeric Quillweather, mid-whoop.</figcaption></figure></div><div class="flow-col"><blockquote data-label="READ ALOUD"><p><em>"Do sit, mind the books, no, the other books. Tea? I've made tea. I think I've made tea." He beams at you over two pairs of spectacles. "Now. You'll want to know what you're protecting. A box! A very ordinary box. And in the box, eleven years of my life, built on the work Magister Othrelis Var did sixty years ago. A Genesis Egg. Three stages complete. One to go. And I should very much like you to be there when it hatches."</em></p></blockquote><div class="gm-note"><h4>Playing the professor</h4><p>He is brilliant, cultured, respected and impossible to stop once he starts. He tells the party <strong>everything</strong>: Var’s notebooks, the infusion, the bonding, the dreams the egg gave him. He has nothing to hide. He doesn’t know about the fire. <em>Voice: a delighted lecturer who has had three cups of tea.</em></p></div><h3>What he'll tell them</h3>
 <ul>
-<li><strong>Magister Othrelis Var</strong> studied Genesis Eggs more than sixty years ago. The professor has read everything Var left.</li>
+<li><strong>Magister Othrelis Var</strong> studied Genesis Eggs sixty-odd years ago. The professor works from his own handwritten copy of Var's notes, made from another scholar's copy, made from a copy of the original.</li>
 <li><strong>The four stages:</strong> Aspect Infusion, Bonding &amp; Care, and Visualisation &amp; Imprint are done. <strong>Naming &amp; Hatching</strong> is today.</li>
 <li><strong>Why the Archives?</strong> His notes are there, the light is cool and steady, and it's the safest building in the city. <em>"Nothing gets past those golems. Nothing!"</em></li>
 <li><strong>Pay:</strong> 25 gp each for the escort, and <em>"the privilege of witnessing history"</em>, which he clearly thinks is worth more.</li>
@@ -243,9 +255,9 @@
 <p><strong><em>BOING! SPLAT!</em></strong></p>
 <p><em>The golem returns to perfect stillness. The professor pats your arm. "You see? Nothing gets past them."</em></p></blockquote></div><div class="flow-col"><h3>The bracelets</h3>
 <p>Beside the doors, outside on the steps, a recess in the wall sits behind a locked bronze cover. A librarian comes out with a key, checks names against a ledger, and unlocks it for one visitor at a time. The professor is expected; so, thanks to him, is the party.</p><blockquote data-label="READ ALOUD"><p><em>The librarian turns her key and the cover slides back on a faintly glowing hollow. "Hand in, please. All the way. Thank you." You feel a cool tingle. When you draw your hand out, a slim silver bracelet sits on your wrist, a tiny pale crystal glowing in it.</em></p>
-<p><em>Then the induction, delivered at speed to every new visitor: "Welcome to the Great Archives. No flames, no food, no running, no shouting. Your bracelet keeps fire spells off, so don't bother. It opens the monolith for borrowing. Ordinary books only, unless you've been granted otherwise. Books leave sealed, and sealed books come home on their own. If anything goes wrong, touch the crystal and you'll find yourself on the assembly ground outside. Bracelets are returned on exit. Enjoy your visit. Next!"</em></p></blockquote><p>Let the players try the bracelet. A fire cantrip fizzles to a wisp of steam. If they ask questions, answer honestly. If they don't, the finer points can come as a surprise later.</p>
+<p><em>Then the induction, delivered at speed to every new visitor: "Welcome to the Great Archives. No flames, no food, no running, no shouting. Your bracelet keeps fire spells off, so don't bother. It opens the monolith for borrowing. Ordinary books only, unless you've been granted otherwise. Books leave sealed, and sealed books come home on their own. Bags, pets and belongings stay on the desks: nothing goes on a shelf that isn't a book. If anything goes wrong, touch the crystal and you'll find yourself on the assembly ground outside. Bracelets are returned on exit. Enjoy your visit. Next!"</em></p></blockquote><p>Let the players try the bracelet. A fire cantrip fizzles to a wisp of steam. If they ask questions, answer honestly. If they don't, the finer points can come as a surprise later.</p>
 <h3>The tower</h3>
-<p>Inside, the Archives open upward: level after level of curved galleries, staircases winding round the walls, open gaps beside the reading platforms, and pale orbs drifting in the air like slow fish. Show them the map on page 29.</p><div class="gm-note"><h4>Why this matters</h4><p>This is the whole adventure in two jokes. The golems hit <em>anything</em> without a bracelet, instantly and precisely. Let the players laugh. They will remember it in Act II.</p></div></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>6</span></div>
+<p>Inside, the Archives open upward: level after level of curved galleries, staircases winding round the walls, open gaps beside the reading platforms, and pale orbs drifting in the air like slow fish. Show them the map on page 31.</p><div class="gm-note"><h4>Why this matters</h4><p>This is the whole adventure in two jokes. The golems hit <em>anything</em> without a bracelet that crosses the doors or touches the shelves, instantly and precisely. Let the players laugh. They will remember it in Act II.</p></div></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>6</span></div>
 \page
 <div class="pf-body oo-fill"><img alt="BOING! Nothing gets past them." src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/entrance.jpg" style="object-position:74% 50%"><p class="fl-cap">BOING! Nothing gets past them.</p></div>
 \page
@@ -257,10 +269,10 @@
 <li><strong>To use it:</strong> press your bracelet to the palm-shaped surface. Any authorised visitor may unseal an <strong>ordinary</strong> book. <strong>Restricted</strong> works need encoded authority, such as Head Librarian Faversham's bracelet.</li>
 <li><strong>One book per cycle</strong>, about 6–10 seconds: roughly one book a round.</li>
 </ul><blockquote data-label="READ ALOUD"><p><em>A librarian slides a slim volume under the press. Stone grinds down, light flares along the spine, and the book comes out with a faint shimmer, like frost. "Sealed," she says, to no one in particular, and walks away.</em></p></blockquote></div><div class="flow-col"><h3>The invitation</h3>
-<p>The professor sets up at a reading desk on Level 1 (page 29), unpacks his notes, lifts out the egg on its little cushion, and turns to the party with shining eyes.</p><blockquote data-label="READ ALOUD"><p><em>"I know you were only hired to see me safely here," he says, quieter than you've heard him all day. "But I've spent eleven years on this and I've spent them alone. I would very much like you to stay. Will you help me name it?"</em></p></blockquote><div class="gm-note"><h4>Head Librarian Faversham</h4><p>She sweeps past during the setup, inspects the egg, inspects the party, and sniffs. <em>"No mess, Professor. No noise. And no animals."</em> She has authority over the restricted works and a bracelet to prove it. She matters later.</p></div><figure class="tb-pic"><div class="tb-frame" style="height:300px"><img alt="The book monolith on Level 1." src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/monolith.jpg" style="object-position:50% 40%"></div><figcaption>The book monolith on Level 1.</figcaption></figure></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>8</span></div>
+<p>The professor sets up at a reading desk on Level 1 (page 31), unpacks his notes, lifts out the egg on its little cushion, and turns to the party with shining eyes.</p><blockquote data-label="READ ALOUD"><p><em>"I know you were only hired to see me safely here," he says, quieter than you've heard him all day. "But I've spent eleven years on this and I've spent them alone. I would very much like you to stay. Will you help me name it?"</em></p></blockquote><div class="gm-note"><h4>Head Librarian Faversham</h4><p>She sweeps past during the setup, inspects the egg, inspects the party, and sniffs. <em>"No mess, Professor. No noise. And no animals."</em> She has authority over the restricted works and a bracelet to prove it. She matters later.</p></div><figure class="tb-pic"><div class="tb-frame" style="height:300px"><img alt="The book monolith on Level 1." src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/monolith.jpg" style="object-position:50% 40%"></div><figcaption>The book monolith on Level 1.</figcaption></figure></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>8</span></div>
 \page
 <div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM</span></div><div class="pf-body columns" style="--accent:#8a3b12"><div class="layout-cols"><div class="flow-col"><h2>Act II — Naming, Hatching, Bonding</h2>
-<p><em>About 55 minutes.</em></p>
+<p><em>About 40 minutes.</em></p>
 <h3>What happens in this act</h3>
 <p>Act II is played mostly <strong>on the players' phones</strong>. The professor sets the egg on his desk, the players scan a code and see it there too, and from then on the table and the screens move together:</p>
 <ol>
@@ -293,7 +305,7 @@
 </ul>
 <p>It fidgets and chirps on its own and <strong>never moves the story on by itself.</strong> Write down what they fed it and what they said: it pays off in Act III.</p></div><div class="flow-col"><div class="shots two"><figure><img class="shot" alt="The egg" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/shot-egg.jpg"><figcaption>Before: the egg</figcaption></figure><figure><img class="shot" alt="The hatchling" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/shot-bird.jpg"><figcaption>After: the hatchling</figcaption></figure></div><div class="gm-note"><h4>Your hidden controls</h4><p>Tap the <strong>top-left corner</strong> of the screen <strong>five times quickly</strong> to reset the egg, hatch again, return to the bird, replay the bookcase or turn the sound off. <strong>After the SPLAT</strong>, touch the <strong>glowing light</strong> at the top of the bookshelf and type <strong>new archive</strong>: the page resets to a fresh egg. Keep the password to yourself.</p></div></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>12</span></div>
 \page
-<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM · THE HATCHLINGS</span></div><div class="pf-body stat" style="--accent:#8a3b12"><h2>The four hatchlings</h2><p>All four are the same creature: a baby phoenix, though nobody knows it yet. Only the colours and the personality change. Whichever hatches, it is the fluffiest thing anyone at the table has ever seen, and it should be.</p><div class="four-box birds"><div><img class="shot" alt="Pipkin" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/bird-pipkin.jpg"><h4>Pipkin</h4><p>Golden yellow, orange-tipped. Curious: peers, tilts its head, investigates fingers.</p></div><div><img class="shot" alt="Fizzwick" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/bird-fizzwick.jpg"><h4>Fizzwick</h4><p>Bright orange, gold and crimson. Mischievous: bounces at the slightest excuse.</p></div><div><img class="shot" alt="Solin" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/bird-solin.jpg"><h4>Solin</h4><p>Deep crimson, gold highlights. Gentle: slow blinks, soft chirps, calm.</p></div><div><img class="shot" alt="Tuppence" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/bird-tuppence.jpg"><h4>Tuppence</h4><p>Amber and soft scarlet. Affectionate: leans into every stroke.</p></div></div><div class="gm-note"><h4>Using the bond in Act III</h4><p>Whatever the players did on their phones pays off later. Calling the bird by name, saying the kind words it liked, or offering the food it pecked at gives <strong>Advantage</strong> on checks to calm it (page 19).</p></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>13</span></div>
+<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM · THE HATCHLINGS</span></div><div class="pf-body stat" style="--accent:#8a3b12"><h2>The four hatchlings</h2><p>All four are the same creature: a baby phoenix, though nobody knows it yet. Only the colours and the personality change. Whichever hatches, it is the fluffiest thing anyone at the table has ever seen, and it should be.</p><div class="four-box birds"><div><img class="shot" alt="Pipkin" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/bird-pipkin.jpg"><h4>Pipkin</h4><p>Golden yellow, orange-tipped. Curious: peers, tilts its head, investigates fingers.</p></div><div><img class="shot" alt="Fizzwick" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/bird-fizzwick.jpg"><h4>Fizzwick</h4><p>Bright orange, gold and crimson. Mischievous: bounces at the slightest excuse.</p></div><div><img class="shot" alt="Solin" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/bird-solin.jpg"><h4>Solin</h4><p>Deep crimson, gold highlights. Gentle: slow blinks, soft chirps, calm.</p></div><div><img class="shot" alt="Tuppence" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/bird-tuppence.jpg"><h4>Tuppence</h4><p>Amber and soft scarlet. Affectionate: leans into every stroke.</p></div></div><div class="gm-note"><h4>Using the bond in Act III</h4><p>Whatever the players did on their phones pays off later. Calling the bird by name, saying the kind words it liked, or offering the food it pecked at gives <strong>Advantage</strong> on checks to calm it (page 20).</p></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>13</span></div>
 \page
 <div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM</span></div><div class="pf-body columns" style="--accent:#8a3b12"><div class="layout-cols"><div class="flow-col"><h2>Playing the professor through it</h2>
 <p>He is beside himself. Eleven years, and it's <em>alive</em>. He hovers, narrates, scribbles notes, wipes his eyes, and keeps nudging the players to try things on their screens:</p><blockquote data-label="READ ALOUD"><p><em>"Stroke it! Gently! Oh, look at it, look at its little face."</em></p>
@@ -361,95 +373,117 @@
 <div class="pf-body oo-fill"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/golem.jpg"></div>
 \page
 <div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM</span></div><div class="pf-body columns" style="--accent:#8a3b12"><figure class="tb-banner" style="height:170px"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/burning.jpg" style="object-position:50% 18%"></figure><div class="layout-cols"><div class="flow-col"><h2>Act III — The Archives Burn</h2>
-<p><em>About 105 minutes.</em></p><blockquote data-label="READ ALOUD"><p><em>The golem's fist lashes out again. The bird shrieks and bolts, straight up, a streak of gold through the gap beside the gallery above. Behind it, the shelf it sat on is a sheet of flame, and the fire is already climbing.</em></p>
+<p><em>About 2 hours at the table. A few frantic minutes in the tower.</em></p><blockquote data-label="READ ALOUD"><p><em>The professor is still shouting when the second golem moves. Its fist leaves the far pillar with a twang, and the bird, blinking on its burning shelf, simply vanishes in a puff of gold.</em></p>
+<p><em>For a heartbeat, nothing. Then</em> WHOOMPH<em>, a little brighter, and it's back, shrieking, and it bolts, straight up, a streak of fire through the gap beside the gallery above. Behind it, two shelves are burning now.</em></p>
 <p><em>Somewhere above, another golem turns its head.</em></p>
-<p><em>The professor grabs the nearest of you by the sleeve. "Help me. Please. Help me get it out."</em></p></blockquote><h3>How Act III runs</h3>
-<p>There are <strong>no forced quests</strong>. The tower is in trouble in several ways at once, and the players choose what to do about it:</p>
+<p><em>The professor grabs the nearest of you by the sleeve. "Help me. Please. Help me get it out."</em></p></blockquote><p><strong>Roll initiative.</strong> Act III runs in <strong>rounds</strong>, from start to finish. It's fast, and it gets faster.</p></div><div class="flow-col"><h3>What's going on</h3>
+<p>Once the bird has been punched, <strong>it is an intruder everywhere</strong>: on a desk, in someone's arms, anywhere. Every golem near it will strike it on sight. Each time it dies, it comes back sooner and hotter, flies up in terror, and gets struck again, mid-flight or the second it lands. <strong>That's the cascade.</strong> Left alone, it sets the whole tower on fire in a couple of minutes.</p>
+<p>The players' choices, all at once, with not enough hands for them all:</p>
 <ol>
-<li><strong>The bird:</strong> stop the next punch, calm it, and carry it out of a physical door or window. <strong>Bracelets can't take it.</strong></li>
-<li><strong>The fire:</strong> fight it where it is actually burning.</li>
-<li><strong>The people:</strong> anyone in the building without a bracelet.</li>
-<li><strong>The books:</strong> unseal them at the monolith and get them out.</li>
-<li><strong>Anything clever</strong> the players think of. If it fits the rules, it works.</li>
+<li><strong>Break the cascade:</strong> stop the strikes, calm the bird, and get it out through a physical door, window or the roof. <strong>Bracelets can't take it.</strong></li>
+<li><strong>Fight the fire</strong> where it's actually burning.</li>
+<li><strong>Save the people</strong> with no bracelet.</li>
+<li><strong>Save the books</strong> at the monolith, and the restricted works with Faversham.</li>
+<li><strong>Face what the burning books let loose</strong> (page 22).</li>
 </ol>
-<p>Use the <strong>tracker sheet</strong> (page 34) and the <strong>five-minute check</strong> (opposite).</p></div><div class="flow-col"><h3>The five-minute check</h3>
-<p>Roughly every five minutes of in-world time, or at any natural break, do these four things in order:</p>
-<ol>
-<li><strong>Resolve what the players did.</strong> Successes stick.</li>
-<li><strong>The golems act.</strong> They close on the bird, and one strikes at it, or at anyone else without a bracelet. The players get the chance to stop it (page 20). Every strike at the bird sends it up a level.</li>
-<li><strong>Fire and structure.</strong> An untended blaze spreads to a neighbouring area. <strong>Fire climbs</strong>, so it spreads up through the gaps first. A blaze someone is fighting doesn't spread. A stray fist damages what it hits.</li>
-<li><strong>Warnings.</strong> Show what's about to fail before it fails: a smoky stair, a leaning stack, a crystal humming.</li>
-</ol>
-<p>In a fight, use ordinary rounds. The five-minute check isn't a round.</p>
-<h3>The counters</h3>
-<p>The tracker has <strong>Fire 0–6</strong>, <strong>Structure 0–6</strong> and <strong>Minutes elapsed</strong>. They are your overview, not a timer. <strong>Never move a number without a cause you can describe.</strong> If the players have something under control, the numbers don't move.</p>
+<p><strong>Anything clever</strong> the players think of works if it fits the rules.</p><div class="gm-note"><h4>The tower’s turn</h4><p>At the end of every round, the tower takes a turn, in this order: <strong>1</strong> the golems strike; <strong>2</strong> the bird is reborn and flies; <strong>3</strong> fire spreads; <strong>4</strong> warnings. It is all on the next page, and on the tracker (page 36).</p></div></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>19</span></div>
+\page
+<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM · THE CASCADE</span></div><div class="pf-body columns" style="--accent:#8a3b12"><h3>The tower's turn (end of every round)</h3>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Fire</th>
-<th style="text-align: left;"></th>
-<th style="text-align: left;">Structure</th>
-<th style="text-align: left;"></th>
+<th style="text-align: left;">Step</th>
+<th style="text-align: left;">What happens</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">0</td>
-<td style="text-align: left;">Out</td>
-<td style="text-align: left;">0–1</td>
-<td style="text-align: left;">Sound</td>
+<td style="text-align: left;"><strong>1 · Golems strike</strong></td>
+<td style="text-align: left;">Each pursuing golem with the bird within 30 ft strikes it: <strong>+7 to hit, the bird is AC 12 and has 1 Hit Point.</strong> A hit kills it. The players may try to stop each strike first (page 21).</td>
 </tr>
 <tr>
-<td style="text-align: left;">1</td>
-<td style="text-align: left;">One blaze</td>
-<td style="text-align: left;">2–3</td>
-<td style="text-align: left;">Shelving down, routes blocked</td>
+<td style="text-align: left;"><strong>2 · Rebirth and flight</strong></td>
+<td style="text-align: left;">A dead bird comes back as the cascade table says, sets a fire where it was reborn, and <strong>flies up one level</strong>. The golem on that level strikes it the moment it arrives, next tower's turn, unless stopped.</td>
 </tr>
 <tr>
-<td style="text-align: left;">2</td>
-<td style="text-align: left;">Spreading</td>
-<td style="text-align: left;">4–5</td>
-<td style="text-align: left;">Dangerous collapses</td>
+<td style="text-align: left;"><strong>3 · Fire spreads</strong></td>
+<td style="text-align: left;">Any level that has burned for <strong>two rounds with nobody fighting it</strong> catches the level above. Fire climbs the gaps.</td>
 </tr>
 <tr>
-<td style="text-align: left;">3</td>
-<td style="text-align: left;">Several sections</td>
-<td style="text-align: left;">6</td>
-<td style="text-align: left;">The tower fails</td>
-</tr>
-<tr>
-<td style="text-align: left;">4</td>
-<td style="text-align: left;">Major blaze</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;">5</td>
-<td style="text-align: left;">Widespread</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;">6</td>
-<td style="text-align: left;">The Archives are lost</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>4 · Warnings</strong></td>
+<td style="text-align: left;">Say out loud what's about to go: a crystal humming, a stair cracking, a shelf leaning, the dome glowing.</td>
 </tr>
 </tbody>
-</table></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>19</span></div>
+</table>
+<h3>The cascade</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Death</th>
+<th style="text-align: left;">Reborn</th>
+<th style="text-align: left;">Fire burst</th>
+<th style="text-align: left;">Burst damage (DC 12 Dex, half on a success)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1st</strong> (the SPLAT)</td>
+<td style="text-align: left;">narrated</td>
+<td style="text-align: left;">10 ft</td>
+<td style="text-align: left;">7 (2d6) Fire</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2nd</strong> (the opening)</td>
+<td style="text-align: left;">narrated</td>
+<td style="text-align: left;">10 ft</td>
+<td style="text-align: left;">7 (2d6) Fire</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3rd</strong></td>
+<td style="text-align: left;">after 1 round</td>
+<td style="text-align: left;">15 ft</td>
+<td style="text-align: left;">7 (2d6) Fire</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4th</strong></td>
+<td style="text-align: left;">at once</td>
+<td style="text-align: left;">15 ft</td>
+<td style="text-align: left;">10 (3d6) Fire</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>5th and after</strong></td>
+<td style="text-align: left;">at once, and it flies two levels</td>
+<td style="text-align: left;">20 ft</td>
+<td style="text-align: left;">10 (3d6) Fire</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cooling off.</strong> Every round the bird is <strong>not</strong> killed, move it <strong>one row back up</strong> the table. Three quiet rounds and it's back to the top. That's how the players win time.</p><div class="layout-cols"><div class="flow-col"><h3>The bird</h3>
+<ul>
+<li><strong>Pursuers:</strong> only the golem on the bird's level and the one on the level below hunt it. The rest keep their posts.</li>
+<li><strong>Calming it:</strong> once it has gone <strong>a full round without dying</strong>, anyone within reach can try: DC 12 Wisdom (Animal Handling). <strong>Advantage</strong> if the professor helps, or if they use its name, a kind word or the food it loved on the phones. A calmed bird stops fleeing and can be carried.</li>
+<li><strong>Holding it doesn't protect it.</strong> A golem striking a held bird hits both: the holder takes the fist (below), the bird dies, and the rebirth <strong>burns the holder for the full burst damage, no save</strong>. The bird drops at their feet.</li>
+<li><strong>At the top.</strong> On Level 6 it can't go higher. It circles under the dome, struck by the Level 6 golem every round, until it's calmed or the roof hatch is opened (Faversham's key, or DC 15 Strength or thieves' tools).</li>
+<li><strong>Getting it out:</strong> a door, a window or the roof hatch. Carried, coaxed or guided. <strong>Never by bracelet.</strong></li>
+</ul></div><div class="flow-col"><h3>Fire, crystals and books</h3>
+<ul>
+<li><strong>Putting out a blaze:</strong> two successes at DC 12 in one round (Athletics, Survival, a bucket, a cloak) from creatures on that level. The level is <strong>contained</strong>. It's easy. There are just too many of them.</li>
+<li><strong>Crystals.</strong> A cluster on a burning level <strong>hums</strong> for one round, then <strong>bursts</strong> on the next, setting the level above alight. Douse it or break it out early (an action, DC 12 Strength) and it never bursts.</li>
+<li><strong>The monolith:</strong> one ordinary book a round, for anyone with a bracelet. A runner can keep it fed with an armful a minute.</li>
+<li><strong>Restricted works</strong> need Faversham's own bracelet, on her own wrist, pressed to the stone. She won't hand it over. Someone has to get her down from Level 5 to the monolith and back, with books in their arms.</li>
+</ul></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>20</span></div>
 \page
 <div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM · GOLEMS</span></div><div class="pf-body columns" style="--accent:#8a3b12"><div class="layout-cols"><div class="flow-col"><div class="hazard"><h4>Golem · hazard card</h4><p><em>Huge construct guardian. Very hard to destroy. Easier to outwit.</em></p>
 <ul>
-<li><strong>Target:</strong> always the <strong>closest creature without a bracelet</strong> it can reach.</li>
-<li><strong>Fist:</strong> +7 to hit, reach 30 ft (the spring shoots out and snaps back).</li>
-<li><strong>Hits anyone else:</strong> only 4 (1d4 + 2) Bludgeoning, but they're <strong>knocked 30 ft</strong> straight back and land Prone (DC 13 Strength save: 10 ft, and stay standing). Slamming into a wall or shelf adds 3 (1d6). Knocked over a gallery rail, they fall to the level below.</li>
-<li><strong>Hits the bird:</strong> the bird dies and is reborn, <strong>WHOOMPH</strong>. That spot is now <strong>burning</strong>. Everyone within 10 ft makes a DC 12 Dexterity save, taking 7 (2d6) Fire damage on a failure, half on a success.</li>
-<li><strong>Misses:</strong> the fist smashes whatever is behind the target. Mark that spot <strong>damaged</strong>.</li>
-<li><strong>Moves:</strong> 30 ft a round, by the stairs. It does not jump the gaps.</li>
-<li><strong>Toughness:</strong> AC 17, 150 Hit Points. <strong>Resistant</strong> to all damage; <strong>immune</strong> to Fire, Poison and Psychic damage, and to being Charmed, Frightened or Poisoned. A level-3 party is not going to break one, and shouldn't need to.</li>
-<li><strong>Staggering it:</strong> 20 damage in one round (after resistance), and it loses its next turn.</li>
-</ul></div><div class="gm-note"><h4>Only two chase at once</h4><p>Only the golem on the bird’s level and the one on the level below it pursue. The rest guard their posts, and punch anything without a bracelet that comes within reach.</p></div></div><div class="flow-col"><h3>Stopping a strike</h3>
-<p>Each of these stops <strong>one</strong> strike. Reward anything else that's clever and fits the rules.</p>
+<li><strong>Target:</strong> the <strong>closest creature without a bracelet</strong> within reach: the bird, a person, a cat, or anything the burning books let loose.</li>
+<li><strong>Fist:</strong> +7 to hit, reach 30 ft (the spring shoots out and snaps back). One strike per golem in the tower's turn.</li>
+<li><strong>Hits anyone but the bird:</strong> only 4 (1d4 + 2) Bludgeoning, but they're <strong>knocked 30 ft</strong> straight back and land Prone (DC 13 Strength save: 10 ft, and stay standing). Hitting a wall or shelf adds 3 (1d6). Over a gallery rail, they fall to the level below.</li>
+<li><strong>Misses:</strong> the fist smashes whatever is behind the target. That spot is <strong>damaged</strong>.</li>
+<li><strong>Moves:</strong> 30 ft a round, by the stairs. It never jumps the gaps.</li>
+<li><strong>Toughness:</strong> AC 17, 150 Hit Points, resistant to all damage; immune to Fire, Poison and Psychic, and to being Charmed, Frightened or Poisoned.</li>
+<li><strong>Staggering it:</strong> 10 damage or more in one round, after resistance, and it skips its next strike. Weapons work fine with a bracelet on.</li>
+</ul></div><div class="gm-note"><h4>No off switch</h4><p>The golems obey the Archives’ rules, not people. Nobody can switch them off, by design, so nobody can bribe or bully their way past them. Faversham’s authority can only make one pause.</p></div></div><div class="flow-col"><h3>Stopping a strike</h3>
+<p>Each of these stops <strong>one</strong> strike. Reward anything else clever that fits the rules.</p>
 <table>
 <thead>
 <tr>
@@ -460,7 +494,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Shield</strong></td>
-<td style="text-align: left;">Ready an action, step in, take the hit yourself.</td>
+<td style="text-align: left;">Ready an action, step in, take the fist yourself.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Catch</strong></td>
@@ -468,47 +502,63 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Distract</strong></td>
-<td style="text-align: left;">Golems take the closest intruder. Put something nearer that has no bracelet: a thrown cockroach, the cat, a hat with an illusion on it.</td>
+<td style="text-align: left;">Golems take the closest intruder. Put something nearer that has no bracelet: a beetle, the cat, an illusion of a bird, an Inkwisp.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Block</strong></td>
-<td style="text-align: left;">Topple a shelf or slam a gate in the fist's path: DC 14 Strength (Athletics). That spot becomes damaged.</td>
+<td style="text-align: left;">Topple a shelf or slam a gate in the fist's path: DC 14 Strength (Athletics). That spot is damaged.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Outwit</strong></td>
-<td style="text-align: left;">Golems obey Archives rules exactly. <em>"This creature is under escort for evacuation"</em>: DC 15 Charisma (Persuasion or Deception) pauses one golem for a round. Advantage if Faversham's bracelet backs it up.</td>
+<td style="text-align: left;"><em>"This creature is under escort for evacuation!"</em> DC 15 Charisma (Persuasion or Deception) pauses one golem for a round. Advantage if Faversham is there to back it up.</td>
 </tr>
 </tbody>
 </table>
 <h3>The bold option</h3>
-<p>A PC who <strong>takes off their bracelet</strong> becomes an intruder too. The golems may come for them instead of the bird. But that PC has thrown away their way out. <strong>No bangle, no safety.</strong></p><div class="gm-note"><h4>Two golems at once</h4><p>If both pursuers strike in the same check, the players need to stop both. That is when splitting up pays off, and when it hurts.</p></div></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>20</span></div>
-\page
-<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM</span></div><div class="pf-body columns" style="--accent:#8a3b12"><div class="layout-cols"><div class="flow-col"><h3>The bird</h3>
-<ul>
-<li><strong>Every time a golem strikes at it,</strong> hit or miss, it panics and <strong>flies up one level</strong>, unless someone is holding it calmed.</li>
-<li><strong>Calming it:</strong> DC 12 Wisdom (Animal Handling). <strong>Advantage</strong> if the professor helps, or if a player uses its name, a kind word or the food it loved on the phone.</li>
-<li><strong>Once it's calmed and held,</strong> it can be carried, but it struggles and bolts again if a golem gets within 10 ft.</li>
-<li><strong>Getting it out:</strong> only through a physical exit. A door, a window, the roof. Carried, coaxed or guided. <strong>Never by bracelet.</strong></li>
-<li><strong>It is not destructive on purpose.</strong> It's a baby, it's terrified, and every time it dies, it comes back on fire.</li>
-</ul>
-<h3>Fighting the fire</h3>
-<ul>
-<li><strong>Smother, beat or drench it.</strong> Two successes at DC 12 in one check (Athletics, Survival, or a sensible tool) make a level <strong>contained</strong>.</li>
-<li><strong>Magic that isn't destructive works</strong>, for example <em>Shape Water</em>. Fire spells and destructive spells fizzle under the bracelets.</li>
-<li><strong>The light crystals.</strong> Cool and safe, until fire reaches them. A cluster caught in a blaze <strong>hums, darkens and spits sparks</strong> for a round or two, then <strong>bursts</strong>, spreading the fire to the level above. Douse it, shift the books away from it, or break it out early with a DC 12 Strength check, and it never bursts.</li>
-</ul></div><div class="flow-col"><h3>Saving books</h3>
-<ul>
-<li><strong>One PC at the monolith with a runner</strong> saves about <strong>one armful (six books) a minute</strong> from a level that isn't burning. Keep a tally of armfuls.</li>
-<li><strong>Restricted works</strong> need Faversham's authority. Win her round and she'll press her bracelet to the stone, or lend it.</li>
-<li><strong>Sealed books go home.</strong> Brannoch can run with a sealed book all he likes; the moment it crosses the threshold, it's back on its shelf.</li>
-</ul>
+<p>A PC who <strong>takes off their bracelet</strong> gets their full magic back. They also become an intruder: the golems may come for them instead, from the left and the right, and there's no teleport to save them. <strong>No bangle, no safety.</strong></p>
 <h3>Teleporting out</h3>
 <ul>
-<li>A PC wearing a bracelet who would drop to <strong>0 Hit Points</strong>, or take a deadly fall or burn, is <strong>teleported to the assembly ground at 1 Hit Point</strong> instead.</li>
-<li>Anyone can <strong>activate a bracelet at will</strong>: the emergency way out.</li>
-<li><strong>The bracelet stays behind.</strong> On arrival it slips off and vanishes back to the recess. Anyone who goes back inside does so <strong>without a bracelet</strong>, and the golems treat them as an intruder.</li>
-<li><strong>If they're holding the bird,</strong> it drops exactly where they stood.</li>
-</ul><div class="gm-note"><h4>False hope, fairly</h4><p>Let them win things. A contained gallery, a blocked punch, a rescued cat, a dozen books saved: all real, all permanent. The tower tips towards burning because there is too much to do and too few heroes, not because anything is faked. Keep the tracker swinging both ways.</p></div></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>21</span></div>
+<li>With a bracelet on, a creature that would drop to <strong>0 Hit Points</strong>, or take a deadly fall, is teleported to the assembly ground at <strong>1 Hit Point</strong>. Anyone can also touch the crystal to leave.</li>
+<li><strong>Out means out:</strong> the bracelet comes off on arrival. Go back in, and you go in without one.</li>
+<li><strong>No bracelet, no rescue.</strong> A PC who has taken theirs off drops to 0 like anywhere else.</li>
+</ul><div class="gm-note"><h4>Two golems at once</h4><p>If both pursuers strike in the same tower’s turn, the players need to stop both. That’s when splitting up pays off, and when it hurts.</p></div></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>21</span></div>
+\page
+<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM · THE LOOSED LORE</span></div><div class="pf-body columns" style="--accent:#8a3b12"><div class="layout-cols"><div class="flow-col"><h2>The loosed lore</h2>
+<p>The restricted works on <strong>Level 5</strong> aren't just rare. Some of them are <em>dangerous</em>: bound spells, sealed entities, things written down so they couldn't get out. <strong>When Level 5 catches fire, they get out.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">When</th>
+<th style="text-align: left;">What rises</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">The round Level 5 catches fire</td>
+<td style="text-align: left;"><strong>Four Inkwisps</strong>, burning droplets of spilled spell-ink</td>
+</tr>
+<tr>
+<td style="text-align: left;">The next round</td>
+<td style="text-align: left;"><strong>Two Ash-Page Swarms</strong>, whirlwinds of burning pages</td>
+</tr>
+<tr>
+<td style="text-align: left;">After Level 5 has burned for <strong>three rounds</strong></td>
+<td style="text-align: left;"><strong>The Unbound Index</strong>, a forbidden catalogue risen as a storm of fire and paper, quoting itself as it burns</td>
+</tr>
+</tbody>
+</table>
+<p>They are drawn to unburnt paper. They spread fire wherever they go, and they don't stop at Level 5.</p>
+<h3>Saving books makes it smaller</h3>
+<p>Every armful of restricted works carried out with Faversham <strong>before</strong> Level 5 burns removes one Inkwisp. Save <strong>three armfuls</strong> and the Index never forms.</p><div class="gm-note"><h4>The bracelet trap</h4><p>With bracelets on, the party’s destructive and fire magic fizzles, so they fight with steel, water and cleverness. A caster can take theirs off to hit at full power. Then the golems come for them, too.</p></div></div><div class="flow-col"><h3>The golems hate them too</h3>
+<p>The loosed lore has no bracelets. <strong>Golems punch them</strong>, if they're the closest intruder. A clever party leads an Inkwisp past a golem, or puts the Index between the fist and the bird.</p>
+<h3>Running the fight</h3>
+<ul>
+<li>Encounter: 4 Inkwisps, 2 Ash-Page Swarms and the Unbound Index make <strong>850 XP</strong>, a Low encounter on paper for six level-3 characters. With the fire, the golems and the bracelets, it plays far harder. Remove a wisp or swarm for four or five players.</li>
+<li><strong>Water is the weapon.</strong> Buckets, waterskins and <em>Shape Water</em> blunt the swarms and the Index.</li>
+<li>The Index speaks only in quotations from the books it was made of: <em>"Chapter nine. On the burning of the unbelievers."</em> It is quite mad, and it is enjoying itself.</li>
+</ul></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>22</span></div>
+\page
+<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>STAT BLOCKS · THE LOOSED LORE</span></div><div class="pf-body stat sbwide" style="--accent:#8a3b12"><h3 class="sbh">The loosed lore</h3><p class="sbline">4 Inkwisps · 2 Ash-Page Swarms · the Unbound Index · 850 XP</p><div class="sbgrid fin"><div class="stat-card sb span2"><h4>The Unbound Index</h4><p class="sb-sub"><em>Large Elemental, Chaotic Neutral</em></p><p class="sb-l"><b>AC</b> 13 · <b>Initiative</b> +2 (12) · <b>HP</b> 45 (6d10 + 12) · <b>Speed</b> 10 ft., Fly 30 ft. (hover)</p><table class="sb-ab"><tr><td><b>Str</b> 10 (+0)</td><td><b>Dex</b> 14 (+2)</td><td><b>Con</b> 14 (+2)</td></tr><tr><td><b>Int</b> 12 (+1)</td><td><b>Wis</b> 10 (+0)</td><td><b>Cha</b> 14 (+2)</td></tr></table><p class="sb-l"><b>Immunities</b> Fire, Poison; Exhaustion, Poisoned · <b>Senses</b> Darkvision 60 ft., Passive Perception 10 · <b>Languages</b> understands every language in the Archives; speaks only in quotations</p><p class="sb-l"><b>CR</b> 2 (XP 450; PB +2)</p><h5>Traits</h5><p class="sb-a"><b><em>Fire Form.</em></b> A creature that touches it or hits it with a melee attack while within 5 feet takes 3 (1d6) Fire damage.</p><p class="sb-a"><b><em>Drenched.</em></b> If it is drenched with water or takes Cold damage, Fire Form and Recite stop working until the end of its next turn.</p><h5>Actions</h5><p class="sb-a"><b><em>Multiattack.</em></b> Two Page Lash attacks.</p><p class="sb-a"><b><em>Page Lash.</em></b> <em>Melee:</em> +4, reach 10 ft. <em>Hit:</em> 6 (1d8 + 2) Slashing plus 3 (1d6) Fire.</p><p class="sb-a"><b><em>Recite (Recharge 5–6).</em></b> It reads itself aloud in a 15-foot Cone of burning words. Dexterity save DC 12: 14 (4d6) Fire damage on a failure, half on a success. Paper in the Cone catches fire.</p></div><div class="stat-card sb "><h4>Inkwisp</h4><p class="sb-sub"><em>Tiny Elemental, Unaligned</em></p><p class="sb-l"><b>AC</b> 13 · <b>Initiative</b> +3 (13) · <b>HP</b> 7 (2d4 + 2) · <b>Speed</b> 0 ft., Fly 40 ft. (hover)</p><table class="sb-ab"><tr><td><b>Str</b> 2 (−4)</td><td><b>Dex</b> 16 (+3)</td><td><b>Con</b> 12 (+1)</td></tr><tr><td><b>Int</b> 4 (−3)</td><td><b>Wis</b> 10 (+0)</td><td><b>Cha</b> 6 (−2)</td></tr></table><p class="sb-l"><b>Immunities</b> Fire, Poison; Poisoned · <b>Senses</b> Darkvision 60 ft., Passive Perception 10</p><p class="sb-l"><b>CR</b> 1/4 (XP 50; PB +2)</p><h5>Traits</h5><p class="sb-a"><b><em>Death Flare.</em></b> When it dies, it bursts. Each creature within 5 feet makes a DC 12 Dexterity save, taking 3 (1d6) Fire damage on a failure or half on a success. Paper there catches fire.</p><h5>Actions</h5><p class="sb-a"><b><em>Searing Touch.</em></b> <em>Melee:</em> +5, reach 5 ft. <em>Hit:</em> 5 (1d4 + 3) Fire.</p></div><div class="stat-card sb "><h4>Ash-Page Swarm</h4><p class="sb-sub"><em>Medium Swarm of Tiny Constructs, Unaligned</em></p><p class="sb-l"><b>AC</b> 12 · <b>Initiative</b> +2 (12) · <b>HP</b> 22 (5d8) · <b>Speed</b> 0 ft., Fly 30 ft. (hover)</p><table class="sb-ab"><tr><td><b>Str</b> 3 (−4)</td><td><b>Dex</b> 14 (+2)</td><td><b>Con</b> 10 (+0)</td></tr><tr><td><b>Int</b> 1 (−5)</td><td><b>Wis</b> 8 (−1)</td><td><b>Cha</b> 1 (−5)</td></tr></table><p class="sb-l"><b>Resistances</b> Bludgeoning, Piercing, Slashing · <b>Immunities</b> Fire, Poison, Psychic; Charmed, Frightened, Grappled, Paralyzed, Petrified, Prone, Restrained, Stunned · <b>Senses</b> Blindsight 30 ft., Passive Perception 9</p><p class="sb-l"><b>CR</b> 1/2 (XP 100; PB +2)</p><h5>Traits</h5><p class="sb-a"><b><em>Swarm.</em></b> It can occupy another creature’s space and move through any opening big enough for a sheet of paper. It can’t regain Hit Points.</p><p class="sb-a"><b><em>Soaked.</em></b> A creature can take an action to drench it (a waterskin, a bucket, <em>Shape Water</em>): it takes 7 (2d6) damage and can’t fly until the end of its next turn.</p><h5>Actions</h5><p class="sb-a"><b><em>Paper Cuts and Cinders.</em></b> <em>Melee:</em> +4, reach 5 ft. <em>Hit:</em> 7 (2d4 + 2) Slashing plus 2 (1d4) Fire, or half the Slashing if the swarm is Bloodied.</p></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>23</span></div>
 \page
 <div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM</span></div><div class="pf-body columns" style="--accent:#8a3b12"><h3>The tower, level by level</h3>
 <table>
@@ -535,7 +585,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>3 · Natural philosophy</strong></td>
-<td style="text-align: left;">Herbals, bestiaries, Var's notebooks</td>
+<td style="text-align: left;">Herbals, bestiaries, the professor's copy of Var</td>
 <td style="text-align: left;">2 clusters</td>
 <td style="text-align: left;"><strong>The cat</strong>, under a reading table</td>
 </tr>
@@ -547,44 +597,26 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>5 · Restricted</strong></td>
-<td style="text-align: left;">Locked cages of restricted works</td>
+<td style="text-align: left;">Locked cages of restricted works. <strong>The loosed lore</strong> (page 22)</td>
 <td style="text-align: left;">2 clusters</td>
 <td style="text-align: left;"><strong>Faversham</strong>, saving what she can</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>6 · The dome</strong></td>
-<td style="text-align: left;">Maps, star charts, the roof hatch</td>
+<td style="text-align: left;">Maps, star charts, the locked roof hatch</td>
 <td style="text-align: left;">4 clusters</td>
 <td style="text-align: left;">Nobody. A way out through the roof.</td>
 </tr>
 </tbody>
-</table><div class="layout-cols"><div class="flow-col"><p><strong>Getting out with the bird:</strong> the doors on Level 1 (two golems guard them), the tall windows on any level (a long drop to the square), or the roof hatch on Level 6 (an iron ladder, then the rooftops).</p><div class="gm-note"><h4>Var’s notebooks</h4><p>The professor’s own research copy of Var is on Level 3. If it burns, he grieves it all the way to the assembly ground. If a player unseals it and carries it out, he never forgets them.</p></div><h3>Ottoline Faversham</h3>
-<p>On Level 5, unlocking cages and handing restricted works to anyone with two free hands. She won’t stop the golems. She doesn’t think she can, and she’s partly right. She’ll lend her authority to anyone who helps her save the restricted collection. Afterwards, she will lie about all of it.</p><figure class="tb-pic"><div class="tb-frame" style="height:230px"><img alt="Brannoch Tey, holding a book that will not stay with him." src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/brannoch.jpg" style="object-position:50% 16%"></div><figcaption>Brannoch Tey, holding a book that will not stay with him.</figcaption></figure></div><div class="flow-col"><h3>The people</h3>
+</table><div class="layout-cols"><div class="flow-col"><p><strong>Getting out with the bird:</strong> the doors on Level 1 (two golems guard them), the tall windows on any level (a long drop to the square), or the roof hatch on Level 6 (locked, then an iron ladder and the rooftops).</p><div class="gm-note"><h4>The professor’s copy of Var</h4><p>On Level 3: his own handwritten copy, made from another scholar’s copy, made from a copy of the original. Eleven years of notes in the margins. If it burns, he grieves it all the way to the assembly ground. If a player unseals it and carries it out, he never forgets them.</p></div><h3>Ottoline Faversham</h3>
+<p>On Level 5, unlocking cages and handing restricted works to anyone with two free hands. She can't stop the golems; nobody can. She'll go down to the monolith with anyone who'll carry books and keep the fists off her, and press her own bracelet to the stone for each restricted work. Afterwards, she will lie about all of it.</p></div><div class="flow-col"><h3>The people</h3>
 <p>None of them has a bracelet, so <strong>the golems go for them too</strong>. Every one is another target, another stray fist through a shelf, and another reason the party can't be everywhere at once.</p>
-<p><strong>Brannoch Tey</strong> <em>(copyist, quietly a follower of Isthara).</em> He came in properly, bracelet and all. When the fire started he hit his bracelet and found himself on the assembly ground, bracelet gone. Then he looked up at the smoke, thought of Isthara's books on Level 4, and ran straight back in. <strong>Now he has no bracelet, and the golems come for him.</strong> The party can help him, shield him, or drag him out. If anyone helps him, he helps back: he knows the back stair. Whatever he grabs will go home unless it's unsealed at the monolith.</p>
-<p><strong>Old Wenlow</strong> <em>(librarian).</em> Took his bracelet off to polish it, put it down, and can't remember where. Kind, flustered, slow on the stairs. The bracelet is in his top pocket.</p>
-<p><strong>The reading-room cat.</strong> Under a table on Level 3, refusing to move. A perfect distraction, if anyone's quick and a little heartless.</p></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>22</span></div>
-\page
-<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM</span></div><div class="pf-body columns" style="--accent:#8a3b12"><div class="layout-cols"><div class="flow-col"><h3>Why the Archives burn</h3>
-<p>History wins through things that are really there, never through your thumb on the scale:</p>
-<ul>
-<li><strong>Scale.</strong> Six levels of dry paper joined by open gaps, and fire climbs. Six heroes can't hold every gallery.</li>
-<li><strong>The golems never stop.</strong> Every check brings a fresh strike. Every strike the players don't stop means a rebirth and a new fire somewhere else, and every miss smashes shelving.</li>
-<li><strong>The crystals.</strong> Missed warnings turn one blaze into two.</li>
-<li><strong>The people.</strong> Each rescue pulls hands away from the fire.</li>
-</ul>
-<h3>If they really do it</h3>
-<p>If the party <strong>contains the first fire, stops every later strike and prevents further damage</strong>, the Archives <strong>do not burn at your table.</strong> Don't invent another fire. Don't overrule their successes. Don't claim it burned when it didn't. This should be rare, because it is very hard, and it should feel like a legend when it happens.</p><div class="gm-note"><h4>Alternate history</h4><p>If the Archives survive at your table, they survive. Every other book in Aelderia records the fire. That tension is yours to enjoy.</p></div></div><div class="flow-col"><h3>Bringing it to an end</h3>
-<p>Act III ends when <strong>the bird is out</strong>, or the tower is lost, or the fire is beaten. Usually all three come close together. Signs that it's time:</p>
-<ul>
-<li>The bird is through a door, a window or the roof hatch.</li>
-<li>Fire reaches <strong>5</strong>, or Structure reaches <strong>5</strong>, and the Archives order a full evacuation: every bracelet glows, and everyone wearing one has a round to get clear of whatever they're holding.</li>
-<li>The last blaze is out.</li>
-</ul>
-<p><strong>The professor and the bird always survive.</strong> If the players have been taken out by their bracelets, the professor carries the bird out himself, singed and coughing, through whatever exit is left. Describe it from the assembly ground, with the players watching the doors.</p><blockquote data-label="READ ALOUD"><p><em>The bracelets flare white. The Archives' voice rings through every gallery: "Evacuate. Evacuate. Evacuate." And all around you, people blink out like snuffed candles, leaving behind whatever they were holding.</em></p></blockquote></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>23</span></div>
+<p><strong>Brannoch Tey</strong> <em>(copyist, quietly a follower of Isthara).</em> He came in properly, bracelet and all. When the fire started he touched his crystal and found himself on the assembly ground, bracelet gone. Then he looked up at the smoke, thought of Isthara's books on Level 4, and ran straight back in. <strong>Now he has no bracelet, and the golems come for him.</strong> If anyone helps him, he helps back: he knows the back stair. Whatever he grabs goes home unless it's unsealed at the monolith.</p>
+<p><strong>Old Wenlow</strong> <em>(librarian).</em> Took his bracelet off to polish it as the alarm went, put it down, and can't remember where. Kind, flustered, slow on the stairs. The bracelet is in his top pocket.</p>
+<p><strong>The reading-room cat.</strong> Lives under the reading tables, where the golems leave it alone: desks are visitors' ground. Now the shelves around it are burning, and it won't come out. A perfect distraction, if anyone's quick and a little heartless.</p></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>24</span></div>
 \page
 <div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM</span></div><div class="pf-body columns" style="--accent:#8a3b12"><h3>Things that happen</h3>
-<p>Roll or choose at a check when the tower needs a nudge. <strong>Every one has a cause, and a warning</strong>, and every one can be answered.</p>
+<p>Roll or choose on the tower's turn when it needs a nudge. <strong>Every one has a cause, and a warning</strong>, and every one can be answered.</p>
 <table>
 <thead>
 <tr>
@@ -597,7 +629,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;">1</td>
-<td style="text-align: left;">Isthara's followers rush the doors in the chaos</td>
+<td style="text-align: left;">Isthara's followers rush the open doors in the chaos</td>
 <td style="text-align: left;">Shouting in the square</td>
 <td style="text-align: left;">Help them, or stop them; either way the door golems turn</td>
 </tr>
@@ -628,8 +660,8 @@
 <tr>
 <td style="text-align: left;">6</td>
 <td style="text-align: left;">Scholars blink out mid-sentence as their bracelets take them</td>
-<td style="text-align: left;">Bracelets glowing</td>
-<td style="text-align: left;">Grab what they drop: a sealed book, a lamp, a child's toy</td>
+<td style="text-align: left;">Crystals flaring</td>
+<td style="text-align: left;">Grab what they drop: a sealed book, a satchel, a child's toy</td>
 </tr>
 <tr>
 <td style="text-align: left;">7</td>
@@ -639,63 +671,81 @@
 </tr>
 <tr>
 <td style="text-align: left;">8</td>
-<td style="text-align: left;">The bird lands somewhere quiet, exhausted</td>
-<td style="text-align: left;">It stops chirping</td>
-<td style="text-align: left;">A chance to calm it, if anyone reaches it first</td>
+<td style="text-align: left;">An Inkwisp drifts down from Level 5</td>
+<td style="text-align: left;">A blue-black spark falling</td>
+<td style="text-align: left;">Catch it, douse it, or feed it to a golem</td>
 </tr>
 </tbody>
 </table><div class="gm-note"><h4>Never a trap</h4><p>These are pressure, not punishment. Always show the warning first. If the players answer it, it is answered, and nothing comes back to undo it.</p></div><div class="layout-cols"><div class="flow-col"><h3>Ideas players love</h3>
 <ul>
-<li><strong>Wrap the bird in a wet cloak</strong> and run. It still struggles near golems, but fire won't spread from it unless it's struck.</li>
-<li><strong>Make a decoy.</strong> A cushion with an illusion of a bird, a thrown hat, the cat. The golems take the closest intruder.</li>
-<li><strong>Argue the rules.</strong> The golems obey Archives regulations to the letter. A clever reading of them, backed by Faversham's authority, can pause a golem.</li>
-<li><strong>Take the bracelet off.</strong> It works, and it is brave and very stupid.</li>
-<li><strong>Use the gaps.</strong> A rope down through the gap beside a platform beats the stairs, and golems won't follow.</li>
-<li><strong>Shut the doors.</strong> Fire needs air. Closing a gallery's doors and shutters slows a blaze (Advantage on the next check to contain it).</li>
+<li><strong>Wrap the bird in a wet cloak</strong> and run. It doesn't stop the golems, but it stops it lighting everything it touches between deaths.</li>
+<li><strong>Make a decoy.</strong> An illusion of a bird, a thrown hat, the cat, an Inkwisp. Golems take the closest intruder.</li>
+<li><strong>Argue the rules.</strong> Golems obey Archives regulations to the letter. A clever reading of them, with Faversham at your side, can pause one.</li>
+<li><strong>Use the gaps.</strong> A rope down through the gap beats the stairs, and golems won't follow.</li>
+<li><strong>Shut the doors.</strong> Closing a gallery's doors and shutters slows a blaze: Advantage on the next attempt to contain it.</li>
 </ul></div><div class="flow-col"><h3>If the table stalls</h3>
-<p>Have the professor shout the obvious: <em>"It's going up! It always goes up! Get above it!"</em> Or let a golem walk calmly past the party, ignoring them completely, because they're wearing bracelets, on its way to the bird.</p></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>24</span></div>
+<p>Have the professor shout the obvious: <em>"It's going up! It always goes up! Get above it!"</em> Or let a golem walk calmly past the party, ignoring them completely because they're wearing bracelets, on its way to the bird.</p><div class="gm-note"><h4>Timing</h4><p>Each round takes about five minutes at a table of six. Act III usually runs <strong>20 to 25 rounds</strong>: about two minutes in the tower, and two hours at the table.</p></div></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>25</span></div>
+\page
+<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM</span></div><div class="pf-body columns" style="--accent:#8a3b12"><div class="layout-cols"><div class="flow-col"><h3>Why the Archives burn</h3>
+<p>History wins through things that are really there, never through your thumb on the scale:</p>
+<ul>
+<li><strong>Speed.</strong> The cascade turns one fire into five in a minute. Every fire is easy to put out. There are just too many.</li>
+<li><strong>Scale.</strong> Six levels of dry paper joined by open gaps, and fire climbs.</li>
+<li><strong>The golems never stop.</strong> No off switch, no mercy, no mistakes.</li>
+<li><strong>The loosed lore.</strong> Once Level 5 goes, the fire has help.</li>
+<li><strong>The people.</strong> Every rescue pulls hands away from the fire.</li>
+</ul><h3>If they really do it</h3>
+<p>If the party <strong>breaks the cascade before Level 5 catches, contains every fire and gets the bird out</strong>, the Archives <strong>do not burn at your table.</strong> Don't invent another fire. Don't overrule their successes. This should be rare, and feel like a legend when it happens.</p><div class="gm-note"><h4>Alternate history</h4><p>If the Archives survive at your table, they survive. Every other book in Aelderia records the fire. That tension is yours to enjoy.</p></div></div><div class="flow-col"><h3>Bringing it to an end</h3>
+<p>Act III ends when <strong>the bird is out</strong>, or the tower is lost, or the fire is beaten. Usually all three come close together. Signs that it's time:</p>
+<ul>
+<li>The bird is through a door, a window or the roof hatch.</li>
+<li><strong>Four or more levels are burning</strong>, and the Archives order a full evacuation: every crystal flares, and everyone wearing a bracelet has one round to let go of whatever they're holding.</li>
+<li>The last blaze is out.</li>
+</ul>
+<p><strong>The professor and the bird always survive.</strong> If the players have been taken out by their bracelets, the professor carries the bird out himself, singed and coughing, through whatever exit is left. Describe it from the assembly ground, with the players watching the doors.</p><blockquote data-label="READ ALOUD"><p><em>The crystals flare white. The Archives' voice rings through every gallery: "Evacuate. Evacuate. Evacuate." And all around you, people blink out like snuffed candles, leaving behind whatever they were holding.</em></p></blockquote></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>26</span></div>
 \page
 <div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM</span></div><div class="pf-body columns" style="--accent:#8a3b12"><div class="layout-cols"><div class="flow-col"><h2>Ending — The Assembly Ground</h2>
 <p>Everyone gathers on the assembly ground outside: scholars in blankets, librarians counting heads, Isthara's followers watching from the square. Smoke rises from the tower, or, at a rare table, doesn't.</p><blockquote data-label="READ ALOUD"><p><em>The professor sits on the steps of the assembly ground with the tiny bird cupped against his chest. For once, Emeric Quillweather says nothing at all.</em></p>
-<p><em>He looks up at the tower. Eleven years of notes. Sixty years of Var's. Everything they burned.</em></p>
+<p><em>He looks up at the tower. Eleven years of notes. His copy of Var, copied from a copy of a copy. Everything they burned.</em></p>
 <p><em>The bird pushes its warm little head under his chin and nuzzles him, and he closes his eyes.</em></p></blockquote><h3>Record what actually happened</h3>
-<p>Use the <strong>consequence log</strong> (page 34): strikes stopped and taken, where the fires started, who was rescued, armfuls of books saved, levels contained, routes lost. Every success counts. Name the books they saved. Let Brannoch thank them, or Wenlow, or the cat, in its way.</p><div class="gm-note"><h4>The bird</h4><p>It stays with the professor. It is bonded to him. It is <strong>never a reward</strong> for the party, however much they love it. He may let them visit.</p></div></div><div class="flow-col"><h3>The librarians' story</h3>
+<p>Use the <strong>consequence log</strong> (page 36): strikes stopped and taken, where the fires started, who was rescued, armfuls of books saved, levels contained, routes lost. Every success counts. Name the books they saved. Let Brannoch thank them, or Wenlow, or the cat, in its way.</p><div class="gm-note"><h4>The bird</h4><p>It stays with the professor. It is bonded to him. It is <strong>never a reward</strong> for the party, however much they love it. He may let them visit.</p></div></div><div class="flow-col"><h3>The librarians' story</h3>
 <p>While the scholars cough and count, the surviving librarians huddle around Head Librarian Faversham. By the time the city watch arrives, there is an official account: <strong>deliberate sabotage by unidentified intruders.</strong> Nobody mentions golems. Nobody mentions a bird.</p>
 <p>The players can back the story, keep quiet, or say loudly what really happened. Nothing forces them either way. Faversham will be icily polite to anyone who contradicts her, and the story will stand in the histories regardless. Most of Aelderia blames the followers of Isthara.</p><blockquote data-label="READ ALOUD"><p><em>Faversham's voice carries across the square. "Saboteurs. Unknown persons. A grave crime, which will be thoroughly investigated."</em></p></blockquote><p>If it suits your table, and only then:</p><blockquote data-label="READ ALOUD"><p><em>"There was no phoenix," says Faversham, flatly.</em></p>
 <p><em>The professor holds up the bird. "I'm holding it."</em></p>
-<p><em>"Then kindly hold it somewhere else."</em></p></blockquote><p><strong>Handout 1</strong>, the official proclamation, is optional: a comic extra for the players to keep.</p><figure class="tb-pic"><div class="tb-frame" style="height:190px"><img alt="The assembly ground." src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/assembly.jpg" style="object-position:50% 50%"></div><figcaption>The assembly ground.</figcaption></figure></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>25</span></div>
+<p><em>"Then kindly hold it somewhere else."</em></p></blockquote><p><strong>Handout 1</strong>, the official proclamation, is optional: a comic extra for the players to keep.</p><figure class="tb-pic"><div class="tb-frame" style="height:190px"><img alt="The assembly ground." src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/assembly.jpg" style="object-position:50% 50%"></div><figcaption>The assembly ground.</figcaption></figure></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>27</span></div>
 \page
 <div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM · QUICK REFERENCE</span></div><div class="pf-body columns" style="--accent:#8a3b12"><div class="layout-cols"><div class="flow-col"><h2>GM quick reference</h2>
 <h3>The bracelet</h3>
 <ul>
-<li>Suppresses fire and destructive magic, for everyone.</li>
-<li>Opens the monolith. Ordinary books for anyone; restricted works need encoded authority.</li>
-<li>Takes the <strong>wearer only</strong> to the assembly ground: by choice, by evacuation order, or at mortal danger (instead of dropping to 0 HP, arrive at 1 HP).</li>
-<li><strong>Never carries the bird</strong>, or anyone else. The bird drops where the wearer stood.</li>
+<li>Suppresses fire and destructive magic, for the wearer.</li>
+<li>Opens the monolith. Ordinary books for anyone; restricted works need Faversham's own bracelet on the stone.</li>
+<li>Takes the <strong>wearer only</strong> to the assembly ground: by choice, by evacuation order, or instead of dropping to 0 HP (arrive at 1 HP).</li>
+<li><strong>Out means out:</strong> it comes off outside. Never carries the bird.</li>
 </ul>
 <h3>The golems</h3>
 <ul>
-<li>Target the closest creature <strong>without a bracelet</strong>.</li>
-<li>+7, reach 30 ft. Anyone it hits: 1d4 + 2, knocked 30 ft and Prone (DC 13 Str: 10 ft).</li>
-<li>Hit the bird: WHOOMPH, new fire, DC 12 Dex for 2d6 Fire within 10 ft.</li>
-<li>Miss: damage behind the target.</li>
-<li>AC 17, 150 HP, resistant to everything, immune to Fire. 20 damage in a round makes it skip a turn.</li>
-<li>Only two chase the bird at once. They never fight fires.</li>
+<li>Guard the doors and the shelves. Desks and arms are safe, <strong>until the bird has been struck once</strong>.</li>
+<li>Strike the closest intruder within 30 ft, once each, in the tower's turn: +7.</li>
+<li>Anyone but the bird: 1d4 + 2, knocked 30 ft and Prone (DC 13 Str: 10 ft).</li>
+<li>Miss: damage behind the target. No off switch.</li>
+<li>AC 17, 150 HP, resistant to everything, immune to Fire. 10 damage in a round (after resistance) skips its next strike.</li>
 </ul>
 <h3>Stopping a strike</h3>
-<p>Shield (Ready) · Catch (DC 13 Acrobatics) · Distract (closer intruder) · Block (DC 14 Athletics) · Outwit (DC 15 Persuasion/Deception)</p></div><div class="flow-col"><h3>The five-minute check</h3>
+<p>Shield (Ready) · Catch (DC 13 Acrobatics) · Distract (closer intruder) · Block (DC 14 Athletics) · Outwit (DC 15 Persuasion/Deception)</p></div><div class="flow-col"><h3>The tower's turn (end of each round)</h3>
 <ol>
-<li>Resolve the players' actions.</li>
-<li>Golems act; players may stop strikes.</li>
-<li>Untended fire spreads, upward first; tended fire doesn't.</li>
+<li>Golems strike.</li>
+<li>A dead bird is reborn (cascade table), bursts into fire and flies up a level.</li>
+<li>A level burning two rounds untended catches the one above.</li>
 <li>Warn before anything fails.</li>
 </ol>
+<h3>The cascade</h3>
+<p>3rd death: back after 1 round, 15 ft, 2d6 · 4th: at once, 15 ft, 3d6 · 5th+: at once, 20 ft, 3d6, flies two levels. <strong>Each round it doesn't die, step back one row.</strong></p>
 <h3>The bird</h3>
-<p>Flies up a level every time it's struck at, unless held and calmed. Calm it: DC 12 Animal Handling, Advantage with the professor, its name or its food. Leaves only by a physical exit.</p>
-<h3>Fire</h3>
-<p>Two DC 12 successes in a check: level contained. Crystals in a blaze hum, darken, spark, then burst upward; douse or break them first (DC 12 Str).</p>
-<h3>Books</h3>
-<p>One a round at the monolith; one armful (six) a minute with a runner. Sealed books return home.</p>
+<p>Calm it after a round without dying: DC 12 Animal Handling, Advantage with the professor, its name or its food. Held and struck: the holder takes the fist and the full burst, no save. Leaves only by a physical exit.</p>
+<h3>Fire and books</h3>
+<p>Two DC 12 successes in a round contain a level. Crystals hum, then burst upward next round; douse or break them (DC 12 Str). One book a round at the monolith.</p>
+<h3>The loosed lore</h3>
+<p>Level 5 burns: 4 Inkwisps, then 2 Ash-Page Swarms, then after three rounds the Unbound Index. Each restricted armful saved first removes a wisp; three stop the Index.</p>
 <h3>Scaling</h3>
 <table>
 <thead>
@@ -711,15 +761,14 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>5</strong></td>
-<td style="text-align: left;">Only one golem pursues the bird.</td>
+<td style="text-align: left;">Only one golem pursues the bird; remove one swarm.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>4</strong></td>
-<td style="text-align: left;">Only one golem pursues, and the crystals warn for two full rounds before bursting.</td>
+<td style="text-align: left;">As for five, and remove two Inkwisps.</td>
 </tr>
 </tbody>
-</table>
-<h3>The first punch is fixed. Every other punch can be stopped.</h3></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>26</span></div>
+</table></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>28</span></div>
 \page
 <div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM · THEATRE OF THE MIND</span></div><div class="pf-body columns totm" style="--accent:#8a3b12"><div class="layout-cols"><div class="flow-col"><h2>Theatre of the mind</h2>
 <p>No maps, no minis, no phones? The whole adventure runs on description. Here's how.</p>
@@ -771,38 +820,38 @@
 </table>
 <h3>Running a strike</h3>
 <ol>
-<li><strong>Warn:</strong> <em>"The golem on Level 3 turns its head. The spring creaks back."</em></li>
-<li><strong>Ask:</strong> <em>"What do you do?"</em> Give everyone close a moment to shield, catch, distract, block or outwit.</li>
-<li><strong>Resolve</strong> with the hazard card (page 20), then describe the result big: the fist, the knockback, the shelf exploding, or the bird whisked clear.</li>
+<li><strong>Warn</strong> in the players' turns: <em>"The golem on Level 3 turns its head. The spring creaks back."</em></li>
+<li><strong>Ask:</strong> <em>"What do you do?"</em> Anyone close can ready a shield, catch, distract, block or outwit.</li>
+<li><strong>Resolve</strong> in the tower's turn with the hazard card (page 21), then describe it big: the fist, the knockback, the shelf exploding, the bird whisked clear, or WHOOMPH.</li>
 </ol>
 <h3>Keeping everyone in it</h3>
-<p>Split party? Cut between them every few minutes, ending each cut on a question. Track only what matters on the tracker sheet: each level's state, where the bird is, where the two hunting golems are.</p><div class="gm-note"><h4>One sentence to remember</h4><p>The bird goes up, the golems follow, the fire climbs: everything else is the players deciding what to save.</p></div></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>27</span></div>
+<p>Split party? Cut between them every few minutes, ending each cut on a question. Track only what matters on the tracker sheet: each level's state, the bird's row on the cascade, where the two hunting golems are.</p><div class="gm-note"><h4>One sentence to remember</h4><p>The bird goes up, the golems follow, the fire climbs: everything else is the players deciding what to save.</p></div></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>29</span></div>
 \page
-<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM · THE TOWER</span></div><div class="pf-body battle-map-page" style="--accent:#8a3b12"><section class="battle-map"><div class="map-eyebrow">GM REFERENCE</div><h3>The Great Archives, in section</h3><figure class="map-plate"><img alt="Cross-section of the Great Archives tower" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/tower-section.jpg"></figure></section></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>28</span></div>
+<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM · THE TOWER</span></div><div class="pf-body battle-map-page" style="--accent:#8a3b12"><section class="battle-map"><div class="map-eyebrow">GM REFERENCE</div><h3>The Great Archives, in section</h3><figure class="map-plate"><img alt="Cross-section of the Great Archives tower" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/tower-section.jpg"></figure></section></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>30</span></div>
 \page
-<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>PLAYER MAP</span></div><div class="pf-body battle-map-page" style="--accent:#8a3b12"><section class="battle-map"><div class="map-eyebrow">PLAYER MAP · GA-M01</div><h3>Level 1 · The Entrance</h3><figure class="map-plate"><img alt="Level 1 · The Entrance" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/map-l1-player.jpg"><figcaption>1 square = 5 ft · the doors are at the bottom</figcaption></figure><p class="map-downloads">GM map and key on the next page</p></section></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>29</span></div>
+<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>PLAYER MAP</span></div><div class="pf-body battle-map-page" style="--accent:#8a3b12"><section class="battle-map"><div class="map-eyebrow">PLAYER MAP · GA-M01</div><h3>Level 1 · The Entrance</h3><figure class="map-plate"><img alt="Level 1 · The Entrance" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/map-l1-player.jpg"><figcaption>1 square = 5 ft · the doors are at the bottom</figcaption></figure><p class="map-downloads">GM map and key on the next page</p></section></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>31</span></div>
 \page
-<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM · MAP KEY</span></div><div class="pf-body map-key-page" style="--accent:#8a3b12"><section class="map-key"><div class="map-eyebrow">GM MAP &amp; KEY · GA-M01</div><h3>Level 1 · The Entrance</h3><figure class="gm-map-plate" style="--gm-map-height:540px"><img src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/map-l1-gm.jpg" alt="Level 1 · The Entrance: GM reference"></figure><ul class="map-key-list"><li><strong>1 · The doors</strong> — Tall, open, and the main way out. Two golems stand here.</li><li><strong>2 · The recess</strong> — Outside, on the wall beside the doors, behind a locked cover. A librarian comes out to issue each bracelet.</li><li><strong>3 · The golem alcoves</strong> — The door guards. They punch anything without a bracelet that comes within 30 ft.</li><li><strong>4 · The monolith</strong> — Sealing on one side, unsealing on the other. One book a round.</li><li><strong>5 · The professor’s desk</strong> — Where the egg hatches, and where the first fire starts.</li><li><strong>6 · Reading desks</strong> — Half Cover. Easy to tip over as a barricade.</li><li><strong>7 · The stairs</strong> — Curving up to Level 2 on either side.</li><li><strong>8 · Crystal clusters</strong> — On the door pillars. They burst if fire reaches them.</li></ul><p class="map-gm-note">The first fire starts at the shelf nearest the professor’s desk.</p></section></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>30</span></div>
+<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM · MAP KEY</span></div><div class="pf-body map-key-page" style="--accent:#8a3b12"><section class="map-key"><div class="map-eyebrow">GM MAP &amp; KEY · GA-M01</div><h3>Level 1 · The Entrance</h3><figure class="gm-map-plate" style="--gm-map-height:540px"><img src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/map-l1-gm.jpg" alt="Level 1 · The Entrance: GM reference"></figure><ul class="map-key-list"><li><strong>1 · The doors</strong> — Tall, open, and the main way out. Two golems stand here.</li><li><strong>2 · The recess</strong> — Outside, on the wall beside the doors, behind a locked cover. A librarian comes out to issue each bracelet.</li><li><strong>3 · The golem alcoves</strong> — The door guards. They punch anything without a bracelet that comes within 30 ft.</li><li><strong>4 · The monolith</strong> — Sealing on one side, unsealing on the other. One book a round.</li><li><strong>5 · The professor’s desk</strong> — Where the egg hatches, and where the first fire starts.</li><li><strong>6 · Reading desks</strong> — Half Cover. Easy to tip over as a barricade.</li><li><strong>7 · The stairs</strong> — Curving up to Level 2 on either side.</li><li><strong>8 · Crystal clusters</strong> — On the door pillars. They burst if fire reaches them.</li></ul><p class="map-gm-note">The first fire starts at the shelf nearest the professor’s desk.</p></section></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>32</span></div>
 \page
-<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>PLAYER MAP</span></div><div class="pf-body battle-map-page" style="--accent:#8a3b12"><section class="battle-map"><div class="map-eyebrow">PLAYER MAP · GA-M02</div><h3>An Upper Gallery</h3><figure class="map-plate"><img alt="An Upper Gallery" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/map-gallery-player.jpg"><figcaption>1 square = 5 ft · use for any of Levels 2–6</figcaption></figure><p class="map-downloads">GM map and key on the next page</p></section></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>31</span></div>
+<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>PLAYER MAP</span></div><div class="pf-body battle-map-page" style="--accent:#8a3b12"><section class="battle-map"><div class="map-eyebrow">PLAYER MAP · GA-M02</div><h3>An Upper Gallery</h3><figure class="map-plate"><img alt="An Upper Gallery" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/map-gallery-player.jpg"><figcaption>1 square = 5 ft · use for any of Levels 2–6</figcaption></figure><p class="map-downloads">GM map and key on the next page</p></section></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>33</span></div>
 \page
-<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM · MAP KEY</span></div><div class="pf-body map-key-page" style="--accent:#8a3b12"><section class="map-key"><div class="map-eyebrow">GM MAP &amp; KEY · GA-M02</div><h3>An Upper Gallery</h3><figure class="gm-map-plate" style="--gm-map-height:540px"><img src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/map-gallery-gm.jpg" alt="An Upper Gallery: GM reference"></figure><ul class="map-key-list"><li><strong>1 · Outer shelves</strong> — All the way round. The first thing to burn.</li><li><strong>2 · Reading platform</strong> — Raised, with tables and chairs. Half Cover.</li><li><strong>3 · The gaps</strong> — Open drops to the level below, with railings. The bird flies up through them; golems don’t jump them. Falling one level is 10 ft (1d6 damage).</li><li><strong>4 · The stairs</strong> — Up and down, top and bottom of the circle. Golems use these.</li><li><strong>5 · Crystal clusters</strong> — On the pillars. Watch them.</li><li><strong>7 · Golem patrol</strong> — One golem walks each gallery.</li></ul><p class="map-gm-note">Tall windows sit in the outer wall between the shelf runs: a long drop to the square, and a way out for a bird.</p></section></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>32</span></div>
+<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM · MAP KEY</span></div><div class="pf-body map-key-page" style="--accent:#8a3b12"><section class="map-key"><div class="map-eyebrow">GM MAP &amp; KEY · GA-M02</div><h3>An Upper Gallery</h3><figure class="gm-map-plate" style="--gm-map-height:540px"><img src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/map-gallery-gm.jpg" alt="An Upper Gallery: GM reference"></figure><ul class="map-key-list"><li><strong>1 · Outer shelves</strong> — All the way round. The first thing to burn.</li><li><strong>2 · Reading platform</strong> — Raised, with tables and chairs. Half Cover.</li><li><strong>3 · The gaps</strong> — Open drops to the level below, with railings. The bird flies up through them; golems don’t jump them. Falling one level is 10 ft (1d6 damage).</li><li><strong>4 · The stairs</strong> — Up and down, top and bottom of the circle. Golems use these.</li><li><strong>5 · Crystal clusters</strong> — On the pillars. Watch them.</li><li><strong>6 · Golem patrol</strong> — One golem walks each gallery.</li></ul><p class="map-gm-note">Tall windows sit in the outer wall between the shelf runs: a long drop to the square, and a way out for a bird.</p></section></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>34</span></div>
 \page
 <div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM · CHARACTERS</span></div><div class="pf-body columns" style="--accent:#8a3b12"><div class="layout-cols"><div class="flow-col"><h2>Appendix A — Characters</h2><div class="cast"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/professor.jpg" style="object-position:50% 12%"><div><p><strong>Professor Emeric Quillweather</strong> <em>(human, sixties).</em> Brilliant, respected, cultured and a tireless chatterbox. Eleven years on Var’s research. Loves the bird the moment it hatches, marvels at its rebirth, then fights for it. <em>Voice: a delighted lecturer on his third cup of tea.</em></p></div></div><div class="cast"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/faversham.jpg" style="object-position:50% 12%"><div><p><strong>Head Librarian Ottoline Faversham.</strong> Brisk, proud, never wrong. Holds authority over the restricted works. Saves what she can, then writes the official story. <em>Voice: crisp, cold, final.</em></p></div></div><div class="cast"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/golem.jpg" style="object-position:50% 20%"><div><p><strong>The golems.</strong> Seven stone guardians. Polite, precise, literal. Not broken, not stupid. They do exactly what they were built to do. <em>Voice: none. A polite clunk.</em></p></div></div></div><div class="flow-col"><div class="cast"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/brannoch.jpg" style="object-position:50% 14%"><div><p><strong>Brannoch Tey</strong> <em>(copyist and quiet follower of Isthara, early twenties).</em> Brave for about four seconds at a time. Escaped once, went back in without a bracelet for one holy book. Honest, frightened, grateful. <em>Voice: fast and breathless.</em></p></div></div><p><strong>The hatchling.</strong> Pipkin, Fizzwick, Solin or Tuppence. Fluffy, golden to crimson, enormous eyes. A phoenix, though nobody knew. Bonded to the professor.</p>
 <p><strong>Old Wenlow</strong> <em>(librarian).</em> Kind, forgetful, slow on the stairs. His bracelet is in his top pocket.</p>
 <p><strong>The reading-room cat.</strong> Unimpressed by everything, including fire.</p>
 <p><strong>The bracelet librarian.</strong> Comes out to the steps with her key and ledger. Bored, thorough, entirely correct. <em>"You, mind. Not your lunch."</em></p>
-<p><strong>Followers of Isthara.</strong> Protesters at the doors. Some will help in the fire; some grab a book and run, and watch it vanish from their arms.</p></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>33</span></div>
+<p><strong>Followers of Isthara.</strong> Protesters at the doors. Some will help in the fire; some grab a book and run, and watch it vanish from their arms.</p></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>35</span></div>
 \page
-<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM · TRACKER</span></div><div class="pf-body stat" style="--accent:#8a3b12"><h2>The disaster tracker</h2><p><em>State for each level: safe · threatened · burning · contained · damaged · inaccessible. Note where the bird and the golems are. Never change anything without a cause you can describe.</em></p><table class="tracker"><tr><th>LEVEL</th><th>STATE</th><th>BIRD · GOLEMS</th><th>NOTES (crystals, people, books)</th></tr><tr><td class="lvl">Level 6 · The dome</td><td class="box"></td><td class="box"></td><td class="box"></td></tr><tr><td class="lvl">Level 5 · Restricted</td><td class="box"></td><td class="box"></td><td class="box"></td></tr><tr><td class="lvl">Level 4 · Faith and law</td><td class="box"></td><td class="box"></td><td class="box"></td></tr><tr><td class="lvl">Level 3 · Natural philosophy</td><td class="box"></td><td class="box"></td><td class="box"></td></tr><tr><td class="lvl">Level 2 · Histories</td><td class="box"></td><td class="box"></td><td class="box"></td></tr><tr><td class="lvl">Level 1 · Entrance</td><td class="box"></td><td class="box"></td><td class="box"></td></tr></table><div class="dial">FIRE <span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span></div><div class="dial">STRUCTURE <span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span></div><div class="dial">MINUTES ELAPSED <span>5</span><span>10</span><span>15</span><span>20</span><span>25</span><span>30</span><span>35</span><span>40</span><span>45</span></div><div class="gm-note"><h4>Each check</h4><p>1 · Resolve the players’ actions. 2 · Golems act, and strikes may be stopped. 3 · Fire spreads only where it’s untended, upward first. 4 · Warn before anything fails.</p></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>34</span></div>
+<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM · TRACKER</span></div><div class="pf-body stat" style="--accent:#8a3b12"><h2>The disaster tracker</h2><p><em>State for each level: safe · threatened · burning (tick a box each round untended) · contained · damaged · inaccessible. Note where the bird and the golems are. Never change anything without a cause you can describe.</em></p><table class="tracker"><tr><th>LEVEL</th><th>STATE</th><th>BIRD · GOLEMS</th><th>NOTES (crystals, people, books)</th></tr><tr><td class="lvl">Level 6 · The dome</td><td class="box"></td><td class="box"></td><td class="box"></td></tr><tr><td class="lvl">Level 5 · Restricted</td><td class="box"></td><td class="box"></td><td class="box"></td></tr><tr><td class="lvl">Level 4 · Faith and law</td><td class="box"></td><td class="box"></td><td class="box"></td></tr><tr><td class="lvl">Level 3 · Natural philosophy</td><td class="box"></td><td class="box"></td><td class="box"></td></tr><tr><td class="lvl">Level 2 · Histories</td><td class="box"></td><td class="box"></td><td class="box"></td></tr><tr><td class="lvl">Level 1 · Entrance</td><td class="box"></td><td class="box"></td><td class="box"></td></tr></table><div class="dial">FIRE <span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span></div><div class="dial">STRUCTURE <span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span></div><div class="dial">CASCADE ROW <span>3rd</span><span>4th</span><span>5th+</span></div><div class="dial">ROUND <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span></div><div class="dial">LEVEL 5 BURNING (ROUNDS) <span></span><span></span><span></span> &nbsp; RESTRICTED ARMFULS SAVED <span></span><span></span><span></span></div><div class="gm-note"><h4>The tower’s turn</h4><p>1 · Golems strike, and strikes may be stopped. 2 · Rebirth, fire burst, flight. 3 · A level burning two rounds untended catches the one above. 4 · Warn before anything fails.</p></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>36</span></div>
 \page
-<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM · CONSEQUENCE LOG</span></div><div class="pf-body columns" style="--accent:#8a3b12"><div class="layout-cols"><div class="flow-col"><h2>The consequence log</h2><h4>Strikes stopped</h4><div class="loglines"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div><h4>Strikes taken (each one a new fire)</h4><div class="loglines"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div><h4>Where the fires started</h4><div class="loglines"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div></div><div class="flow-col"><h4>Who was rescued</h4><div class="loglines"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div><h4>Books saved (armfuls, and which)</h4><div class="loglines"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div><h4>Levels contained · routes lost</h4><div class="loglines"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div><h4>Who believes the librarians’ story</h4><div class="loglines"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><</div></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>35</span></div>
-\page
-<div class="pf-body oo-fill"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/burning.jpg"></div>
-\page
-<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>PLAYER HANDOUT</span></div><div class="pf-body columns handout-page oo-prop" style="--accent:#8a3b12"><div class="layout-cols"><div class="flow-col"><p class="map-eyebrow">PLAYER HANDOUT 1</p><h3>The official proclamation</h3><div class="papers proc"><p><em>By order of the Keepers of the Great Archives, 298 THK.</em></p><p><em>Let it be known that the Great Archives suffered a grievous fire, caused by the deliberate sabotage of unidentified intruders. The Archives’ guardians performed flawlessly. No animals were present. Any person claiming otherwise is mistaken.</em></p><p><em>— O. Faversham, Head Librarian</em></p></div></div></div><div class="oo-qr"><img alt="QR code" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/qr/handout-1.png"><span><b>SCAN ME</b>Open “The official proclamation”<br>on your phone</span></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>37</span></div>
+<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM · CONSEQUENCE LOG</span></div><div class="pf-body columns" style="--accent:#8a3b12"><div class="layout-cols"><div class="flow-col"><h2>The consequence log</h2><h4>Strikes stopped</h4><div class="loglines"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div><h4>Strikes taken (each one a new fire)</h4><div class="loglines"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div><h4>Where the fires started</h4><div class="loglines"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div></div><div class="flow-col"><h4>Who was rescued</h4><div class="loglines"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div><h4>Books saved (armfuls, and which)</h4><div class="loglines"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div><h4>Levels contained · routes lost</h4><div class="loglines"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div><h4>Who believes the librarians’ story</h4><div class="loglines"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><</div></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>37</span></div>
 \page
 <div class="pf-body oo-fill"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/professor.jpg"></div>
+\page
+<div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>PLAYER HANDOUT</span></div><div class="pf-body columns handout-page oo-prop" style="--accent:#8a3b12"><div class="layout-cols"><div class="flow-col"><p class="map-eyebrow">PLAYER HANDOUT 1</p><h3>The official proclamation</h3><div class="papers proc"><p><em>By order of the Keepers of the Great Archives, 298 THK.</em></p><p><em>Let it be known that the Great Archives suffered a grievous fire, caused by the deliberate sabotage of unidentified intruders. The Archives’ guardians performed flawlessly. No animals were present. Any person claiming otherwise is mistaken.</em></p><p><em>— O. Faversham, Head Librarian</em></p></div></div></div><div class="oo-qr"><img alt="QR code" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/qr/handout-1.png"><span><b>SCAN ME</b>Open “The official proclamation”<br>on your phone</span></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>39</span></div>
+\page
+<div class="pf-body oo-fill"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/monolith.jpg"></div>
 \page
 <div class="pf-body oo-pregen"><img alt="Pre-generated characters, level 3, page 1" src="https://oberonandomegaid.github.io/aelderia/characters/handouts/pages/level-03-page-1.jpg"></div>
 \page
@@ -810,7 +859,7 @@
 \page
 <div class="pf-body oo-pregen"><img alt="Pre-generated characters, level 3, page 3" src="https://oberonandomegaid.github.io/aelderia/characters/handouts/pages/level-03-page-3.jpg"></div>
 \page
-<div class="pf-body oo-fill"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/monolith.jpg"></div>
+<div class="pf-body oo-fill"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/burning.jpg"></div>
 \page
 <div class="running" style="--accent:#51584e"><span>The Destruction of the Great Archives</span><span>CREDITS</span></div><div class="pf-body columns oo-credits" style="--accent:#8a3b12"><h2>Credits and licence</h2><p><strong>The Destruction of the Great Archives</strong> is an original adventure by Oberon &amp; Omega, set in the world of Aelderia.</p><p>The Genesis Egg system and Magister Othrelis Var appear in <em>Genesis Eggs: The Endless Possibilities</em> by Oberon &amp; Omega. The interactive egg is at oberonandomegaid.github.io/aelderia.</p><h3>Rules licence</h3><p>This work includes material from the System Reference Document 5.2.1 (“SRD 5.2.1”) by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.</p><p>Rules terms used here follow the 2024 revision of the fifth-edition rules as published in SRD 5.2.1. Monsters named in this adventure use the statistics in SRD 5.2.1 unless a full stat block is printed here.</p><p>All characters, places, deities, story text and artwork are © Oberon &amp; Omega. No affiliation with or endorsement by Wizards of the Coast is implied.</p></div><div data-company-watermark="last-page" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:220pt;height:220pt;opacity:0.05;pointer-events:none;z-index:0"><img alt="" style="width:220pt!important;height:220pt!important" src="https://oberonandomegaid.github.io/aelderia/oneshots/shared/oberon-omega-logo.png"></div>
 \page

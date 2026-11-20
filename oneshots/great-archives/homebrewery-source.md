@@ -293,7 +293,7 @@
 <h3>The tower</h3>
 <p>Inside, the Archives open upward: level after level of curved galleries, staircases winding round the walls, open gaps beside the reading platforms, and pale orbs drifting in the air like slow fish. Show them the map on page 33.</p><div class="gm-note"><h4>Why this matters</h4><p>This is the whole adventure in two jokes. The golems hit <em>anything</em> without a bracelet that crosses the doors or touches the shelves, instantly and precisely. Let the players laugh. They will remember it in Act II.</p></div></div></div></div><div class="folio-footer"><span>The Destruction of the Great Archives</span><span>8</span></div>
 \page
-<div class="pf-body oo-fill"><img alt="BOING! Nothing gets past them." src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/entrance.jpg" style="object-position:42% 50%"><p class="fl-cap">BOING! Nothing gets past them.</p></div>
+<div class="pf-body oo-fill"><img alt="BOING! Nothing gets past them." src="https://oberonandomegaid.github.io/aelderia/oneshots/great-archives/img/entrance-full.jpg" style="object-position:50% 50%"><p class="fl-cap">BOING! Nothing gets past them.</p></div>
 \page
 <div class="running" style="--accent:#8a3b12"><span>The Destruction of the Great Archives</span><span>GM</span></div><div class="pf-body columns" style="--accent:#8a3b12"><div class="layout-cols"><div class="flow-col"><h3>The monolith</h3>
 <p>In the centre of Level 1 stands a tall carved stone: the <strong>book monolith</strong>. Every book that leaves the Archives passes through it.</p>

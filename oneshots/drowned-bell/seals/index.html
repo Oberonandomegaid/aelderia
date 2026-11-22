@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>The Five Seals · The Drowned Bell</title>
+<style>
+:root{--deep:#04161f;--sea:#0b3a4a;--glow:#7fe3d6;--gold:#e8c46a;--bad:#e2604f}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;background:radial-gradient(ellipse at 50% 30%,#0f4a5c 0%,#062431 55%,#020c11 100%);color:#e6f6f3;font-family:Georgia,'Times New Roman',serif;overflow:hidden}
+.wrap{display:flex;flex-direction:column;align-items:center;height:100%;padding:14px 12px 18px;text-align:center}
+h1{font-size:22px;margin:4px 0 0;letter-spacing:2px;color:var(--gold);font-weight:normal}
+.sub{font-size:13px;opacity:.75;margin:2px 0 10px;font-style:italic}
+.pick{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;width:100%;max-width:420px;margin:6px 0 10px}
+.pick button{font:bold 20px Georgia,serif;padding:12px 0;border-radius:10px;border:1px solid #2c7b86;background:#0a2f3b;color:var(--glow)}
+.pick button.on{background:var(--glow);color:#03222b}
+.pick button.done{background:#1d3b2a;color:var(--gold);border-color:var(--gold)}
+.msg{min-height:44px;font-size:16px;margin:4px 0 8px;max-width:420px}
+.ring{position:relative;width:min(88vw,380px);height:min(88vw,380px);margin:0 auto}
+.ring .eye{position:absolute;left:50%;top:50%;width:26%;height:26%;transform:translate(-50%,-50%);border-radius:50%;
+ background:radial-gradient(circle,#000 30%,#0d3d49 65%,#3fb6aa 100%);box-shadow:0 0 30px #1fa597 inset,0 0 20px #0a6;transition:all .4s}
+.ring.sealed .eye{background:radial-gradient(circle,#fff4c7 0%,var(--gold) 45%,#6b4a10 100%);box-shadow:0 0 60px var(--gold)}
+.k{position:absolute;width:21%;height:21%;transform:translate(-50%,-50%);border-radius:50%;border:2px solid #2a7480;background:#06222b;
+ display:flex;align-items:center;justify-content:center;transition:all .15s;cursor:pointer}
+.k svg{width:78%;height:78%;stroke:#5fbfb4;fill:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+.k.lit{background:#9ff3e8;border-color:#fff;box-shadow:0 0 26px #9ff3e8}.k.lit svg{stroke:#023}
+.k.bad{background:var(--bad);border-color:#fff}.k.bad svg{stroke:#fff}
+.k.ok{background:#1d4a3a;border-color:var(--gold)}.k.ok svg{stroke:var(--gold)}
+.go{margin-top:14px;font:bold 18px Georgia,serif;padding:12px 28px;border-radius:30px;border:0;background:var(--gold);color:#2b1d02}
+.go[disabled]{opacity:.35}
+.foot{margin-top:auto;font-size:11px;opacity:.5}
+.dots{font-size:22px;letter-spacing:6px;color:var(--gold);min-height:28px}
+</style></head><body><div class="wrap">
+<h1>THE FIVE SEALS</h1><div class="sub">Watch the knot. Tie it back. One seal each.</div>
+<div class="pick" id="pick"></div>
+<div class="msg" id="msg">Choose the seal your GM gave you.</div>
+<div class="dots" id="dots"></div>
+<div class="ring" id="ring"><div class="eye"></div></div>
+<button class="go" id="go" disabled>Show me the knot</button>
+<div class="foot">The Drowned Bell · Oberon &amp; Omega</div>
+</div>
+<script>
+const G=[ // eight knot-runes
+'M20 50 Q50 10 80 50 Q50 90 20 50Z','M25 25 L75 75 M75 25 L25 75 M50 15 V85','M50 15 L85 80 H15Z M50 45 V65',
+'M30 20 Q70 35 30 50 Q70 65 30 80','M20 50 H80 M35 30 Q50 50 35 70 M65 30 Q50 50 65 70','M50 15 A35 35 0 1 1 49 15 M50 35 A15 15 0 1 0 51 35',
+'M20 80 L50 20 L80 80 M30 60 H70','M25 30 Q50 5 75 30 Q50 55 25 30 M25 70 Q50 45 75 70 Q50 95 25 70'];
+const LEN=[4,4,5,5,6], ring=document.getElementById('ring'), msg=document.getElementById('msg'), go=document.getElementById('go'), dots=document.getElementById('dots');
+let seal=0, seq=[], pos=0, state='idle', done=JSON.parse(sessionStorage.getItem('sealsDone')||'[]');
+let ac; const tone=(f,d=.18,t='sine')=>{try{ac=ac||new (window.AudioContext||window.webkitAudioContext)();const o=ac.createOscillator(),g=ac.createGain();o.type=t;o.frequency.value=f;g.gain.value=.12;o.connect(g);g.connect(ac.destination);o.start();g.gain.exponentialRampToValueAtTime(.0001,ac.currentTime+d);o.stop(ac.currentTime+d)}catch(e){}};
+const NOTES=[262,294,330,392,440,523,587,659];
+const keys=G.map((p,i)=>{const a=(i/8)*Math.PI*2-Math.PI/2,r=38;const k=document.createElement('div');k.className='k';
+ k.style.left=(50+r*Math.cos(a))+'%';k.style.top=(50+r*Math.sin(a))+'%';k.innerHTML=`<svg viewBox="0 0 100 100"><path d="${p}"/></svg>`;
+ k.onclick=()=>tap(i);ring.appendChild(k);return k});
+const pick=document.getElementById('pick');
+for(let s=1;s<=5;s++){const b=document.createElement('button');b.textContent=['I','II','III','IV','V'][s-1];b.onclick=()=>choose(s,b);pick.appendChild(b);if(done.includes(s))b.classList.add('done')}
+function choose(s,b){if(state==='show')return;seal=s;[...pick.children].forEach(x=>x.classList.remove('on'));b.classList.add('on');ring.classList.toggle('sealed',done.includes(s));
+ if(done.includes(s)){msg.textContent='Seal '+b.textContent+' is already bound. It cannot be undone.';go.disabled=true;state='idle';return}
+ msg.textContent='Seal '+b.textContent+': a knot of '+LEN[s-1]+'. When your GM starts the timer, press the button and watch closely.';go.disabled=false;state='ready';dots.textContent=''}
+go.onclick=()=>{if(!seal||state==='show')return;seq=Array.from({length:LEN[seal-1]},()=>Math.floor(Math.random()*8));for(let i=1;i<seq.length;i++)while(seq[i]===seq[i-1])seq[i]=Math.floor(Math.random()*8);
+ pos=0;state='show';go.disabled=true;msg.textContent='Watch…';dots.textContent='';keys.forEach(k=>k.className='k');
+ seq.forEach((n,i)=>{setTimeout(()=>{keys[n].classList.add('lit');tone(NOTES[n])},900+i*850);setTimeout(()=>keys[n].classList.remove('lit'),900+i*850+600)});
+ setTimeout(()=>{state='input';msg.textContent='Now tie it. Tap the runes in the same order.';dots.textContent='○'.repeat(seq.length)},900+seq.length*850+200)};
+function tap(n){if(state!=='input'){return}keys[n].classList.add('lit');setTimeout(()=>keys[n].classList.remove('lit'),220);
+ if(n===seq[pos]){tone(NOTES[n]);pos++;dots.textContent='●'.repeat(pos)+'○'.repeat(seq.length-pos);
+  if(pos===seq.length){state='sealed';done.push(seal);sessionStorage.setItem('sealsDone',JSON.stringify(done));ring.classList.add('sealed');[523,659,784,1047].forEach((f,i)=>setTimeout(()=>tone(f,.4,'triangle'),i*140));
+   msg.innerHTML='<b style="color:var(--gold)">THE SEAL HOLDS.</b><br>Tell your GM: Seal '+['I','II','III','IV','V'][seal-1]+' is bound.';pick.children[seal-1].classList.add('done');go.disabled=true}}
+ else{state='ready';keys[n].classList.add('bad');tone(110,.5,'sawtooth');setTimeout(()=>keys[n].classList.remove('bad'),500);msg.textContent='The knot slips. Press the button for a new knot, if there is still time.';go.disabled=false;dots.textContent=''}}
+// GM: tap the title five times to clear this phone's bound seals for a new game
+let tc=0,tt;document.querySelector('h1').onclick=()=>{tc++;clearTimeout(tt);tt=setTimeout(()=>tc=0,1500);if(tc>=5){sessionStorage.removeItem('sealsDone');location.reload()}};
+</script></body></html>

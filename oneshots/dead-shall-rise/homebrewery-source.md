@@ -212,11 +212,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>5</strong></td>
-<td style="text-align: left;">Remove one ghoul and two zombies from each fight; the Guardian raises one zombie a round, not two</td>
+<td style="text-align: left;">Road: one ghoul and two zombies fewer. Gallery: one ghast fewer. Chamber: the Guardian raises one zombie a round, not two</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>4</strong></td>
-<td style="text-align: left;">As for five, and remove one wight from the final fight</td>
+<td style="text-align: left;">As for five, plus one specter fewer in the Gallery and one wight fewer in the chamber</td>
 </tr>
 </tbody>
 </table>

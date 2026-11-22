@@ -266,7 +266,7 @@
 <li><strong>The servants</strong>: a dozen maids, footmen and cooks, mostly below decks.</li>
 </ul></div><div class="flow-col"><h3>The safety tour</h3><figure class="tb-banner" style="height:170px;margin:4px 0 8px"><img alt="The bubble safety demonstration" src="https://oberonandomegaid.github.io/aelderia/oneshots/sky-that-failed/img/bubble-demo.jpg" style="object-position:50% 45%"></figure><p>A pompous chief steward, <strong>Mr Fairweather</strong>, gathers everyone in the saloon for the safety tour. Play it for laughs. He has three things to show them, and the players will need all three later:</p>
 <ol>
-<li><strong>The bubbles.</strong> A wall of brass levers by every exit. Pull one, and a huge, wobbling, rainbow-sheened <strong>bubble</strong> puffs out of a hatch. He demonstrates by lying belly-down <strong>on top</strong> of one, arms and legs dangling, saying with great dignity: “<em>Ride, do not enter. It will lower you gently to the ground, where it will pop. Thank you.</em>” There are <strong>forty bubbles</strong>, each carrying up to <strong>two people</strong>.</li>
+<li><strong>The bubbles.</strong> A wall of brass levers by every exit. Pull one, and a huge, wobbling, rainbow-sheened <strong>bubble</strong> puffs out of a hatch. He demonstrates by lying belly-down <strong>on top</strong> of one, arms and legs dangling, saying with great dignity: “<em>Ride, do not enter. It will lower you gently to the ground, where it will pop. Thank you.</em>” There are <strong>sixty bubbles</strong>, each carrying <strong>one person</strong>.</li>
 <li><strong>The red wheel.</strong> Beside the engine room door: an emergency release that opens the conductor housing. “<em>Only in the most unlikely event.</em>”</li>
 <li><strong>The speaking tubes.</strong> Brass tubes in every room connect to the bridge. Blow, then speak.</li>
 </ol>
@@ -344,7 +344,7 @@
 <h3>Stage 4: evacuation</h3><blockquote data-label="READ ALOUD"><p><em>The ship is sinking through the evening air like a stone through water: slowly, steadily, all the way down. The hills below are soft and green and very close.</em></p>
 <p><em>Through the speaking tubes, Captain Holt’s voice, quite different now. Steady.</em></p>
 <p><em>“This is the captain. I was wrong. We are going down. Every soul aboard is to go to the bubble stations. Crew, help the passengers. And whoever you adventurers are: please. Help them.”</em></p></blockquote><p>Move the clock to <strong>stage 4</strong>: ten new boxes. <strong>Every bubble launch, every rescue and every argument costs boxes.</strong> When they run out, the ship reaches the valley.</p></div><div class="flow-col"><h3>Launching bubbles</h3>
-<p>At each bubble station: pull the lever, a bubble puffs out of the hatch, and up to <strong>two people</strong> climb on top and push off. It takes no check, just a minute. The problem is everything else:</p>
+<p>At each bubble station: pull the lever, a bubble puffs out of the hatch, and <strong>one person</strong> climbs on top and pushes off. It takes no check, just a minute. The problem is everything else:</p>
 <ul>
 <li><strong>Panic.</strong> Passengers crowd the stations, push, freeze. A character can organise a station (DC 12 Charisma (Persuasion) or (Intimidation)): that station launches everyone near it for <strong>1 box</strong>.</li>
 <li><strong>People who won’t go.</strong> Silas the violinist is frozen with terror. A kind word or a firm hand works; so does a spell.</li>
@@ -561,7 +561,7 @@
 \page
 <div class="running" style="--accent:#3d4f6b"><span>The Sky That Failed</span><span>PLAYER HANDOUT</span></div><div class="pf-body columns handout-page oo-prop" style="--accent:#3d4f6b"><div class="layout-cols"><div class="flow-col"><p class="map-eyebrow">PLAYER HANDOUT 1</p><h3>The safety card</h3><img class="tb-handout" alt="The safety card" src="https://oberonandomegaid.github.io/aelderia/oneshots/sky-that-failed/img/safety.jpg" style="max-height:400px;width:auto!important;display:block;margin:0 auto 10px"><p><strong>AURELIAN SPLENDOUR · PASSENGER SAFETY</strong></p>
 <p><em>In the most unlikely event of an emergency:</em></p>
-<p><strong>1. BUBBLES.</strong> Pull the brass lever by any exit. <strong>Ride ON TOP, belly-down.</strong> Do not attempt to enter. Two passengers per bubble. It will lower you gently and pop on landing.</p>
+<p><strong>1. BUBBLES.</strong> Pull the brass lever by any exit. <strong>Ride ON TOP, belly-down.</strong> Do not attempt to enter. One passenger per bubble. It will lower you gently and pop on landing.</p>
 <p><strong>2. THE RED WHEEL.</strong> Beside the engine room door. For crew use only. Opens the conductor housing.</p>
 <p><strong>3. SPEAKING TUBES.</strong> In every room. Blow, then speak. The bridge is always listening.</p>
 <p><em>Thank you for flying with us. Enjoy the view.</em></p></div></div><div class="oo-qr"><img alt="QR code" src="https://oberonandomegaid.github.io/aelderia/oneshots/sky-that-failed/qr/handout-1.png"><span><b>SCAN ME</b>Open “The safety card”<br>on your phone</span></div></div><div class="folio-footer"><span>The Sky That Failed</span><span>23</span></div>

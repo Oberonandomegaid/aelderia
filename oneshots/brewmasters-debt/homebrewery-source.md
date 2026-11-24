@@ -396,7 +396,7 @@
 \page
 <div class="running" style="--accent:#7a4a14"><span>Brewmaster’s Debt</span><span>PLAYER MAP</span></div><div class="pf-body gamap" style="--accent:#7a4a14"><p class="gm-eye">PLAYER MAP · BD-M01</p><h2>The Cairn Square</h2><img class="gm-plate" alt="The Cairn Square" src="https://oberonandomegaid.github.io/aelderia/oneshots/brewmasters-debt/img/map-festival-player.jpg"><p class="gm-cap">1 square = 5 ft · the lake is at the bottom</p></div><div class="folio-footer"><span>Brewmaster’s Debt</span><span>16</span></div>
 \page
-<div class="running" style="--accent:#7a4a14"><span>Brewmaster’s Debt</span><span>GM · MAP KEY</span></div><div class="pf-body gamap" style="--accent:#7a4a14"><p class="gm-eye">GM MAP &amp; KEY · BD-M01</p><h2>The Cairn Square</h2><img class="gm-plate small" alt="The Cairn Square" src="https://oberonandomegaid.github.io/aelderia/oneshots/brewmasters-debt/img/map-festival-gm.jpg"><div class="gkeys"><div class="gk"><b>1 · The breach</b> Above the cairn ring. Xanthos stands here.</div><div class="gk"><b>2 · The cairns</b> Stone, 6 ft. Three-Quarters Cover.</div><div class="gk"><b>3 · Sallowbrand stall</b> Barrels of Lantern Dark.</div><div class="gk"><b>4 · Other stalls</b> Half Cover. Tables to tip over.</div><div class="gk"><b>5 · The bonfire</b> Heat and light. Imps hate nothing; dwarves love it.</div><div class="gk"><b>6 · Thane’s hall</b> Stout doors: a shelter.</div><div class="gk"><b>7 · Cellar hatches</b> Hide the glowing below.</div><div class="gk"><b>8 · Lake steps</b> Down to the cold green water.</div></div></div><div class="folio-footer"><span>Brewmaster’s Debt</span><span>17</span></div>
+<div class="running" style="--accent:#7a4a14"><span>Brewmaster’s Debt</span><span>GM · MAP KEY</span></div><div class="pf-body gamap" style="--accent:#7a4a14"><p class="gm-eye">GM MAP &amp; KEY · BD-M01</p><h2>The Cairn Square</h2><img class="gm-plate small" alt="The Cairn Square" src="https://oberonandomegaid.github.io/aelderia/oneshots/brewmasters-debt/img/map-festival-gm.jpg"><div class="gkeys"><div class="gk"><b>1 · The breach</b> Above the cairn ring. Xanthos stands here.</div><div class="gk"><b>2 · The cairns</b> Stone, 6 ft. Three-Quarters Cover.</div><div class="gk"><b>3 · Sallowbrand stall</b> Barrels of Lantern Dark.</div><div class="gk"><b>4 · Other stalls</b> Half Cover. Tables to tip over.</div><div class="gk"><b>5 · The bonfire</b> Heat and light. A fine place to make a stand.</div><div class="gk"><b>6 · Thane’s hall</b> Stout doors: a shelter.</div><div class="gk"><b>7 · Cellar hatches</b> Hide the glowing below.</div><div class="gk"><b>8 · Lake steps</b> Down to the cold green water.</div></div></div><div class="folio-footer"><span>Brewmaster’s Debt</span><span>17</span></div>
 \page
 <div class="pf-body oo-fill"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/brewmasters-debt/img/full-cairns.jpg"></div>
 \page
@@ -607,7 +607,7 @@
 <p><strong>Kelda Hammerhold.</strong> Drinking champion. Strong, loud, brave.</p>
 <p><strong>Ysra Flintwhistle.</strong> Mask-carver. Gossip.</p></div></div></div><div class="folio-footer"><span>Brewmaster’s Debt</span><span>23</span></div>
 \page
-<div class="pf-body oo-fill"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/brewmasters-debt/img/full-xanthos.jpg"></div>
+<div class="pf-body oo-fill"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/brewmasters-debt/img/full-act2b.jpg"></div>
 \page
 <div class="running" style="--accent:#7a4a14"><span>Brewmaster’s Debt</span><span>PLAYER HANDOUT</span></div><div class="pf-body columns handout-page oo-prop" style="--accent:#7a4a14"><div class="layout-cols"><div class="flow-col"><p class="map-eyebrow">PLAYER HANDOUT 1</p><h3>The contract</h3><p><em>Folded small inside the cover of a brewer’s ledger. The ink is the red of old wine, and when no one is looking directly at it, the letters seem to move.</em></p>
 <p><strong>Agreement between Orrik Sallowbrand, Brewmaster of Kettlecairn, and the undersigned.</strong></p>
@@ -620,7 +620,7 @@
 <p><em>Signed:</em> Orrik Sallowbrand</p>
 <p><em>Signed:</em> a mark like a wine stain, shaped like a smiling mouth</p></div></div><div class="oo-qr"><img alt="QR code" src="https://oberonandomegaid.github.io/aelderia/oneshots/brewmasters-debt/qr/handout-1.png"><span><b>SCAN ME</b>Open “The contract”<br>on your phone</span></div></div><div class="folio-footer"><span>Brewmaster’s Debt</span><span>25</span></div>
 \page
-<div class="pf-body oo-fill"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/brewmasters-debt/img/full-act3.jpg"></div>
+<div class="pf-body oo-fill"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/brewmasters-debt/img/full-xanthos.jpg"></div>
 \page
 <div class="pf-body oo-pregen"><img alt="Pre-generated characters, level 5, page 1" src="https://oberonandomegaid.github.io/aelderia/characters/handouts/pages/level-05-page-1.jpg"></div>
 \page
@@ -628,7 +628,7 @@
 \page
 <div class="pf-body oo-pregen"><img alt="Pre-generated characters, level 5, page 3" src="https://oberonandomegaid.github.io/aelderia/characters/handouts/pages/level-05-page-3.jpg"></div>
 \page
-<div class="pf-body oo-fill"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/brewmasters-debt/img/full-end.jpg"></div>
+<div class="pf-body oo-fill"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/brewmasters-debt/img/full-act3.jpg"></div>
 \page
 <div class="running" style="--accent:#51584e"><span>Brewmaster’s Debt</span><span>CREDITS</span></div><div class="pf-body columns oo-credits" style="--accent:#7a4a14"><h2>Credits and licence</h2><p><strong>Brewmaster’s Debt</strong> is an original adventure by Oberon &amp; Omega, set in the world of Aelderia.</p><p>The imp is from the System Reference Document 5.2.1, with two traits added for this adventure. The Connoisseur is an original creature.</p><h3>Rules licence</h3><p>This work includes material from the System Reference Document 5.2.1 (“SRD 5.2.1”) by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.</p><p>Rules terms used here follow the 2024 revision of the fifth-edition rules as published in SRD 5.2.1. Monsters named in this adventure use the statistics in SRD 5.2.1 unless a full stat block is printed here.</p><p>All characters, places, deities, story text and artwork are © Oberon &amp; Omega. No affiliation with or endorsement by Wizards of the Coast is implied.</p></div><div data-company-watermark="last-page" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:220pt;height:220pt;opacity:0.05;pointer-events:none;z-index:0"><img alt="" style="width:220pt!important;height:220pt!important" src="https://oberonandomegaid.github.io/aelderia/oneshots/shared/oberon-omega-logo.png"></div>
 \page

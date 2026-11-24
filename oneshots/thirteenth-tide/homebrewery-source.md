@@ -437,7 +437,7 @@
 <li><strong>The story</strong>: the night the Saltgrave sank, which every tavern on the coast will want to hear.</li>
 </ul></div></div></div><div class="folio-footer"><span>The Thirteenth Tide</span><span>17</span></div>
 \page
-<div class="pf-body oo-fill"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/thirteenth-tide/img/full-sea.jpg"></div>
+<div class="pf-body oo-fill"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/thirteenth-tide/img/full-act1.jpg"></div>
 \page
 <div class="running" style="--accent:#2f5a5a"><span>The Thirteenth Tide</span><span>GM · QUICK REFERENCE</span></div><div class="pf-body columns" style="--accent:#2f5a5a"><div class="layout-cols"><div class="flow-col"><h2>GM quick reference</h2>
 <h3>The fixed rules</h3>
@@ -658,7 +658,7 @@
 <p><strong>Grimsby Vale.</strong> First mate. Loyal to Rook to the end.</p>
 <p><strong>Saul and Netta.</strong> Xanthos’s sailors. Steady and curious.</p></div></div></div><div class="folio-footer"><span>The Thirteenth Tide</span><span>21</span></div>
 \page
-<div class="pf-body oo-fill"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/thirteenth-tide/img/full-act1.jpg"></div>
+<div class="pf-body oo-fill"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/thirteenth-tide/img/full-act3.jpg"></div>
 \page
 <div class="running" style="--accent:#2f5a5a"><span>The Thirteenth Tide</span><span>PLAYER HANDOUT</span></div><div class="pf-body columns handout-page oo-prop" style="--accent:#2f5a5a"><div class="layout-cols"><div class="flow-col"><p class="map-eyebrow">PLAYER HANDOUT 1</p><h3>Tobiah’s notes</h3><p><em>A sheaf of damp pages, written in a neat, careful hand that grows shakier towards the end.</em></p>
 <p><strong>Notes on the Saltgrave. T. Fennimore.</strong></p>

@@ -260,7 +260,7 @@
 <li><strong>Lord and Lady Vantrey</strong>, the owners, who paid for all of it and would like everyone to know.</li>
 <li><strong>Captain Orrin Holt</strong>, grey-whiskered and charming, a good man with a weakness for rich people.</li>
 <li><strong>Chief Engineer Wenna Pike</strong>, oil to the elbows, who keeps glancing at the floor.</li>
-<li><strong>Miss Harriet Fennimore</strong>, a governess, with two children: <strong>Tobias</strong> (9, wants to see the engines) and <strong>Lettice</strong> (6, has brought a rabbit).</li>
+<li><strong>Miss Harriet Pettigrew</strong>, a governess, with two children: <strong>Tobias</strong> (9, wants to see the engines) and <strong>Lettice</strong> (6, has brought a rabbit).</li>
 <li><strong>Silas Crane</strong>, a jumpy violinist in the quartet, who hates heights.</li>
 <li><strong>Ezra Doyle</strong>, a young junior engineer, very proud of the ship.</li>
 <li><strong>The servants</strong>: a dozen maids, footmen and cooks, mostly below decks.</li>
@@ -280,7 +280,7 @@
 <ul>
 <li>Getting Wenna Pike to put her crew on standby.</li>
 <li>Having Ezra show them the engine room and the red wheel now.</li>
-<li>Telling Miss Fennimore to keep the children close.</li>
+<li>Telling Miss Pettigrew to keep the children close.</li>
 <li>Anything else sensible.</li>
 </ul></div><div class="flow-col"><h3>The first jolt</h3><blockquote data-label="READ ALOUD"><p><em>The sun is going down over a sea of soft green hills. Everyone is at the windows. The quartet is playing something gentle.</em></p>
 <p><em>Then the hum under your feet stops.</em></p>
@@ -354,8 +354,8 @@
 <p><strong>The rescue tally.</strong> As groups go over the side, tick them off: the guests in the saloon, the band, the crew, each named passenger.</p><figure class="tb-banner" style="height:180px;margin:6px 0 0"><img alt="Four nobles drifting down on bubbles" src="https://oberonandomegaid.github.io/aelderia/oneshots/sky-that-failed/img/nobles.jpg" style="object-position:50% 40%"></figure></div></div></div><div class="folio-footer"><span>The Sky That Failed</span><span>15</span></div>
 \page
 <div class="running" style="--accent:#3d4f6b"><span>The Sky That Failed</span><span>GM</span></div><div class="pf-body columns" style="--accent:#3d4f6b"><div class="layout-cols"><div class="flow-col"><h3>The governess and the children</h3>
-<p><strong>Miss Fennimore, Tobias and Lettice</strong> are trapped in their cabin behind a buckled bulkhead. Tobias is shouting through the gap. Lettice is holding her rabbit.</p>
-<p>Getting them out costs <strong>2 boxes</strong>, and needs a way through: force the bulkhead (DC 15 Strength, or two characters together), cut it, blast it, climb round outside the hull (DC 13 Athletics, very windy), or anything clever. Miss Fennimore insists the children go first.</p>
+<p><strong>Miss Pettigrew, Tobias and Lettice</strong> are trapped in their cabin behind a buckled bulkhead. Tobias is shouting through the gap. Lettice is holding her rabbit.</p>
+<p>Getting them out costs <strong>2 boxes</strong>, and needs a way through: force the bulkhead (DC 15 Strength, or two characters together), cut it, blast it, climb round outside the hull (DC 13 Athletics, very windy), or anything clever. Miss Pettigrew insists the children go first.</p>
 <h3>The strongbox</h3><blockquote data-label="READ ALOUD"><p><em>Lord Ashcombe grabs you by the sleeve. His face is white.</em></p>
 <p><em>“My strongbox. It’s in the hold. You are my bodyguards. I am paying you. Get it. Get it NOW.”</em></p>
 <p><em>Down the corridor, from the servants’ stair, you can hear people hammering on a door that won’t open.</em></p></blockquote><p>The <strong>servants</strong> (cooks, maids, footmen: twelve people) are trapped below decks behind a jammed door. The strongbox is in the hold, the other way. <strong>There is time for one, not both</strong> (each costs 3 boxes).</p></div><div class="flow-col"><p><strong>Don’t make the choice for the players.</strong> Some things that might happen:</p>
@@ -459,7 +459,7 @@
 </tbody>
 </table></div><div class="flow-col"><h3>Rescue tally</h3>
 <p>☐ Saloon guests ☐ The quartet ☐ Staircase guests (6)
-☐ Miss Fennimore ☐ Tobias ☐ Lettice
+☐ Miss Pettigrew ☐ Tobias ☐ Lettice
 ☐ The servants (12) ☐ Silas Crane ☐ Ezra Doyle
 ☐ Wenna Pike ☐ Captain Holt ☐ The Vantreys
 ☐ Lord Ashcombe ☐ The strongbox</p>
@@ -553,7 +553,7 @@
 <p><strong>Captain Orrin Holt.</strong> Charming, weak, then brave. Admits his mistake.</p>
 <p><strong>Chief Engineer Wenna Pike.</strong> Blunt, oily, right all along.</p>
 <p><strong>Ezra Doyle.</strong> Junior engineer, keen, heartbroken.</p>
-<p><strong>Miss Harriet Fennimore, Tobias and Lettice.</strong> The governess and her charges. Lettice has a rabbit called Button.</p>
+<p><strong>Miss Harriet Pettigrew, Tobias and Lettice.</strong> The governess and her charges. Lettice has a rabbit called Button.</p>
 <p><strong>Silas Crane.</strong> Violinist. Hates heights.</p>
 <p><strong>Mr Fairweather.</strong> Chief steward. Gave the safety talk. Very dignified on a bubble.</p></div></div></div><div class="folio-footer"><span>The Sky That Failed</span><span>21</span></div>
 \page

@@ -198,7 +198,7 @@
 <td style="text-align: left;">A carter. The creature’s host when the party arrive.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Nell Ashby</td>
+<td style="text-align: left;">Nell Hartwell</td>
 <td style="text-align: left;">A washerwoman at the channels. Its next host.</td>
 </tr>
 </tbody>
@@ -280,7 +280,7 @@
 <li><strong>The sixteenth body.</strong> Found while Tomas is in the cells: a lamplighter, dried hollow. The magistrate says he could have died weeks ago. A DC 14 Medicine check finds a half-eaten pie in his pocket, <strong>still fresh</strong>. He died this week. <em>Evidence: the fresh pie.</em></li>
 <li><strong>The merchant.</strong> Market folk remember a curio-seller last season, and a cracked jar he threw away by the channels (DC 13 Investigation, or buy a drink). <em>Evidence: the jar.</em></li>
 </ul></div><div class="flow-col"><figure class="tb-pic"><div class="tb-frame" style="height:210px"><img alt="At Fennick Cross, Lord Xanthos examines the dead." src="https://oberonandomegaid.github.io/aelderia/oneshots/hollow-chain/img/husk.jpg" style="object-position:50% 45%"></div><figcaption>At Fennick Cross, Lord Xanthos examines the dead.</figcaption></figure><h3>The channels</h3>
-<p>On the way somewhere, the party pass the washing steps where women do laundry in the clean upstream channel. <strong>Nell Ashby</strong>, a sharp-tongued washerwoman, shouts at them for treading on her sheets, then gossips: “<em>You’re the ones looking into the husks? Ask about Edric Thorne. Carter. Ate a whole ham at the Anchor two nights back. Whole ham, bone and all, near enough.</em>”</p>
+<p>On the way somewhere, the party pass the washing steps where women do laundry in the clean upstream channel. <strong>Nell Hartwell</strong>, a sharp-tongued washerwoman, shouts at them for treading on her sheets, then gossips: “<em>You’re the ones looking into the husks? Ask about Edric Thorne. Carter. Ate a whole ham at the Anchor two nights back. Whole ham, bone and all, near enough.</em>”</p>
 <p><strong>Introduce Nell clearly.</strong> The party need to know her face. She becomes the creature’s host in Act III.</p>
 <h3>Pressure</h3>
 <p>Between leads, show the town boiling: a mob outside the bakery, a stone through its window, the magistrate setting a date. <strong>The hanging will be at noon tomorrow.</strong></p></div></div></div><div class="folio-footer"><span>The Hollow Chain</span><span>7</span></div>
@@ -337,7 +337,7 @@
 </tbody>
 </table></div><div class="flow-col"><p><strong>Splitting up, blocking branches and using fire are all good plans.</strong> Reward them. Count successes over the three junctions:</p>
 <ul>
-<li><strong>3 or more:</strong> they catch up at the last culvert in time to see it <strong>slide out by the washing steps</strong>, where a basket of wet sheets lies on its side, and Nell Ashby is gone. They <strong>know</strong> who it took.</li>
+<li><strong>3 or more:</strong> they catch up at the last culvert in time to see it <strong>slide out by the washing steps</strong>, where a basket of wet sheets lies on its side, and Nell Hartwell is gone. They <strong>know</strong> who it took.</li>
 <li><strong>1–2:</strong> they reach the washing steps too late. The upturned basket. A neighbour says Nell went home “not right”. (DC 14 Investigation joins the dots.)</li>
 <li><strong>0:</strong> they lose it entirely. Later, at the gallows, Nell’s strangeness is their only clue.</li>
 </ul>
@@ -395,7 +395,7 @@
 <div class="running" style="--accent:#5c3d2e"><span>The Hollow Chain</span><span>GM</span></div><div class="pf-body columns" style="--accent:#5c3d2e"><figure class="tb-banner" style="height:120px"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/hollow-chain/img/banner-act3.jpg" style="object-position:50% 50%"></figure><div class="layout-cols"><div class="flow-col"><h2>Act III — The Hollow Chain</h2>
 <p><em>About 60 minutes.</em></p>
 <h3>It comes out</h3><blockquote data-label="READ ALOUD"><p><em>The crowd is still shouting about the gallows when the screaming starts.</em></p>
-<p><em>A washerwoman at the edge of the square, Nell Ashby, falls to her knees. Her mouth opens. Black pours out of it, and keeps pouring, gallons of it, and rises up over the cobbles in a glistening, swaying tower with a dozen arms. Three of them whip out into the fleeing crowd and snatch up a fishwife, a young clerk and a boy, and lift them, struggling, into the air.</em></p>
+<p><em>A washerwoman at the edge of the square, Nell Hartwell, falls to her knees. Her mouth opens. Black pours out of it, and keeps pouring, gallons of it, and rises up over the cobbles in a glistening, swaying tower with a dozen arms. Three of them whip out into the fleeing crowd and snatch up a fishwife, a young clerk and a boy, and lift them, struggling, into the air.</em></p>
 <p><em>Nell hangs in the middle of it all, held up by black cords that run into her mouth. Her eyes are open. She can see you.</em></p></blockquote><p>This happens <strong>after the gallows scene is settled</strong>, however it went. The creature isn’t using hostages. <strong>It is just feeding.</strong></p></div><div class="flow-col"><figure class="tb-pic"><div class="tb-frame" style="height:220px"><img alt="The Hollow Chain." src="https://oberonandomegaid.github.io/aelderia/oneshots/hollow-chain/img/creature.jpg" style="object-position:50% 45%"></div><figcaption>The Hollow Chain.</figcaption></figure><h3>The four captives</h3>
 <p>Track each captive’s <strong>feeds left</strong>. Each start of the creature’s turn, every captive loses one. <strong>At 0, that captive is hollowed and dies.</strong> A freed captive stops losing feeds.</p>
 <table>
@@ -407,11 +407,11 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Nell Ashby</strong> (eaten for days already)</td>
+<td style="text-align: left;"><strong>Nell Hartwell</strong> (eaten for days already)</td>
 <td style="text-align: left;"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Bess Calloway</strong>, fishwife</td>
+<td style="text-align: left;"><strong>Bess Pennock</strong>, fishwife</td>
 <td style="text-align: left;">5</td>
 </tr>
 <tr>
@@ -454,7 +454,7 @@
 <p><em>He is off his horse before it has stopped, and kneeling beside the nearest of the injured.</em></p></blockquote><h3>Xanthos returns</h3>
 <p>He helps the local healers with the survivors, <strong>calmly and well</strong>. His magic keeps the dying alive and closes wounds. <strong>It does not regrow what was eaten.</strong> He is gentle with the townsfolk and very interested in what happened to them.</p>
 <ul>
-<li><strong>Nell Ashby</strong> survives only if the party freed her before her feeds ran out. Even then, she is badly hurt. Xanthos’s help gives her a fighting chance; tell the players she will live, but never fully recover.</li>
+<li><strong>Nell Hartwell</strong> survives only if the party freed her before her feeds ran out. Even then, she is badly hurt. Xanthos’s help gives her a fighting chance; tell the players she will live, but never fully recover.</li>
 <li><strong>Edric Thorne</strong>, if he lived, dies peacefully within a few days, with Xanthos sitting by him, asking gentle questions.</li>
 <li>If a <strong>sample</strong> survived, Xanthos takes it with great care. If not, he is visibly disappointed, then says: “<em>The town is alive. I can live without a specimen.</em>”</li>
 <li><strong>His question about souls stays unanswered.</strong> He will not say what he thinks.</li>
@@ -591,9 +591,9 @@
 <h3>The chase, without a map</h3>
 <p>Describe each junction with two or three choices: <em>left under the cooper’s yard, right towards the river, or straight on under the lane.</em> Let the players pick, block and burn. Count their successes on your fingers.</p></div></div></div><div class="folio-footer"><span>The Hollow Chain</span><span>22</span></div>
 \page
-<div class="running" style="--accent:#5c3d2e"><span>The Hollow Chain</span><span>GM · CHARACTERS</span></div><div class="pf-body columns" style="--accent:#5c3d2e"><div class="layout-cols"><div class="flow-col"><h2>Appendix — Characters</h2><div class="cast"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/hollow-chain/img/xanthos-portrait.jpg" style="object-position:50% 8%"><div><p><strong>Lord Xanthos</strong> <em>(Lord of Silverwood).</em> Courteous, incisive, quietly curious. Voice: a calm man who has already noticed what you missed.</p></div></div><div class="cast"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/hollow-chain/img/tomas.jpg" style="object-position:50% 20%"><div><p><strong>Tomas Greaves</strong> <em>(the baker).</em> Big, gentle, ashamed of nothing but being caught being kind. Voice: slow, floury, stubborn.</p></div></div><div class="cast"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/hollow-chain/img/osric.jpg" style="object-position:50% 20%"><div><p><strong>Magistrate Osric Penhallow.</strong> Grey, sleepless, wants this over. Voice: a man reading from a paper so as not to think.</p></div></div><div class="cast"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/hollow-chain/img/edric.jpg" style="object-position:50% 20%"><div><p><strong>Edric Thorne</strong> <em>(the carter).</em> While possessed: smiles too long. Himself: quiet, terrified, grateful.</p></div></div></div><div class="flow-col"><div class="cast"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/hollow-chain/img/nell.jpg" style="object-position:50% 20%"><div><p><strong>Nell Ashby</strong> <em>(the washerwoman).</em> Loud, nosy, warm. Voice: a shout across a yard.</p></div></div><p><strong>Coroner Ysolde Marrable.</strong> At Fennick Cross. Precise, unflappable. Never appears; her report speaks for her.</p>
+<div class="running" style="--accent:#5c3d2e"><span>The Hollow Chain</span><span>GM · CHARACTERS</span></div><div class="pf-body columns" style="--accent:#5c3d2e"><div class="layout-cols"><div class="flow-col"><h2>Appendix — Characters</h2><div class="cast"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/hollow-chain/img/xanthos-portrait.jpg" style="object-position:50% 8%"><div><p><strong>Lord Xanthos</strong> <em>(Lord of Silverwood).</em> Courteous, incisive, quietly curious. Voice: a calm man who has already noticed what you missed.</p></div></div><div class="cast"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/hollow-chain/img/tomas.jpg" style="object-position:50% 20%"><div><p><strong>Tomas Greaves</strong> <em>(the baker).</em> Big, gentle, ashamed of nothing but being caught being kind. Voice: slow, floury, stubborn.</p></div></div><div class="cast"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/hollow-chain/img/osric.jpg" style="object-position:50% 20%"><div><p><strong>Magistrate Osric Penhallow.</strong> Grey, sleepless, wants this over. Voice: a man reading from a paper so as not to think.</p></div></div><div class="cast"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/hollow-chain/img/edric.jpg" style="object-position:50% 20%"><div><p><strong>Edric Thorne</strong> <em>(the carter).</em> While possessed: smiles too long. Himself: quiet, terrified, grateful.</p></div></div></div><div class="flow-col"><div class="cast"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/hollow-chain/img/nell.jpg" style="object-position:50% 20%"><div><p><strong>Nell Hartwell</strong> <em>(the washerwoman).</em> Loud, nosy, warm. Voice: a shout across a yard.</p></div></div><p><strong>Coroner Ysolde Marrable.</strong> At Fennick Cross. Precise, unflappable. Never appears; her report speaks for her.</p>
 <p><strong>Widow Hesketh</strong> and <strong>old Jory Rudd.</strong> Harbour Street. Both dead before the party arrive.</p>
-<p><strong>Bess Calloway, Piers Wickham and little Sam Doughty.</strong> The three townsfolk seized in the square.</p></div></div></div><div class="folio-footer"><span>The Hollow Chain</span><span>23</span></div>
+<p><strong>Bess Pennock, Piers Wickham and little Sam Doughty.</strong> The three townsfolk seized in the square.</p></div></div></div><div class="folio-footer"><span>The Hollow Chain</span><span>23</span></div>
 \page
 <div class="pf-body oo-fill"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/hollow-chain/img/full-act2.jpg"></div>
 \page

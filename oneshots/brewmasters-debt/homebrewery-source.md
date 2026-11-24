@@ -241,19 +241,20 @@
 <li><strong>Says he’s doing:</strong> finding out what has been tearing small holes in the world around Kettlecairn, before it tears a big one.</li>
 <li><strong>Privately:</strong> fascinated by souls, and by boundaries between worlds.</li>
 <li><strong>What he doesn’t know:</strong> the ale. He hasn’t tasted it. He doesn’t drink at festivals.</li>
-<li><strong>In Acts II and III:</strong> he holds the breach with everything he has. He cannot do anything else, and the party must protect him.</li>
+<li><strong>In Acts II and III:</strong> he holds the breach with everything he has, and the party must protect him.</li>
+<li><strong>And something else.</strong> He is fascinated by the soul fragments, and while the breach is open he studies them before the effect fades, all of it disguised as helping. “<em>Bring the wounded to me. I can steady them.</em>” He watches the lights closely, asks victims what they feel, and remembers every answer.</li>
 </ul></div></div></div><div class="folio-footer"><span>Brewmaster’s Debt</span><span>4</span></div>
 \page
 <div class="running" style="--accent:#7a4a14"><span>Brewmaster’s Debt</span><span>GM</span></div><div class="pf-body columns" style="--accent:#7a4a14"><figure class="tb-banner" style="height:120px"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/brewmasters-debt/img/banner-act1.jpg" style="object-position:50% 50%"></figure><div class="layout-cols"><div class="flow-col"><h2>Act I — The Night of Lanterns</h2>
 <p><em>About 55 minutes.</em></p>
 <h3>Arrival</h3><blockquote data-label="READ ALOUD"><p><em>The road climbs through pines to a hillside full of light. Lanterns hang from every eave and every cairn, hundreds of them, gold and green and red. Somewhere a band is playing something loud with a great many drums. The air smells of woodsmoke, roast pork and malt.</em></p>
 <p><em>Lord Xanthos stops at the town gate and looks at a brass instrument in his palm, its needle trembling.</em></p>
-<p><em>“Seven tears in three months,” he says. “Small, brief, and all closed now. Something has been coming and going here.” He snaps the instrument shut. “Enjoy the festival. Keep your eyes open. I would like to know who has been leaving the door ajar.”</em></p></blockquote><p>He goes to pay his respects to <strong>Thane Brunhild Ironwhistle</strong> and examine the cairns. The party have the run of the festival until the <strong>Toast to the Dead at midnight</strong>.</p></div><div class="flow-col"><figure class="tb-pic"><div class="tb-frame" style="height:200px"><img alt="Lantern Dark." src="https://oberonandomegaid.github.io/aelderia/oneshots/brewmasters-debt/img/stout.jpg" style="object-position:50% 50%"></div><figcaption>Lantern Dark.</figcaption></figure><h3>The tracker</h3>
-<p>Turn to <strong>the drinkers’ tracker</strong> (page 22). It lists the townsfolk who will drink <strong>Lantern Dark</strong> tonight.</p>
+<p><em>“Seven tears in three months,” he says. “Small, brief, and all closed now. Something has been coming and going here.” He snaps the instrument shut. “Enjoy the festival. Keep your eyes open. I would like to know who has been leaving the door ajar.”</em></p></blockquote><p>He goes to pay his respects to <strong>Thane Brunhild Ironwhistle</strong> and examine the cairns. The party have the run of the festival until the <strong>Toast to the Dead at midnight</strong>.</p></div><div class="flow-col"><figure class="tb-pic"><div class="tb-frame" style="height:200px"><img alt="Lantern Dark." src="https://oberonandomegaid.github.io/aelderia/oneshots/brewmasters-debt/img/stout.jpg" style="object-position:50% 50%"></div><figcaption>Lantern Dark.</figcaption></figure><h3>The drinkers</h3>
+<p><strong>The drinkers</strong> (page 22) are the named townsfolk who drink <strong>Lantern Dark</strong> tonight. They are characters, not a checklist: you only need numbers for them when they are in a fight.</p>
 <ul>
 <li><strong>Four drink it early</strong>, in Act I, whatever the party do.</li>
 <li><strong>Four more drink it at the midnight toast.</strong> If the party stop the stout being served before then, they don’t.</li>
-<li><strong>Any character who drinks Lantern Dark</strong> is marked too. Note it secretly. <strong>Don’t tell them.</strong></li>
+<li><strong>Any character who drinks Lantern Dark</strong> is marked too. Just remember who. <strong>Don’t tell them.</strong></li>
 </ul>
 <p>Orrik’s stall is the most popular in the square. A character who just asks for “the festival ale” is offered Lantern Dark. Many other brewers are pouring too; <strong>only Orrik’s stout is poisoned</strong>.</p></div></div></div><div class="folio-footer"><span>Brewmaster’s Debt</span><span>5</span></div>
 \page
@@ -344,9 +345,9 @@
 </tr>
 </tbody>
 </table>
-<p><strong>About 800 XP per wave</strong>: easy to fight, hard to stop. The real danger is to the glowing townsfolk.</p><div class="combat-note"><h4>Encounter · GM reference</h4><p><strong>Sips.</strong> Each sip is <strong>1 Exhaustion level</strong> for the victim (−2 to d20 tests and −5 ft. Speed per level). <strong>At 6, they die.</strong> Mark it on the tracker.</p>
-<p><strong>Killing an imp</strong> returns every fragment it carries, at once. Each victim loses the Exhaustion it took.</p>
-<p><strong>Through the breach.</strong> An imp that flies into the breach is gone, with its fragments. Those victims <strong>keep</strong> that Exhaustion. (See “Reaching through”, page 13.)</p>
+<p><strong>About 800 XP per wave</strong>: easy to fight, hard to stop. The real danger is to the glowing townsfolk.</p><div class="combat-note"><h4>Encounter · GM reference</h4><p><strong>Show it, don’t count it.</strong> Each sip dims a victim’s glow and slows them, and each stolen fragment becomes <strong>a little light the imp carries</strong>. Describe both. Players can see who is fading and which imp is loaded.</p>
+<p><strong>Only count what is in the fight.</strong> Track Exhaustion (1 per sip, 6 kills) <strong>only for player characters</strong> and for any townsfolk <strong>the party are protecting right now</strong>. Everyone else in the square is described, not tracked.</p>
+<p><strong>Count the lights on each imp.</strong> Killing an imp sends its lights home at once, and those victims brighten. An imp that flies into the breach takes its lights with it. (See “Reaching through”, page 13.)</p>
 <p><strong>Rescue.</strong> Pull a glowing victim indoors (move to them; carry them at half speed); doors and cellars slow imps (an action to break in). Cover them with your body: the imp must hit you first.</p>
 <p><strong>Friends from Act I help.</strong> Kelda the champion hauls two victims to safety each round. Grudda throws dice in an imp’s eyes.</p></div></div><div class="flow-col"><div class="stat-card sb "><h4>Imp</h4><p class="sb-sub"><em>Tiny Fiend (Devil), Lawful Evil</em></p><p class="sb-l"><b>AC</b> 13 · <b>Initiative</b> +3 (13) · <b>HP</b> 21 (6d4 + 6) · <b>Speed</b> 20 ft., Fly 40 ft.</p><table class="sb-ab"><tr><td><b>Str</b> 6 (−2)</td><td><b>Dex</b> 17 (+3)</td><td><b>Con</b> 13 (+1)</td></tr><tr><td><b>Int</b> 11 (+0)</td><td><b>Wis</b> 12 (+1)</td><td><b>Cha</b> 14 (+2)</td></tr></table><p class="sb-l"><b>Skills</b> Deception +4, Insight +3, Stealth +5 · <b>Resistances</b> Cold · <b>Immunities</b> Fire, Poison; Poisoned · <b>Senses</b> Darkvision 120 ft.; Passive Perception 11 · <b>Languages</b> Common, Infernal</p><p class="sb-l"><b>CR</b> 1 (XP 200; PB +2)</p><h5>Traits</h5><p class="sb-a"><b><em>Magic Resistance.</em></b> The imp has Advantage on saving throws against spells and other magical effects.</p><p class="sb-a"><b><em>Soul-Drunk (this adventure).</em></b> An imp carrying 2 or more soul fragments glows, can’t turn invisible, has Disadvantage on attack rolls, and its Fly Speed drops to 20 feet. With 3 fragments, it heads straight for the breach.</p><h5>Actions</h5><p class="sb-a"><b><em>Sting.</em></b> <em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 6 (1d6 + 3) Piercing damage plus 7 (2d6) Poison damage.</p><p class="sb-a"><b><em>Invisibility.</em></b> The imp casts <em>Invisibility</em> on itself, requiring no spell components and using Charisma as the spellcasting ability.</p><h5>Bonus Actions</h5><p class="sb-a"><b><em>Sip (this adventure).</em></b> <em>Charisma Saving Throw:</em> DC 11, one glowing creature within 5 feet that this imp hasn’t sipped. <em>Failure:</em> The target gains 1 Exhaustion level, and the imp carries a fragment of its soul.</p></div></div></div></div><div class="folio-footer"><span>Brewmaster’s Debt</span><span>10</span></div>
 \page
@@ -432,8 +433,8 @@
 <li>Orrik is guilty; Maudra is innocent and stays well.</li>
 <li>Xanthos holds the breach and does nothing else.</li>
 </ul>
-<h3>Sips and Exhaustion</h3>
-<p>Each sip: 1 Exhaustion (−2 to d20 tests, −5 ft. Speed per level). 6 = death. Returned fragments remove their Exhaustion.</p>
+<h3>Sips</h3>
+<p>Track Exhaustion only for player characters and townsfolk in the current fight (1 per sip, 6 kills). Everyone else: describe the glow. Count the lights each imp carries.</p>
 <h3>Protecting Xanthos</h3>
 <p>Damage to him: d20; 10 or lower, 2 extra imps.</p></div><div class="flow-col"><h3>Encounters</h3>
 <table>
@@ -513,66 +514,94 @@
 <h3>Timing</h3>
 <p>Act I 55 min · Act II 65 min · Act III 70 min · <strong>190 minutes</strong> in all.</p></div></div></div><div class="folio-footer"><span>Brewmaster’s Debt</span><span>21</span></div>
 \page
-<div class="running" style="--accent:#7a4a14"><span>Brewmaster’s Debt</span><span>GM · THE DRINKERS’ TRACKER</span></div><div class="pf-body columns" style="--accent:#7a4a14"><div class="layout-cols"><div class="flow-col"><h2>The drinkers’ tracker</h2>
-<p>Copy this page, or keep it beside you. <strong>Four drink early</strong>, whatever happens. <strong>Four drink at the toast</strong>, unless the party stop Lantern Dark before midnight: cross them out if so.</p>
+<div class="running" style="--accent:#7a4a14"><span>Brewmaster’s Debt</span><span>GM · THE DRINKERS</span></div><div class="pf-body columns" style="--accent:#7a4a14"><div class="layout-cols"><div class="flow-col"><h2>The drinkers’ tracker</h2>
+<p><strong>Four drink early</strong>, whatever happens. <strong>Four drink at the toast</strong>, unless the party stop Lantern Dark before midnight. The rest of the square is safe from the sipping.</p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Drinker</th>
 <th style="text-align: left;">When</th>
-<th style="text-align: left;">Exhaustion</th>
+<th style="text-align: left;">Where they are at midnight</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Brannoc</strong>, Thane’s nephew</td>
 <td style="text-align: left;">Early</td>
-<td style="text-align: left;">☐☐☐☐☐☐</td>
+<td style="text-align: left;">Showing off by the bonfire</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Hethra</strong>, cairn priestess</td>
 <td style="text-align: left;">Early</td>
-<td style="text-align: left;">☐☐☐☐☐☐</td>
+<td style="text-align: left;">At the cairns, leading the prayer</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Bodo</strong>, cooper</td>
+<td style="text-align: left;"><strong>Bodo and Bram</strong>, twin coopers</td>
 <td style="text-align: left;">Early</td>
-<td style="text-align: left;">☐☐☐☐☐☐</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Bram</strong>, his twin</td>
-<td style="text-align: left;">Early</td>
-<td style="text-align: left;">☐☐☐☐☐☐</td>
+<td style="text-align: left;">Rolling barrels by the stalls</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Ysra</strong>, mask-carver</td>
 <td style="text-align: left;">Toast</td>
-<td style="text-align: left;">☐☐☐☐☐☐</td>
+<td style="text-align: left;">At her stall</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Kelda</strong>, champion</td>
 <td style="text-align: left;">Toast</td>
-<td style="text-align: left;">☐☐☐☐☐☐</td>
+<td style="text-align: left;">Wherever the party are</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Pim</strong>, Grudda’s grandson, 9</td>
 <td style="text-align: left;">Toast</td>
-<td style="text-align: left;">☐☐☐☐☐☐</td>
+<td style="text-align: left;">Running towards the lake</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Aurel Venn</strong>, human merchant</td>
 <td style="text-align: left;">Toast</td>
-<td style="text-align: left;">☐☐☐☐☐☐</td>
-</tr>
-<tr>
-<td style="text-align: left;">Player characters</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">☐☐☐☐☐☐</td>
+<td style="text-align: left;">Hiding under a table</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Kelda</strong> (if she is the party’s friend from the contest) still drank at the toast; she can keep hauling victims to safety until she reaches 3 Exhaustion.</p>
-<p><strong>Pim</strong> only had a sip from his mother’s cup. <strong>Maudra and Orrik</strong> never drink it: Orrik made sure.</p></div><div class="flow-col"><h3>Theatre of the mind</h3>
+<h3>The glow tells the story</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Sips taken</th>
+<th style="text-align: left;">What the players see</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">Bright, like moonlight</td>
+</tr>
+<tr>
+<td style="text-align: left;">1–2</td>
+<td style="text-align: left;">Dimmer; stumbling</td>
+</tr>
+<tr>
+<td style="text-align: left;">3–4</td>
+<td style="text-align: left;">Flickering; can barely stand</td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Guttering, like a candle end</td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">Gone out. Dead.</td>
+</tr>
+</tbody>
+</table>
+<h3>When the harvest ends</h3>
+<p>You don’t need to have counted every sip. Decide each named drinker’s fate by <strong>how many imps got through the breach with lights</strong>:</p>
+<ul>
+<li><strong>None:</strong> everyone recovers.</li>
+<li><strong>1–3:</strong> one drinker (your choice, never a child the party protected) is left dimmed for life.</li>
+<li><strong>4 or more:</strong> one drinker dies, and another is left dimmed.</li>
+</ul>
+<p>Anyone the party <strong>protected in a fight</strong> uses their real tracked Exhaustion instead.</p>
+<p><strong>Maudra and Orrik</strong> never drink it: Orrik made sure.</p></div><div class="flow-col"><h3>Theatre of the mind</h3>
 <p>Keep three things in front of the players: <strong>the breach</strong> (with Xanthos before it), <strong>who is glowing and where</strong>, and <strong>which imps are heading home</strong>.</p>
 <table>
 <thead>

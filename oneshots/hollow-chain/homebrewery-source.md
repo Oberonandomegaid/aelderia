@@ -105,7 +105,7 @@
 .page .pf-body.hx-cover{background:#1d1630!important}
 .page .hx-cover .hx-art{position:absolute;inset:0;width:100%!important;height:100%!important;max-width:none!important;object-fit:cover;margin:0;z-index:0!important}
 .page .hx-cover .cv-logo{z-index:3}
-.page .hx-sash{position:absolute;left:0;right:0;top:73%;padding:14px 50px 16px;background:rgba(26,17,40,.93);border-top:3px solid #c9a24a;border-bottom:3px solid #c9a24a;box-shadow:0 4px 18px rgba(0,0,0,.55);z-index:2}
+.page .hx-sash{position:absolute;left:0;right:0;top:61%;padding:14px 50px 16px;background:rgba(26,17,40,.93);border-top:3px solid #c9a24a;border-bottom:3px solid #c9a24a;box-shadow:0 4px 18px rgba(0,0,0,.55);z-index:2}
 .page .hx-sash .cv-series{margin:0 0 6px!important;color:#e6cf93!important}
 .page .hx-sash h1{color:#f5e6bd!important;font:bold 36px/1.08 Georgia,serif!important;letter-spacing:1px;margin:0 0 6px!important;border:0!important;text-transform:uppercase}
 .page .hx-sash .cv-sub{margin:0 0 8px!important;color:#eadfca!important;font-size:15px!important}

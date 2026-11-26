@@ -412,7 +412,7 @@
 <h3>Under water</h3>
 <ul>
 <li>Melee without a Swim Speed: Disadvantage unless Piercing.</li>
-<li>Ranged: Disadvantage in normal range, miss beyond.</li>
+<li>Ranged: Disadvantage in normal range, miss beyond. Crossbows, nets and thrown weapons are exempt.</li>
 <li>Fire: Resistance. Lightning and thunder: as written.</li>
 <li>Two Potions of Water Breathing each. No breath counting.</li>
 </ul>

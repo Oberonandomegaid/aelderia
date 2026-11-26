@@ -372,7 +372,7 @@
 \page
 <div class="running" style="--accent:#3d4f6b"><span>The Sky That Failed</span><span>GM</span></div><div class="pf-body columns" style="--accent:#3d4f6b"><figure class="tb-banner" style="height:140px"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/sky-that-failed/img/banner-end.jpg" style="object-position:50% 55%"></figure><div class="layout-cols"><div class="flow-col"><h2>Ending — The Scenic Detour</h2><blockquote data-label="READ ALOUD"><p><em>The Aurelian Splendour hits the hillside at full speed. There is no other word for it: she is obliterated. Walnut, brass, crystal, silk, all of it, in a single tremendous noise and a cloud of dust and sparks.</em></p>
 <p><em>Behind you, all down the valley, the bubbles are coming down. One by one they touch the grass and pop, with a soft, absurd </em>plip<em>, dumping their passengers face-first into the meadow.</em></p>
-<p><em>Four nobles, still in evening dress, come down together on one bubble, clinging to each other and screaming. It pops. They land in a heap. Lady Vantrey has lost a shoe.</em></p></blockquote><h3>Lord Xanthos</h3><blockquote data-label="READ ALOUD"><p><em>For a long time nothing moves in the wreck. Then something shifts. A beam slides aside. Lord Xanthos climbs out of the smoking ruin of the engine room, robes torn, hair singed, a cut on his cheek, and walks down the hill towards you, picking a splinter out of his sleeve.</em></p>
+<p><em>Four nobles, still in evening dress, come down side by side on four bubbles, clinging to each other’s hands and screaming. The bubbles pop together. They land in a heap. Lady Vantrey has lost a shoe.</em></p></blockquote><h3>Lord Xanthos</h3><blockquote data-label="READ ALOUD"><p><em>For a long time nothing moves in the wreck. Then something shifts. A beam slides aside. Lord Xanthos climbs out of the smoking ruin of the engine room, robes torn, hair singed, a cut on his cheek, and walks down the hill towards you, picking a splinter out of his sleeve.</em></p>
 <p><em>He looks at the Vantreys. He looks at the wreck.</em></p>
 <p><em>“I trust,” he says, “the scenic detour was worth it.”</em></p></blockquote></div><div class="flow-col"><h3>Who lived?</h3>
 <p>Go through the <strong>rescue tally</strong>. Anyone on a bubble before the impact lands safely. Anyone still aboard is lost.</p>
@@ -419,7 +419,7 @@
 <li><strong>Lord Xanthos</strong> says nothing about their work. But as he leaves, he nods to them, once.</li>
 </ul></div></div></div><div class="folio-footer"><span>The Sky That Failed</span><span>17</span></div>
 \page
-<div class="pf-body oo-fill"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/sky-that-failed/img/full-act2.jpg"></div>
+<div class="pf-body oo-fill"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/sky-that-failed/img/nobles.jpg"></div>
 \page
 <div class="running" style="--accent:#3d4f6b"><span>The Sky That Failed</span><span>GM · QUICK REFERENCE</span></div><div class="pf-body columns" style="--accent:#3d4f6b"><div class="layout-cols"><div class="flow-col"><h2>GM quick reference</h2>
 <h3>The disaster clock</h3>
@@ -557,7 +557,7 @@
 <p><strong>Silas Crane.</strong> Violinist. Hates heights.</p>
 <p><strong>Mr Fairweather.</strong> Chief steward. Gave the safety talk. Very dignified on a bubble.</p></div></div></div><div class="folio-footer"><span>The Sky That Failed</span><span>21</span></div>
 \page
-<div class="pf-body oo-fill"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/sky-that-failed/img/nobles.jpg"></div>
+<div class="pf-body oo-fill"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/sky-that-failed/img/full-act2.jpg"></div>
 \page
 <div class="running" style="--accent:#3d4f6b"><span>The Sky That Failed</span><span>PLAYER HANDOUT</span></div><div class="pf-body columns handout-page oo-prop" style="--accent:#3d4f6b"><div class="layout-cols"><div class="flow-col"><p class="map-eyebrow">PLAYER HANDOUT 1</p><h3>The safety card</h3><img class="tb-handout" alt="The safety card" src="https://oberonandomegaid.github.io/aelderia/oneshots/sky-that-failed/img/safety.jpg" style="max-height:400px;width:auto!important;display:block;margin:0 auto 10px"><p><strong>AURELIAN SPLENDOUR · PASSENGER SAFETY</strong></p>
 <p><em>In the most unlikely event of an emergency:</em></p>

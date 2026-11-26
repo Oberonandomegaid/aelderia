@@ -489,7 +489,7 @@
 </ul>
 <h3>Evidence at the gallows</h3>
 <p>Hunger 1 · Timeline 1 · Fresh pie 1 · Jar 1 · Saw it 1 · <strong>Edric 2</strong> · Speech 1.
-<strong>4</strong> stops it; <strong>3</strong> turns the crowd.</p>
+<strong>3 or more</strong> stops the hanging.</p>
 <h3>Captives</h3>
 <p>Nell <strong>2</strong> feeds · Bess, Piers, Sam <strong>5</strong> each. Lose 1 each start of its turn. Tendril: AC 12, 15 HP.</p></div><div class="flow-col"><h3>Encounters</h3>
 <table>

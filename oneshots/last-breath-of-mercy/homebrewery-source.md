@@ -303,7 +303,7 @@
 \page
 <div class="pf-body oo-fill"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/last-breath-of-mercy/img/full-act1.jpg"></div>
 \page
-<div class="running" style="--accent:#5b4a3a"><span>The Last Breath of Mercy</span><span>GM</span></div><div class="pf-body columns" style="--accent:#5b4a3a"><figure class="tb-banner" style="height:212px"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/last-breath-of-mercy/img/banner-act2.jpg" style="object-position:50% 0%"></figure><div class="layout-cols"><div class="flow-col"><h2>Act II — They Took Mummy</h2>
+<div class="running" style="--accent:#5b4a3a"><span>The Last Breath of Mercy</span><span>GM</span></div><div class="pf-body columns" style="--accent:#5b4a3a"><figure class="tb-banner" style="height:180px"><img alt="" src="https://oberonandomegaid.github.io/aelderia/oneshots/last-breath-of-mercy/img/banner-act2.jpg" style="object-position:50% 0%"></figure><div class="layout-cols"><div class="flow-col"><h2>Act II — They Took Mummy</h2>
 <p><em>About 60 minutes.</em></p>
 <h3>Day three, dawn</h3><blockquote data-label="READ ALOUD"><p><em>You are woken by hammering on the door. It is barely light.</em></p>
 <p><em>Pip Tallow is standing on the step in her nightdress, her wooden sword in one fist, her face blotched and furious and soaked with tears.</em></p>
